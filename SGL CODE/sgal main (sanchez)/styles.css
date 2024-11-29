@@ -1,0 +1,22 @@
+html{
+    size: 62.5%;
+}
+
+/* .contenedor_modulos{
+ 
+} */
+.contenedor_imagenes{
+    display: flex;
+    background-color: gray;
+}
+
+.modulo{
+    background-color: white;
+    margin: 2rem;
+    height: 100%;
+
+}
+
+.modulo a{
+    text-decoration: none;
+}
