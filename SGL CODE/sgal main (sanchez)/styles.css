@@ -1,7 +1,11 @@
 html{
     size: 62.5%;
 }
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8bd37f; /* Fondo verde */
+    margin: 0;
+  }
 /* .contenedor_modulos{
  
 } */
@@ -20,3 +24,100 @@ html{
 .modulo a{
     text-decoration: none;
 }
+
+
+/*
+Empieza
+Usuario(Nombre, Rol, Foto de perfil)
+*/.contenedor_principal {
+    display: flex;
+    align-items: center; 
+    gap: 2rem;
+  }
+  
+  /* Estilos de Usuario */
+  .contenedor_usuario {
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9; /* Fondo claro */
+    border: 0.2rem solid #748e9e; /* Borde */
+    border-radius: 1rem; /* Bordes redondeados */
+    padding: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  .texto_usuario {
+    margin-right: 1rem; 
+  }
+  
+  .texto {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .foto_perfil {
+    width: 5rem; /* Tamaño de la imagen */
+    height: 5rem;
+    border-radius: 50%; /* Imagen circular */
+    object-fit: cover; /* Ajustar imagen sin deformarla */
+  }
+  
+  /* Estilos de Módulos */
+  .contenedor_modulos {
+    display: flex;
+    background-color: #808080; /* Fondo gris */
+    padding: 1rem;
+    border-radius: 1rem; /* Bordes redondeados */
+    align-items: flex-start; /* Alineado al inicio */
+
+  }
+  
+  .contenedor_imagenes {
+    display: flex;
+    gap: 1.5rem; 
+  }
+  
+  .modulo a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .modulo a:hover {
+    color: darkblue;
+  }
+  
+  /* Media Queries para dispositivos pequeños */
+  @media (max-width: 76.8rem) { /* 768px */
+    .contenedor_principal {
+      gap: 1rem; 
+    }
+    .contenedor_usuario,
+    .contenedor_modulos {
+      width: 100%; 
+      justify-content: space-between; 
+    }
+    .texto {
+      font-size: 1rem; /*  tamaño de texto reduzido*/
+    }
+    .modulo a {
+      font-size: 0.9rem; /*  tamaño de los enlaces reducidos*/
+    }
+  }
+  
+  @media (max-width: 48rem) { /* 480px */
+    .contenedor_usuario {
+      flex-direction: column; /* Se ponen el Texto e imagen uno encima del otro */
+      align-items: center; /*  Contenido centrado*/
+    }
+    .texto_usuario {
+      margin-right: 0;
+      text-align: center; /*  Texto Centrado*/
+    }
+  }
+/*
+Termina
+Usuario(Nombre, Rol, Foto de perfil)
+*/
