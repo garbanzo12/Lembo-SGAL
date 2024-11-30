@@ -135,3 +135,27 @@ Usuario(Nombre, Rol, Foto de perfil)
 Termina
 Usuario(Nombre, Rol, Foto de perfil)
 */
+
+/*
+Empieza
+Titulo(Titulo, logo sgal, logo SENA)
+*/
+.logos_titulo{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  text-align: center;
+  margin-top: 2rem;
+  color: #007832;
+}
+/*
+Termina
+Titulo(Titulo, logo sgal, logo SENA)
+*/
+/*
+Empiza
+Main(informacin, imagenes, etc)
+*/
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+}
