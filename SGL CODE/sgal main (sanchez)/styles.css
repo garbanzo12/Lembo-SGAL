@@ -209,7 +209,7 @@ Titulo(Titulo, logo sgal, logo SENA)
   margin-left: 10%;
 }
 .sena{
-  align-self: flex-end; /* Opcional: si necesitas ajustar alineación horizontal */
+  align-self: flex-end;
   margin-left: 40%;
 
 }
@@ -221,7 +221,14 @@ Titulo(Titulo, logo sgal, logo SENA)
 Empieza
 Main(informacin, imagenes, etc)
 */
-
+h2{
+  font-size: 2.4rem;
+  text-align: center;
+  color: #00304D;
+}
+h2 span{
+  color: white;
+}
 
 /* main{
   display: grid;
@@ -233,9 +240,10 @@ Empieza
 modulo_cultivos (informacin, imagenes, etc)
 */
 
-.modulo_cultivos{
+.caja_modulo_cultivo,
+.caja_modulo_usuarios{
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 40% 60%;
   width: 95%;
   height: 22rem;
   background-color: white;
@@ -244,7 +252,8 @@ modulo_cultivos (informacin, imagenes, etc)
   border-radius: 1rem;
 }
 
-.imagen_cultivos{
+.imagen_cultivos,
+.imagen_usuario{
   width: 90%;
   height: 20rem;
   border-radius: 1rem;
@@ -252,29 +261,105 @@ modulo_cultivos (informacin, imagenes, etc)
   margin-left: 3%;
 }
 
-.informacion_cultivos h2{
-  font-size: 2.4rem;
-  text-align: center;
-  color: #00304D;
+
+.informacion_cultivos p,
+.caja_grid_insumos p,
+.informacion_iot p,
+.informacion_usuarios p{
+  color: #71277A ;
+  font-weight: bold;
 }
-.informacion_cultivos span{
-  color: white;
-}
+
 /*
-Empieza
+Termina
 modulo_cultivos (informacin, imagenes, etc)
 */
-
+/*
+Empieza
+modulo_insumos (informacin, imagenes, etc)
+*/
+.caja_modulo_insumo{
+  width: 95%;
+  height: 30rem;
+  background-color: white;
+  margin-left: 2%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
 .imagen_insumos{
-  width: 30%;
+  width: 95%;
+  height: 75%;
+  border-radius: 1rem;
+}
+.caja_grid_insumos{
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+/*
+Termina
+modulo_insumos (informacin, imagenes, etc)
+*/
+
+/*
+Empieza
+modulo_iot (informacin, imagenes, etc)
+*/
+.caja_modulo_iot{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 95%;
+  height: 22rem;
+  background-color: #949494;
+  margin-left: 2%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.informacion_iot span{
+  color: #949494 ;
+}
+.informacion_iot p{
+  margin-left: 24%;
+}
+.imagen_iot{
+  width: 98%;
+  height: 20rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+/*
+Termina
+modulo_iot (informacin, imagenes, etc)
+*/
+
+/*
+Empieza
+modulo_iot (informacin, imagenes, etc)
+*/
+
+.imagen_usuarios{
+  width: 30%;       /*Hay pocas lineas aqui ya que se aprovecho para no repetir codigo, ya que la caja es la misma de cultivo*/
   height: 20rem;
 }
 
-.imagen_iot{
-  width: 30%;
-  height: 20rem;
+
+/*
+Termina
+modulo_iot (informacin, imagenes, etc)
+*/
+
+.imagen_footer{
+  margin-top: 10%;
+  width: 100%;
+  display: block;
+  padding: 0;
+  border: none;
+
 }
-.imagen_usuarios{
-  width: 30%;
-  height: 20rem;
+.footer{
+  width: 100%;
+  height: 2rem;
+  background-color: #00304D;
+  padding: 0;
+
 }
