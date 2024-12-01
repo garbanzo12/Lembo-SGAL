@@ -104,32 +104,84 @@ Usuario(Nombre, Rol, Foto de perfil)
   }
   
   /* Media Queries para dispositivos pequeños */
-  @media (max-width: 76.8rem) { /* 768px */
-    .contenedor_principal {
-      gap: 1rem; 
+  @media (max-width: 780px) { 
+    .contenedor_imagenes{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 0rem;
+      margin-top: 1rem;
     }
-    .contenedor_usuario,
-    .contenedor_modulos {
-      width: 100%; 
-      justify-content: space-between; 
+
+    .contenedor_modulos{
+    
+      margin-top: 1%;
+      height: 8%;
+      margin-left: 0.5rem;
     }
-    .texto {
-      font-size: 1rem; /*  tamaño de texto reduzido*/
+    .contenedor_principal{
+      display:flex ;
+      gap: 0;
+
     }
-    .modulo a {
-      font-size: 0.9rem; /*  tamaño de los enlaces reducidos*/
+    .imagen_modulo{
+      width: 40%;
+      margin-top: 10%;
+    
     }
+    .modulo p{
+      margin-top: 0;
+    
+    }
+    .modulo{
+      height: 70%;
+      width: 50%;
+    }
+    .sena{
+      margin-bottom: 50%;
+    }
+    .sgal{
+      margin-top: 0%;
+    }
+
   }
-  
-  @media (max-width: 48rem) { /* 480px */
-    .contenedor_usuario {
-      flex-direction: column; /* Se ponen el Texto e imagen uno encima del otro */
-      align-items: center; /*  Contenido centrado*/
+
+    
+  @media (max-width: 390px) { 
+    .contenedor_imagenes{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 0%;
     }
-    .texto_usuario {
-      margin-right: 0;
-      text-align: center; /*  Texto Centrado*/
+    .contenedor_modulos{
+      height: 60%;
+      width: 90%;
+      margin-top: 3%;
+      margin-left: 0.5rem;
     }
+    .contenedor_principal{
+      display:grid ;
+      grid-template-columns: 1fr;
+    }
+    .imagen_modulo{
+      width: 40%;
+    
+    }
+    .modulo p{
+      margin-top: 0rem;
+      font-size: 60%;
+    
+    }
+    .modulo{
+      height: 70%;
+
+    }
+    .sena{
+      margin-bottom: 50%;
+    }
+    .sgal{
+      margin-top: 50%;
+    }
+
   }
 /*
 Termina
@@ -147,15 +199,82 @@ Titulo(Titulo, logo sgal, logo SENA)
   margin-top: 2rem;
   color: #007832;
 }
+.logos_titulo h1{
+  margin-top: 5%
+}
+.logos_empresas{
+  width: 50%;
+}
+.sgal{
+  margin-left: 10%;
+}
+.sena{
+  align-self: flex-end; /* Opcional: si necesitas ajustar alineación horizontal */
+  margin-left: 40%;
+
+}
 /*
 Termina
 Titulo(Titulo, logo sgal, logo SENA)
 */
 /*
-Empiza
+Empieza
 Main(informacin, imagenes, etc)
 */
-main{
+
+
+/* main{
   display: grid;
   grid-template-columns: 1fr;
+} */
+
+/*
+Empieza
+modulo_cultivos (informacin, imagenes, etc)
+*/
+
+.modulo_cultivos{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  width: 95%;
+  height: 22rem;
+  background-color: white;
+  margin-left: 2%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.imagen_cultivos{
+  width: 90%;
+  height: 20rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-left: 3%;
+}
+
+.informacion_cultivos h2{
+  font-size: 2.4rem;
+  text-align: center;
+  color: #00304D;
+}
+.informacion_cultivos span{
+  color: white;
+}
+/*
+Empieza
+modulo_cultivos (informacin, imagenes, etc)
+*/
+
+.imagen_insumos{
+  width: 30%;
+  height: 20rem;
+}
+
+.imagen_iot{
+  width: 30%;
+  height: 20rem;
+}
+.imagen_usuarios{
+  width: 30%;
+  height: 20rem;
 }
