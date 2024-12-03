@@ -157,6 +157,8 @@ span {
   font-weight: bold;
   font-size: 3.2rem;
   color: var(--primary-800);
+  text-shadow: 0 0 2px #00ff00, /* Sombra verde */ 
+  0 0 20px #00ff00
 }
 
 .box1 {
@@ -181,7 +183,7 @@ span {
   /* colores */
   /* tamaños  */
   width: 40rem;
-  height: 45rem;
+  height: auto;
 
   /* posicionamiento */
   display: flex;
@@ -236,7 +238,7 @@ span {
 }
 .bar-logos .vector2 {
   /* backgroud imagen */
-  background-image: url(/img/LogoSgal.png);
+  background-image: url(../img/LogoSgal.png);
   background-size: cover;
 }
 .bar-logos .vector3 {
@@ -271,7 +273,7 @@ span {
   border-radius: 1rem;
   /* tamaños */
   width: 40rem;
-  height: 38.5rem;
+  height: auto;
   /* centrado */
   text-align: center;
   box-shadow: 0 4px 8px var(--black);
@@ -292,6 +294,7 @@ span {
   /* colores */
   background-color: var(--gray-100);
 
+
   /* tamaños */
   border-radius: 1rem 1rem 0rem 0rem; /* bordes en sentido reloj. */
   height: 5rem;
@@ -299,6 +302,8 @@ span {
   /* texto */
   color: var(--secundary-1-950);
   font-weight: bolder;
+
+
 
   /* posicionamiento */
 }
@@ -334,7 +339,7 @@ span {
   box-sizing: border-box;
   background-color: var(--gray-050);
 }
-.container-login button {
+.container-login .button {
   background-color: var(--secundary-1-800);
   width: 12rem;
   color: var(--white);
@@ -343,6 +348,10 @@ span {
   border-radius: 20px;
   cursor: pointer;
   margin-top: 1rem;
+}
+.container-login a{
+  color: var(--white);
+  text-decoration: none;
 }
 .login-container a {
   display: block;
@@ -401,7 +410,7 @@ footer p {
   bottom: 2%;
 }
 
-footer a {
+footer .titlle {
   /* color */
   text-decoration: underline;
   /* display */
