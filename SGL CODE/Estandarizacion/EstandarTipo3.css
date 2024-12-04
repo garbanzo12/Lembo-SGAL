@@ -140,8 +140,26 @@ body {
   /* flexibilidad */
   display: flex;
   flex-direction: row;/* menu a un lado de la hoja blanca */
-  
+  padding-left: 0rem;
+
 }
+.contenedor-user{
+  background-color: var(--gray-050);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-width: 18rem;
+ max-width: 20rem;
+ max-height: 40rem;
+ width: 12%;
+ margin-left: 0.5rem;
+ margin-right: 1rem;
+ margin-top: 2rem;
+ margin-bottom: 1rem;
+ border-radius: 1.6rem;
+}
+
+
 
 /*  ***************************************************************** */
 
@@ -159,7 +177,7 @@ body {
   max-width: 20rem;
   max-height: 40rem;
   width: 12%;
-  margin-left: 0rem;
+  margin-left: 0.5rem;
   margin-right: 1rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -188,12 +206,31 @@ body {
  transition: 500ms;
 }
 
+.contenedor-sena{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ico-sena{
+  max-width: 10rem;
+  height: auto;
+  margin-top: auto;
+
+  
+}
+
 /*  ***************************************************************** */
 .container-general-gris{
   /* color */
   background-color: var(--gray-050);
   display: flex;
-  padding: 5rem 2rem 2rem 2rem ;
+  flex-direction: column;
+  padding: 5rem 0rem 2rem 2rem ;
   /* tamaño */
   border-radius: 1.2rem;
   /* posicionamiento */
@@ -222,8 +259,8 @@ border-radius: 1.2rem;
   flex-direction: column;
   margin: 2rem 10rem 1rem 10rem;
   border-radius: 1.4rem;
-  padding-top: 10rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   border: 0.01rem solid var(--gray-200);
   
 }
@@ -260,9 +297,38 @@ border-radius: 1.2rem;
 }
 /* LINEA GRIS PARTE BAJA DE LA HOJA DEL REPORTE */
 .gris-botton{
-  background-color: gray;
+  background-color: var(--gray-050);
   margin: 0rem;
   width: 100%;
   height: 5rem;
 }
+
+.conteo-hoja{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.conteo{
+display: flex;
+justify-content: center;
+margin: 1rem;
+
+font-size: 2.4rem;
+font-weight: bold;
+text-decoration: none;
+color: var(--black);
+}
+
+.ico-back{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+  padding-left:5rem ;
+  }
 
