@@ -249,6 +249,7 @@ td{
         padding: 2rem 2rem 2rem 2rem ;
         border-radius: 1.2rem;
         width: 90%;
+        height: 100vh;
         align-items: center;
         justify-content: center;
     
@@ -260,6 +261,7 @@ td{
         margin-top: 2%;
         border-radius: 1.2rem;
         width: 90%;
+        height: 90vh;
         margin-left: 5%;
         margin-right: 5%;
         padding: 2rem 2rem 2rem 2rem;
