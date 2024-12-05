@@ -4,7 +4,8 @@ html{
 }
 body {
     font-family: var(--main-font);
-    background: linear-gradient(to top, var(--Background2-main) 50%, var(--Background1-main) ); /* Degradado de izquierda a derecha */
+    /* background: linear-gradient(to top, var(--Background2-main) 50%, var(--Background1-main) );  */
+    background-color: var(--white);
     margin: 0;
   }
 /* .contenedor_modulos{
@@ -23,7 +24,8 @@ Modulos(imagenes, nimbre modulo,etc)
 }
 
 .imagen_modulo{
-  width: 40%;
+  width: 2.4rem;
+  height: 2.4rem;
 
 }
 
