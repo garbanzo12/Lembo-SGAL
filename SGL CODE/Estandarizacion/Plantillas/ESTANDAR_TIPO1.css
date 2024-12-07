@@ -145,8 +145,10 @@ body {
   /* centrados */
   margin: 0 auto;
 }
-
-span {
+.header1 {
+  display: none; /* se apago un titulo solo ve en media querry */
+}
+.header2 {
   /* display: flex;
   position: absolute;
   top: 4%;
@@ -160,9 +162,9 @@ span {
   /* Sombra verde */
 
   position: absolute;
-  top: 5%; /* Posición vertical centrada dentro de .box2 */
-  left: 63.5%; /* Posición horizontal centrada dentro de .box2 */
-  transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+  top: 5%;
+  left: 63.5%;
+  transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -188,18 +190,16 @@ span {
   flex-direction: column;
   /* alinear */
   align-items: center;
-
 }
 
 .contenedor-gif {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   /* tamaños */
-  width: 100%; 
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
 }
-
 
 .subcontenedor-gif {
   display: flex;
@@ -249,13 +249,6 @@ img {
   /* width: 100%; */
   /* height: 100vh; */
 
-
-
-
-
-
-
-
   /* colores */
   background-color: var(--white);
   border-radius: 1rem;
@@ -267,7 +260,7 @@ img {
   box-shadow: 0 4px 8px var(--black);
   /* posicion */
   position: fixed;
-  top: 22%;
+  top: 8%;
   margin: 0;
   padding: 0;
 }
@@ -311,7 +304,7 @@ img {
   /* *********OPCION 02*********** */
   /* 40 REM o 80 REM */
   width: 80rem;
-  gap: 5rem;
+  gap: 2rem;
   /* 2 REM o 5 REM para 80 REM ARRIBA */
 
   /* ******************************* */
@@ -400,10 +393,6 @@ label {
 .baseform a {
   display: flex;
 
-
-
-
-
   /* colores */
   background-color: var(--gray-100);
   /* display */
@@ -419,4 +408,77 @@ label {
   font-weight: 700;
   color: var(--gray-600);
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  body {
+    height: auto; /* Ajusta la altura del body automáticamente */
+    min-height: 200vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana gráfica */
+    overflow-y: auto; 
+  }
+  .header1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font--main);
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: var(--primary-800);
+    text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
+  }
+  .header2 {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 63.5%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    font-family: var(--font--main);
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: var(--primary-800);
+    text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
+  }
+
+  .box1 {
+    display: none; /* Desactiva .box1 */
+  }
+
+  .box2 {
+    width: 100%;
+  
+  }
+  .container-box {
+    /* width: 100vw; Pasa a la mitad del ancho de la pantalla */
+    /* max-width: 40rem; O 40rem, lo que sea menor */
+    display: flex;
+    position: fixed;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+  h3 {
+    /* width: 40rem; */
+  }
+  .container-form {
+    display: flex;
+    flex-direction: column; /* Organiza en una sola columna */
+    align-items: center; /* Centra los elementos en la columna */
+    width: 40rem;
+
+    gap: 1rem;
+  }
+  .container-form .dato {
+    width: 100%; /* Asegura que cada input y label ocupen todo el ancho del contenedor */
+    margin-bottom: 1rem; /* Añade espacio entre cada input */
+  }
+  .container-form label,
+  .container-form input {
+    width: 100%; /* Asegura que los labels y inputs ocupen todo el ancho disponible */
+  }
 }
