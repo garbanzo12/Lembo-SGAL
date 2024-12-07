@@ -163,7 +163,7 @@
   
     position: absolute;
     top: 5%;
-    left: 63.5%;
+    left: 60%;
     transform: translate(-50%, -50%);
     width: 100%;
     display: flex;
@@ -178,7 +178,7 @@
   /* ************************************************ */
   
   .box1 {
-    width: 27%;
+    width: 20%;
     height: auto;
     background: linear-gradient(
       to bottom,
@@ -233,7 +233,7 @@
     background-color: var(--secundary-1-950);
   
     /* tamanos */
-    width: 73%;
+    width: 80%;
     height: auto;
   
     /* propiedades  si se activa display flex / desactiva aling content*/
@@ -462,10 +462,18 @@
     color: #00304D; /* Ajusta el color según sea necesario */
   }
   
-  .ico-back a {
-    text-decoration: none; /* Elimina subrayado del enlace */
-    color: inherit; /* Usa el color del contenedor padre */
+  .svg-container{
+    background-color: var(--white);
+    display: flex;
+    width: 5.2rem;
+    height: 5.2rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+    
   }
+
   
 
   @media (max-width: 768px) {

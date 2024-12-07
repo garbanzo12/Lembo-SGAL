@@ -163,7 +163,7 @@ body {
 
   position: absolute;
   top: 5%;
-  left: 63.5%;
+  left: 60%;
   transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
@@ -178,7 +178,7 @@ body {
 /* ************************************************ */
 
 .box1 {
-  width: 27%;
+  width: 20%;
   height: auto;
   background: linear-gradient(
     to bottom,
@@ -215,8 +215,8 @@ body {
   /* min-width: 16rem; */
 }
 .image-movile {
-  width: 29rem; /* vector httml para otros = */
-  height: 42rem; /* vector httml para otros = */
+  width: 35rem; /* vector httml para otros = */
+  height: 70rem; /* vector httml para otros = */
   background-image: url("link imagen plantilla img/CUADROS");
   background-size: cover;
   background-repeat: no-repeat;
@@ -224,6 +224,7 @@ body {
 }
 img {
   width: 10rem;
+  
 }
 
 /* ************************************************ */
@@ -233,7 +234,7 @@ img {
   background-color: var(--secundary-1-950);
 
   /* tamanos */
-  width: 73%;
+  width: 80%;
   height: auto;
 
   /* propiedades  si se activa display flex / desactiva aling content*/
@@ -264,7 +265,7 @@ img {
   box-shadow: 0 4px 8px var(--black);
   /* posicion */
   position: fixed;
-  top: 8%;
+  top: 20%;
   margin: 0;
   padding: 0;
 }
@@ -412,6 +413,18 @@ label {
   font-weight: 700;
   color: var(--gray-600);
   text-decoration: none;
+}
+
+.svg-container{
+  background-color: var(--white);
+  display: flex;
+  width: 5.2rem;
+  height: 5.2rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+  
 }
 @media (max-width: 768px) {
   body {
