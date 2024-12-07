@@ -147,7 +147,7 @@ body {
 }
 
 span {
-  display: flex;
+  /* display: flex;
   position: absolute;
   top: 4%;
   width: 100%;
@@ -156,8 +156,21 @@ span {
   font-weight: bold;
   font-size: 3.2rem;
   color: var(--primary-800);
-  text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
+  text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00; */
   /* Sombra verde */
+
+  position: absolute;
+  top: 5%; /* Posición vertical centrada dentro de .box2 */
+  left: 63.5%; /* Posición horizontal centrada dentro de .box2 */
+  transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font--main);
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: var(--primary-800);
+  text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
 }
 
 /* ************************************************ */
@@ -174,25 +187,39 @@ span {
   display: flex;
   flex-direction: column;
   /* alinear */
-  justify-content: center;
   align-items: center;
 
-  /* degradado */
 }
 
 .contenedor-gif {
   display: flex;
+  justify-content: center; 
+  align-items: center; 
+  /* tamaños */
+  width: 100%; 
+  height: 100vh; 
+}
+
+
+.subcontenedor-gif {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+  /* min-width: 16rem; */
 }
-
-.ico-sena img {
-  width: 8rem;
-  height: auto;
+.image-movile {
+  width: 29rem; /* vector httml para otros = */
+  height: 42rem; /* vector httml para otros = */
+  background-image: url("link imagen plantilla img/CUADROS");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-.image-movile img {
-  width: 15rem;
-  height: auto;
+img {
+  width: 10rem;
 }
 
 /* ************************************************ */
@@ -212,4 +239,184 @@ span {
   /* centrados */
   justify-content: center;
   align-items: center;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  /* height: 100vh; */
+
+
+
+
+
+
+
+
+  /* colores */
+  background-color: var(--white);
+  border-radius: 1rem;
+  /* tamaños */
+  width: 40rem;
+  height: auto;
+  /* centrado */
+  text-align: center;
+  box-shadow: 0 4px 8px var(--black);
+  /* posicion */
+  position: fixed;
+  top: 22%;
+  margin: 0;
+  padding: 0;
+}
+.container-box h3 {
+  /* posicion */
+  display: flex;
+  margin: 0 auto;
+  /* centrado */
+  justify-content: center;
+  align-items: center;
+
+  /* colores */
+  background-color: var(--gray-100);
+
+  /* tamaños */
+  border-radius: 1rem 1rem 0rem 0rem; /* bordes en sentido reloj. */
+  height: 5rem;
+  width: 100%;
+
+  /* texto */
+  color: var(--secundary-1-950);
+  font-weight: bolder;
+
+  /* posicionamiento */
+}
+/* ******************************************************* */
+/* ******* aqui se controla las 2 columnas blancas ******* */
+
+.container-form {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* *********OPCION 01*********** */
+  /* 40 REM o 80 REM */
+  /* width: 40rem;   
+  gap: 2rem;  */
+  /* 2 REM o 5 REM para 80 REM ARRIBA */
+
+  /* *********OPCION 02*********** */
+  /* 40 REM o 80 REM */
+  width: 80rem;
+  gap: 5rem;
+  /* 2 REM o 5 REM para 80 REM ARRIBA */
+
+  /* ******************************* */
+}
+
+.container-box img {
+  width: 16rem;
+  height: 12rem;
+  margin: 0.1rem;
+  border-radius: 10rem;
+}
+
+.container-form label {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--black);
+}
+
+/* sanches ni stefania NO BORRAR NINGUNO DE ESTOS PORQUE SON TODOS LOS INPUTS SEGUN SE PONGA HTML */
+.container-box input[type="text"],
+.container-box input[type="password"],
+.container-box input[type="email"],
+.container-box input[type="number"],
+.container-box input[type="tel"],
+.container-box input[type="url"],
+.container-box input[type="search"],
+.container-box input[type="date"],
+.container-box input[type="time"],
+.container-box input[type="datetime-local"],
+.container-box input[type="month"],
+.container-box input[type="week"],
+.container-box input[type="color"],
+.container-box input[type="file"],
+.container-box input[type="checkbox"],
+.container-box input[type="radio"],
+.container-box input[type="range"],
+.container-box input[type="submit"],
+.container-box input[type="reset"],
+.container-box input[type="button"],
+.container-box input[type="hidden"] {
+  font-size: 1.6rem;
+  color: var(--gray-700);
+  width: 32rem;
+  padding: 1.6rem 2.4rem; /* TDOSOS LOS INPUTS DE 52 PX DE ALTOS SEGUN CORRECION GOOGLE DESING GUIDE */
+  margin: 0em;
+  border: 0.1rem solid var(--blanco);
+  border-radius: 5rem; /* campo circular */
+  box-sizing: border-box;
+  background-color: var(--gray-050);
+}
+
+label {
+  margin: 0 auto;
+  padding: 0rem 2.4rem;
+}
+.container-box .button {
+  background-color: var(--secundary-1-800);
+  width: auto;
+  color: var(--white);
+  padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+  border: none;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem;
+}
+.container-box a {
+  color: var(--white);
+  text-decoration: none;
+}
+.login-container a {
+  display: block;
+  margin-top: 10px;
+  color: #0a3d62;
+  text-decoration: none;
+}
+
+.baseform {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+}
+.baseform a {
+  display: flex;
+
+
+
+
+
+  /* colores */
+  background-color: var(--gray-100);
+  /* display */
+  display: flex;
+  /* posicionamiento */
+  justify-content: center;
+  align-items: center;
+  /* tamaños */
+  height: 3.6rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+  /* fuente */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gray-600);
+  text-decoration: none;
 }
