@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="REGISTRO SENSORES" content="PAGINA CON FORMULARIO PARA INGRESAR SENSORES A BASE DATOS"/>
-    <meta name="keywords" content="sena, risaralda, lembo, gestion, agricola, campecino, produtos, cultivos, crear, sensores"/>
-    <meta name="author"content="Aprendiz: Erick Ramirez, Aprendiz Aprendiz:Sanchez Hernandez, Aprendiz:Estefani Acevedo"/>
+    <meta
+      name="REGISTRO SENSORES"
+      content="PAGINA CON FORMULARIO PARA INGRESAR SENSORES A BASE DATOS"
+    />
+    <meta
+      name="keywords"
+      content="sena, risaralda, lembo, gestion, agricola, campecino, produtos, cultivos, crear, sensores"
+    />
+    <meta
+      name="author"
+      content="Aprendiz: Erick Ramirez, Aprendiz Aprendiz:Sanchez Hernandez, Aprendiz:Estefani Acevedo"
+    />
     <meta http-equiv="Content-Language" content="es" />
 
-    <link rel="stylesheet" href="css/crear-sensores.css"/>
-
+    <link rel="stylesheet" href="css/crear-sensores.css" />
 
     <title>REGISTRAR SENSORES</title>
   </head>
@@ -20,7 +28,7 @@
         <div class="subcontenedor-gif">
           <div class="ico-sena">
             <img
-              src="img/logo1.png"
+              src="img/logo-sena-verde-complementario-png-2022.png"
               alt="Imagen de Logo Sena"
             />
           </div>
@@ -57,7 +65,7 @@
     <main class="box2">
       <header class="header2"><span>SENA SEDE LEMBO</span></header>
       <fieldset class="container-box">
-        <h3>TITULO SEGUN VISTA</h3>
+        <h3>CREAR SENSOR</h3>
         <form class="container-form">
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI  -->
 
@@ -72,13 +80,13 @@
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI -->
 
           <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="email" />
+            <label class="label" for="">Tipo de sensor</label>
+            <input placeholder="Ingrese tipo de sensor" type="text" />
           </div>
 
           <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="text" />
+            <label class="label" for="">ID Sensor</label>
+            <input placeholder="Ingrese ID del sensor" type="number" />
           </div>
 
           <!-- ESPACIO PARA MAS INPUTS  -->
@@ -86,34 +94,37 @@
           <!-- text, password, email, number, tel, url, search, date, time, datetime-local, month, week, color, file, checkbox, radio, range, submit, reset, button y hidden -->
 
           <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="email" />
+            <label class="label" for="">Nombre del sensor</label>
+            <input placeholder="Ingrese nombre de sensor" type="text" />
+          </div>
+
+          <!-- ****************************segun figma debe pasar a segunda columna desde aqui ****************************** -->
+
+          <div class="dato">
+            <label class="label" for="">Unidad de medida</label>
+            <input placeholder="Ingrese unidad de medida" type="text" />
           </div>
 
           <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="text" />
+            <label class="label" for="">Tiempo de muestreo</label>
+            <input placeholder="Ingrese muestreo en segundos" type="number" />
           </div>
 
           <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="text" />
+            <label class="label-vacio" for="">.</label>
+            <input class="vacio" placeholder="" type="number" />
           </div>
 
-          <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="text" />
-          </div>
-
-          <div class="dato">
-            <label class="label" for="">INFORMACION LABEL</label>
-            <input placeholder="Ingrese Dato" type="text" />
+          <!-- esta es la imagen o espacio donde podemos cargar la imagen del sensor, por ahora es un div con estilos -->
+          <div>
+            <h4>CREAR SENSOR</h4>
+            <div class="rect-load-picture">Cargar Imagen</div>
           </div>
 
           <!-- ESPACIO PARA MAS INPUTS  -->
         </form>
         <div class="botones">
-          <button class="button"><a href="">ACEPTAR</a></button>
+          <button class="button"><a href="">CREAR</a></button>
           <button class="button"><a href="">CANCELAR</a></button>
         </div>
 
@@ -122,6 +133,13 @@
         </div>
       </fieldset>
       <!-- fin de form -->
+
+   
+    <div>
+    <!-- enlace para volver -->
+    <a class="ico-back" href=""> &lt; </a>
+    <!-- fin contenedor blanco -->
+  </div>
     </main>
 
     <!-- fin box 2 -->

@@ -275,6 +275,7 @@
     /* centrado */
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
   
     /* colores */
     background-color: var(--gray-100);
@@ -360,16 +361,49 @@
     box-sizing: border-box;
     background-color: var(--gray-050);
   }
+
+  /* ES PARA LOS INPUTS VACIOS PARA QUE SE AJUSTE A UN LADO CUANDO SON IMPARES */
+  .container-box .vacio{
+    font-size: 1.6rem;
+    color: var(--white);
+    width: 32rem;
+    padding: 1.6rem 2.4rem; /* TDOSOS LOS INPUTS DE 52 PX DE ALTOS SEGUN CORRECION GOOGLE DESING GUIDE */
+    margin: 0em;
+    border: 0.1rem solid var(--blanco);
+    border-radius: 5rem; /* campo circular */
+    box-sizing: border-box;
+    background-color: var(--white) !important;
+  }
+  .container-box .label-vacio{
+    color: var(--white);
+  }
+
   
   label {
     margin: 0 auto;
     padding: 0rem 2.4rem;
   }
+
+/* cñses para cargar imagen del sensor es un div ojo tiene un titulo en h4 */
+/* formato de image 16 : 9 osea   21rem x 12 rem  */
+.rect-load-picture{
+  background-color: var(--white);
+  width: 21rem;
+  height: 12rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.5rem var(--gray-100);
+  /*  segun el google desing el espesor de borde es de 1px o 2px maximo pero esto no es una selda es un cuadro de imagen */
+}
+
   .container-box .button {
     background-color: var(--secundary-1-800);
     width: auto;
     color: var(--white);
-    padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+    padding: 1rem 3rem 1rem 3rem; 
+    /* paddin segun google desing 1.6rem 2.4rem 1.6rem 2.4rem los cambie segun FIGMA */
     border: none;
     border-radius: 2.4rem;
     cursor: pointer;
@@ -378,6 +412,12 @@
     font-weight: 500;
     margin: 2rem;
   }
+
+.container-box .h4{
+  font-weight: bold;
+}
+
+
   .container-box a {
     color: var(--white);
     text-decoration: none;
@@ -413,6 +453,21 @@
     color: var(--gray-600);
     text-decoration: none;
   }
+
+  .ico-back {
+    display: block; /* Asegura que el div sea un bloque visible */
+    position: absolute;
+    margin-bottom: 0%; 
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #00304D; /* Ajusta el color según sea necesario */
+  }
+  
+  .ico-back a {
+    text-decoration: none; /* Elimina subrayado del enlace */
+    color: inherit; /* Usa el color del contenedor padre */
+  }
+  
+
   @media (max-width: 768px) {
     body {
       height: auto; /* Ajusta la altura del body automáticamente */
