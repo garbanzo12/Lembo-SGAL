@@ -274,7 +274,7 @@ img {
     box-shadow: 0 4px 8px var(--black);
     /* posicion */
     position: fixed;
-    top: 25%;
+    top: 15%;
     margin: 0;
     padding: 0;
 }
@@ -468,16 +468,20 @@ label {
     color: var(--gray-600);
     text-decoration: none;
 }
-  
+
+.box-flecha-back{
+  margin-top: 60%;
+}
+/*   
 .ico-back {
     display: block; /* Asegura que el div sea un bloque visible */
-    position: absolute;
-    margin-bottom: 0%;
-    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
-    color: #00304d; /* Ajusta el color según sea necesario */
-}
+    /* position: absolute; */
+    /* margin-bottom: 0%; */
+    /* font-size: 20px; Ajusta el tamaño del texto según sea necesario */
+    /* color: #00304d; Ajusta el color según sea necesario */
+/* } */
   
-.svg-container {
+/* .svg-container {
     background-color: var(--white);
     display: flex;
     width: 5.2rem;
@@ -486,7 +490,7 @@ label {
     align-items: center;
     position: absolute;
     bottom: 2%;
-}
+} */ 
   
   
   /* ********************************************* */

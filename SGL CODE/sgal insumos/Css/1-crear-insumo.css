@@ -123,7 +123,7 @@ body{
   /* ************************************************ */
   
 .box1 {
-    width: 29%;
+    width: 20%;
     height: 100%;
     background: linear-gradient(
       to bottom,
@@ -202,7 +202,7 @@ img {
     border-radius: 1rem;
     margin-top: 3%;
     width: 85vh;
-    height: 80%;
+    height: 70%;
 }
 .subtittle{
     text-align: center;
@@ -230,7 +230,7 @@ img {
 }
 label{
     font-size: 1.5rem;
-    padding: 1.6rem;
+    padding: 0 1.6rem;
 }
 .opciones{
     text-decoration: none;
@@ -240,7 +240,7 @@ label{
     height: 2.4rem;
     background-color: var(--gray-050);
     border: none;
-    padding: 1.6rem;
+    padding: 1.6rem 2.4rem;
 }
 
 /* Segundo contenedor del contenedor secundario*/
@@ -258,16 +258,23 @@ label{
     gap: 10vh;
 }
 .end-button{
-    margin-top: 2vh;
-    margin-bottom: 1vh; 
-    width: 12rem;
-    height: 3.6;
-    border-radius: 3rem;
-    background-color: var(--secundary-1-950);
+    background-color: var(--secundary-1-800);
+    width: 15rem;
     color: var(--white);
-    /* padding: 1.6rem; */
-    font-size: 1.8rem;
+    padding: 1rem 3rem 1rem 3rem;
+    /* paddin segun google desing 1.6rem 2.4rem 1.6rem 2.4rem los cambie segun FIGMA */
+    border: none;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem;
 }
+.box-flecha-back{
+    margin-left: 45%;
+}
+
 
 /* Responsive */
 /* @media (max-width: 480px ){
@@ -297,30 +304,4 @@ label{
     }
 
 } */
-/* Estilos adicionales para la vista de visualizar */
 
-/* Contenedor de deshabilitar/Habilitar */
-.box-button-habi{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-.tittle-hab{
-    margin-bottom: 0%;
-}
-.box-button-hab{
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-    text-align: center;
-    justify-content: center;
-}
-/* Boton de Habilitar */
-.button-hab{
-    margin-top: 1.5vh;
-    background-color: var(--primary-800);
-    border-radius: 2rem;
-    width: 5%;
-    height: 2rem;
-}
