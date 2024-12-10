@@ -17,9 +17,9 @@
     />
     <meta http-equiv="Content-Language" content="es" />
 
-    <link rel="stylesheet" href="css//2-buscar-sensores.css" />
+    <link rel="stylesheet" href="css/4-actualizar-sensores.css" />
 
-    <title>VISUALIZAR SENSORES</title>
+    <title>ACTUALIZAR SENSORES * ID</title>
   </head>
   <body>
     <header class="header1"><span>SENA SEDE LEMBO</span></header>
@@ -34,16 +34,29 @@
           </div>
 
           <div class="image-movile">
-            <svg width="350" height="700" viewBox="0 0 236 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M203.718 10H32C19.8497 10 10 19.8497 10 32V451.546C10 463.697 19.8497 473.546 32 473.546H203.718C215.868 473.546 225.718 463.697 225.718 451.546V32C225.718 19.8497 215.868 10 203.718 10ZM32 0C14.3269 0 0 14.3269 0 32V451.546C0 469.22 14.3269 483.546 32 483.546H203.718C221.391 483.546 235.718 469.22 235.718 451.546V32C235.718 14.3269 221.391 0 203.718 0H32Z" fill="#5D7B8E"/>
-              <path d="M63 9.50586C63 16.1333 68.3726 21.5059 75 21.5059H161C167.627 21.5059 173 16.1333 173 9.50586H63Z" fill="#5D7B8E"/>
-              </svg>
-              
+            <svg
+              width="350"
+              height="700"
+              viewBox="0 0 236 484"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M90 10C90 16.6274 95.3726 22 102 22H188C194.627 22 200 16.6274 200 10H90Z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M203.718 10H32C19.8497 10 10 19.8497 10 32V451.546C10 463.697 19.8497 473.546 32 473.546H203.718C215.868 473.546 225.718 463.697 225.718 451.546V32C225.718 19.8497 215.868 10 203.718 10ZM32 0C14.3269 0 0 14.3269 0 32V451.546C0 469.22 14.3269 483.546 32 483.546H203.718C221.391 483.546 235.718 469.22 235.718 451.546V32C235.718 14.3269 221.391 0 203.718 0H32Z"
                 fill="#5D7B8E"
               />
-            
+              <path
+                d="M63 9.50586C63 16.1333 68.3726 21.5059 75 21.5059H161C167.627 21.5059 173 16.1333 173 9.50586H63Z"
+                fill="#5D7B8E"
+              />
+            </svg>
+
+            <path
+              d="M90 10C90 16.6274 95.3726 22 102 22H188C194.627 22 200 16.6274 200 10H90Z"
+              fill="#5D7B8E"
+            />
           </div>
 
           <div class="ico-sena">
@@ -57,7 +70,7 @@
     <main class="box2">
       <header class="header2"><span>SENA SEDE LEMBO</span></header>
       <fieldset class="container-box">
-        <h3>VISUALIZAR SENSOR</h3>
+        <h3>ACTUALIZAR SENSOR . <span>ID ####</span></h3>
         <form class="container-form">
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI  -->
 
@@ -72,8 +85,8 @@
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI -->
 
           <div class="dato">
-            <label class="label" for="">ID Sensor</label>
-            <input placeholder="Ingrese el ID del sensor" type="number" />
+            <label class="label" for="">Tipo de sensor</label>
+            <input placeholder="Laser" type="text" />
           </div>
 
          
@@ -81,23 +94,37 @@
 
           <!-- text, password, email, number, tel, url, search, date, time, datetime-local, month, week, color, file, checkbox, radio, range, submit, reset, button y hidden -->
 
+          <div class="dato">
+            <label class="label" for="">Nombre del sensor</label>
+            <input placeholder="Laser Red Dragon" type="text" />
+          </div>
+
           <!-- ****************************segun figma debe pasar a segunda columna desde aqui ****************************** -->
 
+          <div class="dato">
+            <label class="label" for="">Unidad de medida</label>
+            <input placeholder="Candela" type="text" />
+          </div>
 
+          <div class="dato">
+            <label class="label" for="">Tiempo de muestreo</label>
+            <input placeholder="2 ms" type="text" />
+          </div>
+
+        
 
           <!-- esta es la imagen o espacio donde podemos cargar la imagen del sensor, por ahora es un div con estilos -->
-          <div>
-            <h4>VISUALIZAR SENSOR</h4>
-            <div class="rect-load-picture">
-              <div style="width:50%;height:0;padding-bottom:100%;position:relative; right: 27%;"><iframe src="https://giphy.com/embed/emySgWo0iBKWqni1wR" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-            </div>
-          </div>
+
 
           <!-- ESPACIO PARA MAS INPUTS  -->
         </form>
+        <div class="captura">
+          <h4>IMAGEN SENSOR</h4>
+          <img class="rect-load-picture" src="img/image sensor.jpg" alt="Images de Sensor Laser">
+        </div>
         <div class="botones">
+          <button class="button"><a href="">ACEPTAR</a></button>
           <button class="button"><a href="">CANCELAR</a></button>
-          <button class="button"><a href="">BUSCAR</a></button>
         </div>
 
         <div class="baseform">
@@ -108,22 +135,22 @@
 
       <div class="svg-container">
         <a href="">
-        <svg
-          width="48"
-          height="48"
-          viewBox="0 0 26 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M23 34.7746L11 18.9694L23 3.16406M3 3.16406V34.7746"
-            stroke="#00304D"
-            stroke-width="5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </a>
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 26 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23 34.7746L11 18.9694L23 3.16406M3 3.16406V34.7746"
+              stroke="#00304D"
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
       </div>
     </main>
 
