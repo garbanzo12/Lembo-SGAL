@@ -273,8 +273,11 @@ label{
 .end{
     text-align: center;
     justify-content: center;
+    margin-top: 4rem;
+
 }
 .end-button{
+    text-decoration: none;
     background-color: var(--secundary-1-800);
     width: 15rem;
     color: var(--white);
