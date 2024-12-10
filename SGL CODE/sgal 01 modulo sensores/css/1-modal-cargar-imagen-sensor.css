@@ -140,7 +140,7 @@ body {
 
 .contenedor {
   background-color: var(--white);
-  width: 40rem;
+  width: fit-content;
   background-color: var(--white);
   border-radius: 0.8rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -154,7 +154,7 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin: 0;
   width: 100%;
@@ -183,26 +183,31 @@ footer {
 
 main {
   padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contenido h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #333333;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.1rem;
   text-align: left;
+  padding: 0rem 3rem;
 }
 
-.input {
+input {
   width: 32rem;
   padding: 1.2rem;
   font-size: 1rem;
-  background-color: var(--gray-50);
+  background-color: var(--gray-050);
   border: 1px solid #ced4da;
   border: none;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+  border-radius: 5rem 5rem 5rem 5rem;
+  margin: 2rem;
   outline: none;
   box-sizing: border-box;
+  font-size: 1.6rem;
 }
 
 .input::placeholder {
