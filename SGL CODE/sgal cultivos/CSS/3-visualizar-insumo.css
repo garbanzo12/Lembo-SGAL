@@ -256,8 +256,10 @@ label{
     gap: 10vh;
 }
 .end-button{
+    text-decoration: none;
     margin-top: 2vh;
     margin-bottom: 1vh; 
+    padding: 1rem;
     width: 12rem;
     height: 3.6;
     border-radius: 3rem;
