@@ -255,6 +255,7 @@ label{
     gap: 2vh;
 }
 .end-button{
+    text-decoration: none;
     background-color: var(--secundary-1-800);
     width: 15rem;
     color: var(--white);
