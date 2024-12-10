@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Insumos</title>
-    <link rel="stylesheet" href="/SGL CODE/sgal insumos/Css/1-crear-insumo.css">
+    <title>Visualizar Insumo</title>
+    <link rel="stylesheet" href="/SGL CODE/sgal insumos/Css/3-visualizar-insumo.css">
 </head>
 <body>
     <div class="box1">
@@ -13,7 +13,8 @@
           <div class="ico-sena">
             <img
               src="img/logo-sena-verde-complementario-png-2022.png"
-              alt="Imagen de Logo Sena"/>
+              alt="Imagen de Logo Sena"
+            />
           </div>
 
           <!-- <div class="image-movile">
@@ -24,7 +25,9 @@
               
               <path
                 d="M90 10C90 16.6274 95.3726 22 102 22H188C194.627 22 200 16.6274 200 10H90Z"
-                fill="#5D7B8E"/>  
+                fill="#5D7B8E"
+              />
+            
           </div> -->
 
           <div class="ico-sena">
@@ -38,33 +41,41 @@
     <div class="box2">
         <h1 class="tittle">SENA   SEDE   LEMBO</h1>    
         <main class="registro"><!--resgitro-->
-            <h2 class="subtittle">REGISTRO INSUMO</h2>
+            <h2 class="subtittle">DATOS INSUMOS</h2>
             <section class="datos"><!--datos-->
                 <div class="datos-generales"><!--datos-generales-->
                     <label for="">Tipo de Insumo</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Ingresar el tipo de insumo" required>
+                    <input class="opciones" type="text" name="" id="" placeholder="Semillas" required>
                     <label for="">Nombre del Insumo </label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Ingrese nombre de insumo" required>
+                    <input class="opciones" type="text" name="" id="" placeholder="Semilla de fresa" required>
                     <label for="">Cantidad</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingrese cantidad de insumo" required>
+                    <input class="opciones" type="number" name="" id="" placeholder="1023" required>
                     <label for="">Descripción</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Solo texto"required>
+                    <input class="opciones" type="text" name="" id="" placeholder="Mantener en lugar humedo"required>
                 </div><!--datos-generales-->    
 
                 <div class="datos-insumos"><!--datos-insumos-->
                     <label for="">ID Insumo</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingresar ID Insumo" required>
+                    <input class="opciones" type="number" name="" id="" placeholder="876d78" required>
                     <label for="">Unidad De Medida</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Ingresar Unidad Medida"required>
+                    <input class="opciones" type="text" name="" id="" placeholder="Grano"required>
                     <label for="">Valor Total</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingresar Valor Total"required>
+                    <input class="opciones" type="number" name="" id="" placeholder="$10000"required>				
                     <label for="">Valor Unitario</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingresar Valor Unitario"required>
+                    <input class="opciones" type="number" name="" id="" placeholder="$100"required>
+
                 </div><!--datos-insumos-->
             </section><!--datos-->
+            <div class="box-button-habi">
+                <h2 class="tittle-hab">Habilitar/Deshabilitar:</h2>
+                    <div class="box-button-hab">
+                        <h3 class="text-button">Estado:</h3>
+                        <button class="button-hab"></button>    
+                    </div>
+            </div>
 
             <footer class="end"><!--end-->
-                <button class="end-button">Crear</button>
+                <button class="end-button">Actualizar</button>
                 <button class="end-button">Cancelar</button>
             </footer><!--end-->
         </main> <!---registro-->

@@ -116,7 +116,7 @@ body{
     background-color: var(--secundary-1-950);
     /* align-content: center;
     justify-content: center; */
-    gap: 20vh;
+    gap: 30vh;
 }
 
   
@@ -240,7 +240,7 @@ label{
     height: 2.4rem;
     background-color: var(--gray-050);
     border: none;
-    padding: 1.6rem 2.4rem;
+    padding: 1.6rem;
 }
 
 /* Segundo contenedor del contenedor secundario*/
@@ -271,10 +271,6 @@ label{
     font-weight: 500;
     margin: 2rem;
 }
-.box-flecha-back{
-    margin-left: 45%;
-}
-
 
 /* Responsive */
 /* @media (max-width: 480px ){
@@ -304,4 +300,5 @@ label{
     }
 
 } */
+/* Estilos adicionales para la vista de visualizar */
 
