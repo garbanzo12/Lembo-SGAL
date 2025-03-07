@@ -116,7 +116,7 @@
     background-color: var(--secundary-1-950);
     /* align-content: center;
     justify-content: center; */
-    gap: 50vh;
+    gap: 30vh;
   }
   
   
@@ -143,7 +143,7 @@
     align-items: center;
     /* tamaños */
     width: 100%;
-    height: 100vh;
+    height: 97vh;
   }
   
   .subcontenedor-gif {
@@ -153,31 +153,31 @@
     justify-content: center;
     /* position: relative; */
     gap: 2rem;
-    height: 100vh;
+    height: 100%;
     justify-content: space-between;
     margin-top: 5rem;
     margin-bottom: 5rem;
     /* min-width: 16rem; */
   }
-  /* .image-movile {
+  .image-movile {
     width: 35rem; /* vector httml para otros = */
-    /* height: 80rem; vector httml para otros = */
+    height: 80rem; /*vector httml para otros =
     /* imagen cargada detras del celular */
-    /* background-image: url("../img/fondo-laptop.jpg"); */
+    background-image: url("../img/fondo-laptop.jpg");
     /* ajuste a la imagen para que se ajuste detreas de vector */
-    /* border-radius: 4rem;
+    border-radius: 4rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; */
-  /* } */
-  /* .image-movile svg{
+    background-position: center;
+   } 
+  .image-movile svg{
     display: flex;
-    width: 35rem;/* para que no se ve el borde sobresalir 
+    width: 35rem;/* para que no se ve el borde sobresalir */
     height: 90vh;
     justify-content: center;
     box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
     border-radius: 4rem;  
-  }  */
+  } 
   img {
     width: 10rem;
   }
@@ -203,7 +203,7 @@
     border-radius: 1rem;
     margin-top: 3%;
     width: 60vh;
-    height: 39%;
+    height: auto;
   }
   .subtittle{
     text-align: center;
@@ -255,7 +255,6 @@
     gap: 2vh;
   }
   .end-button{
-    text-decoration: none;
     background-color: var(--secundary-1-800);
     width: 15rem;
     color: var(--white);
@@ -281,5 +280,36 @@
     font-weight: 700;
     color: var(--gray-600);
     text-decoration: none;    
-  }
+}
   
+
+/* Responsive */
+
+@media (width < 920px){
+  body .box1{
+    display: none;
+  }
+
+  .box2{
+    width: 100%;
+    margin: 0 auto;    
+  }
+
+  .registro{
+    margin: 0 auto;
+    margin-top: 5%;    
+    width: auto;
+  
+  }
+}
+
+@media ( width < 480px){
+  .registro footer{
+    height: auto;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
