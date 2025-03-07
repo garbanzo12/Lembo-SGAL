@@ -134,7 +134,7 @@ body{
 .contenedor-azul{
     background-color: var(--secundary-1-950);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     gap: 10rem;
@@ -144,8 +144,8 @@ body{
     width: 25rem;
     background-color: #ffffff;
     padding: 2rem;
-    height: 100vh;
-    margin-top: 5vh;
+    height: 100%;
+    /* margin-top: 5vh; */
     box-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 .profile {
@@ -220,7 +220,7 @@ body{
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-    width: 70%;
+    width: 50%;
 }
   
 .texto_usuario {
@@ -249,7 +249,8 @@ body{
     background-color: var(--gray-050);
     padding: 1rem 1rem 1rem 1rem ;
     border-radius: 1.2rem;
-    width: 70vh;
+    width: 70%;
+    height: 90%;
     margin-top: 5vh;
     align-items: center;
     justify-content: center;
@@ -261,7 +262,8 @@ body{
     flex-direction: column;
     margin-top: 2%;
     border-radius: 1.2rem;
-    width: 70%;
+    width: 90%;
+    margin-top: 5rem;
     margin-left: 5%;
     margin-right: 5%;
     padding: 1rem 1rem 1rem 1rem;
@@ -322,7 +324,7 @@ input{
 /* Tabla de contenido */
 table{
     border: 0.1rem solid var(--secundary-1-950);
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 td{
@@ -344,106 +346,66 @@ td{
 
 
 /* Media query */
-@media (min-width: 480px ){
+
+@media (width < 480px){
+    .sidebar{
+        display: none;
+    }
     .contenedor-azul{
         background-color: var(--secundary-1-950);
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    }
+        width: auto;
+        height: 100vh;
+    }   
     .contenedor-gris{
         background-color: var(--gray-050);
-        padding: 2rem 2rem 2rem 2rem ;
         border-radius: 1.2rem;
-        width: 90%;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    
-    }
+        width: 100%;
+        height: 60%;
+    } 
     .contenedor-blanco{
-        background-color: var(--white);
-        display: flex;
-        flex-direction: column;
-        margin-top: 2%;
-        border-radius: 1.2rem;
-        width: 90%;
-        height: 90vh;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 2rem 2rem 2rem 2rem;
-    }
-    
-    .encabezado{
-        display: flex;
-        flex-direction: row;
-    
+        width: auto;
+        height: auto;
+        margin-right: 1rem;
+        margin-top: 2rem;
     }
     .elementos{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 2%;
-    
+        flex-direction: column;
     }
-    .box a, .button-buscar a {
-        text-decoration: none;
-        color: var(--secundary-1-950);
-        font-size: 1.2rem;
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-    .box, .button-buscar, input{
-        display: flex;
-        flex-direction: row;
-        border-radius: 5rem ;
-        color: var(--secundary-1-950);
-        background-color: var(--secundary-1-200);
-        border: 0.1rem solid var(--secundary-1-950);
-        width: 12vh;
-        height: auto;
-        font-size: 1.2rem;
-    }
-    label{
-        display: flex;
-        flex-direction: row;
-    }
-    select{
-        border: none;
-        background-color: var(--secundary-1-200);
-    }
-    .icono{
-        margin-left: 1vh;
-    }
-    
-    .button-buscar{
-        border-top-right-radius: 0%;
-        border-bottom-right-radius: 0%;
-    }
-    input{
-        border-top-left-radius: 0%;
-        border-bottom-left-radius: 0%;
-    }
-    /* Tabla de contenido */
     table{
-        border: 0.1rem solid var(--secundary-1-950);
+        margin-top: 9%;
+
+    }
+}
+
+@media (width < 920px){
+    .sidebar{
+        display: none;
+    }
+    .contenedor-azul{
+        background-color: var(--secundary-1-950);
+        width: auto;
+        height: 100vh;
+    }   
+    .contenedor-gris{
+        background-color: var(--gray-050);
+        border-radius: 1.2rem;
+        width: 100%;
+        height: 80%;
+    } 
+    .contenedor-blanco{
+        width: 90%;
+        height: auto;
+        margin-right: 1rem;
+        margin-top: 4rem;
+    }
+    .elementos{
+        display: flex;
+        flex-direction: column;
+    }
+    table{
         margin-top: 5%;
+
     }
-    td{
-        border-bottom: 0.1rem solid var(--secundary-1-950);
-        border-left: 0.1rem solid var(--secundary-1-950);
-        font-size: 1.2rem;
-        color: var(--secundary-1-950);
-    
-    }
-    .box-text1, .box-datos1{
-        border-left: none;
-    }
-    .box-datos, .box-datos1{
-        border-bottom: none;
-        color:var(--gray-500);
-    }
-    
-} 
+}
+
