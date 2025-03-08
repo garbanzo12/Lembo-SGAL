@@ -1,3 +1,4 @@
+<!--Punto de partida 2025-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,9 +18,9 @@
     />
     <meta http-equiv="Content-Language" content="es" />
 
-    <link rel="stylesheet" href="css/3-visualizar-sensores.css" />
+    <link rel="stylesheet" href="../Css/1-crear-sensores.css" />
 
-    <title>VISUALIZAR SENSORES * ID</title>
+    <title>REGISTRAR SENSORES</title>
   </head>
   <body>
     <header class="header1"><span>SENA SEDE LEMBO</span></header>
@@ -70,7 +71,7 @@
     <main class="box2">
       <header class="header2"><span>SENA SEDE LEMBO</span></header>
       <fieldset class="container-box">
-        <h3>VISUALIZAR SENSOR . <span>ID ####</span></h3>
+        <h3>CREAR SENSOR</h3>
         <form class="container-form">
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI  -->
 
@@ -86,44 +87,50 @@
 
           <div class="dato">
             <label class="label" for="">Tipo de sensor</label>
-            <input placeholder="Laser" type="text" />
+            <input placeholder="Ingrese tipo de sensor" type="text" />
           </div>
 
-         
+          <div class="dato">
+            <label class="label" for="">ID Sensor</label>
+            <input placeholder="Ingrese ID del sensor" type="number" />
+          </div>
+
           <!-- ESPACIO PARA MAS INPUTS  -->
 
           <!-- text, password, email, number, tel, url, search, date, time, datetime-local, month, week, color, file, checkbox, radio, range, submit, reset, button y hidden -->
 
           <div class="dato">
             <label class="label" for="">Nombre del sensor</label>
-            <input placeholder="Laser Red Dragon" type="text" />
+            <input placeholder="Ingrese nombre de sensor" type="text" />
           </div>
 
           <!-- ****************************segun figma debe pasar a segunda columna desde aqui ****************************** -->
 
           <div class="dato">
             <label class="label" for="">Unidad de medida</label>
-            <input placeholder="Candela" type="text" />
+            <input placeholder="Ingrese unidad de medida" type="text" />
           </div>
 
           <div class="dato">
             <label class="label" for="">Tiempo de muestreo</label>
-            <input placeholder="2 ms" type="text" />
+            <input placeholder="Ingrese muestreo en segundos" type="number" />
           </div>
 
-        
+          <div class="dato">
+            <label class="label-vacio" for="">.</label>
+            <input class="vacio" placeholder="" />
+          </div>
 
           <!-- esta es la imagen o espacio donde podemos cargar la imagen del sensor, por ahora es un div con estilos -->
-
+          <div>
+            <h4>CREAR SENSOR</h4>
+            <div class="rect-load-picture">Cargar Imagen</div>
+          </div>
 
           <!-- ESPACIO PARA MAS INPUTS  -->
         </form>
-        <div class="captura">
-          <h4>IMAGEN SENSOR</h4>
-          <img class="rect-load-picture" src="img/image sensor.jpg" alt="Images de Sensor Laser">
-        </div>
         <div class="botones">
-          <button class="button"><a href="/SGL CODE/sgal 01 modulo sensores/4-actualizar-sensores.html">MODIFICAR</a></button>
+          <button class="button"><a href="/SGL CODE/sgal 01 modulo sensores/2-buscar-sensores.html">CREAR</a></button>
           <button class="button"><a href="/SGL CODE/sgal main (sanchez)/">CANCELAR</a></button>
         </div>
 
