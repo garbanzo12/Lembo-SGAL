@@ -161,7 +161,7 @@ span {
   0 0 20px #00ff00
 }
 
-.box1 {
+.cardLeft {
   width: 50%;
   height: auto;
   background: linear-gradient(
@@ -179,7 +179,7 @@ span {
   /* degradado */
 }
 
-.contenedor-gif {
+.cardLeft__container {
   /* colores */
   /* tamaños  */
   width: 40rem;
@@ -199,21 +199,21 @@ span {
   position: fixed;
   top: 22%;
 }
-.contenedor-gif:hover {
+.cardLeft__container:hover {
   gap: 10rem;
   transition: ease 800ms;
 }
 
-.contenedor-gif img {
+.cardLeft__container img {
   width: 12rem;
   height: auto;
 }
 
-.gray {
+.cardLeft__rectangle--gray {
   filter: grayscale(100%);
 }
 
-.bar-logos {
+.cardLeft__logs {
   /* colore */
   /* tamaños */
   height: 10rem;
@@ -226,22 +226,22 @@ span {
   position: fixed;
   bottom: 5%;
 }
-.bar-logos .img {
+.cardLeft__logs .cardLeft__logsimg {
   width: 10rem;
   height: 10rem;
   background-color: var(--gray-350);
 }
-.bar-logos .vector1 {
+.cardLeft__logs .cardLeft__vector1 {
   /* backgroud imagen */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 72" fill="none"><path d="M18.5 60C14.35 60 10.813 58.537 7.889 55.611C4.965 52.685 3.502 49.148 3.5 45C3.498 40.852 4.961 37.315 7.889 34.389C10.817 31.463 14.354 30 18.5 30C22.646 30 26.184 31.463 29.114 34.389C32.044 37.315 33.506 40.852 33.5 45C33.494 49.148 32.031 52.686 29.111 55.614C26.191 58.542 22.654 60.004 18.5 60ZM18.5 49.5C17.25 49.5 16.188 49.063 15.314 48.189C14.44 47.315 14.002 46.252 14 45C13.998 43.748 14.436 42.686 15.314 41.814C16.192 40.942 17.254 40.504 18.5 40.5C19.746 40.496 20.809 40.934 21.689 41.814C22.569 42.694 23.006 43.756 23 45C22.994 46.244 22.557 47.307 21.689 48.189C20.821 49.071 19.758 49.508 18.5 49.5ZM59 60C56.1 60 53.625 58.975 51.575 56.925C49.525 54.875 48.5 52.4 48.5 49.5C48.5 46.6 49.525 44.125 51.575 42.075C53.625 40.025 56.1 39 59 39C61.9 39 64.375 40.025 66.425 42.075C68.475 44.125 69.5 46.6 69.5 49.5C69.5 52.4 68.475 54.875 66.425 56.925C64.375 58.975 61.9 60 59 60ZM12.5 27C11.65 27 10.938 26.712 10.364 26.136C9.79 25.56 9.502 24.848 9.5 24C9.498 23.152 9.786 22.44 10.364 21.864C10.942 21.288 11.654 21 12.5 21H21.5C23.15 21 24.563 21.588 25.739 22.764C26.915 23.94 27.502 25.352 27.5 27H12.5ZM18.5 54C21 54 23.125 53.125 24.875 51.375C26.625 49.625 27.5 47.5 27.5 45C27.5 42.5 26.625 40.375 24.875 38.625C23.125 36.875 21 36 18.5 36C16 36 13.875 36.875 12.125 38.625C10.375 40.375 9.5 42.5 9.5 45C9.5 47.5 10.375 49.625 12.125 51.375C13.875 53.125 16 54 18.5 54ZM59 54C60.25 54 61.313 53.563 62.189 52.689C63.065 51.815 63.502 50.752 63.5 49.5C63.498 48.248 63.061 47.186 62.189 46.314C61.317 45.442 60.254 45.004 59 45C57.746 44.996 56.684 45.434 55.814 46.314C54.944 47.194 54.506 48.256 54.5 49.5C54.494 50.744 54.932 51.807 55.814 52.689C56.696 53.571 57.758 54.008 59 54ZM36.2 48H45.65C46.15 44.4 47.712 41.525 50.336 39.375C52.96 37.225 55.923 36.15 59.225 36.15C60.475 36.15 61.713 36.325 62.939 36.675C64.165 37.025 65.352 37.55 66.5 38.25V24C66.5 22.35 65.913 20.938 64.739 19.764C63.565 18.59 62.152 18.002 60.5 18H41.6L38.45 14.7L41.6 11.55C41.9 11.25 42.05 10.9 42.05 10.5C42.05 10.1 41.9 9.75 41.6 9.45C41.3 9.15 40.95 9 40.55 9C40.15 9 39.8 9.15 39.5 9.45L31.025 17.925C30.725 18.225 30.588 18.588 30.614 19.014C30.64 19.44 30.802 19.802 31.1 20.1C31.398 20.398 31.748 20.548 32.15 20.55C32.552 20.552 32.902 20.402 33.2 20.1L36.35 16.95L39.5 20.1V27C39.5 28.65 38.913 30.063 37.739 31.239C36.565 32.415 35.152 33.002 33.5 33H31.85C33.35 34.65 34.488 36.5 35.264 38.55C36.04 40.6 36.427 42.75 36.425 45C36.425 45.5 36.412 46 36.386 46.5C36.36 47 36.298 47.5 36.2 48Z" fill="%2339AB00"/></svg>');
   background-size: cover;
 }
-.bar-logos .vector2 {
+.cardLeft__logs .cardLeft__vector2 {
   /* backgroud imagen */
   background-image: url(../img/LogoSgal.png);
   background-size: cover;
 }
-.bar-logos .vector3 {
+.cardLeft__logs .cardLeft__vector3 {
   /* backgroud imagen */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 72" fill="none"><path d="M57.26 42C56.8471 44.8647 55.8448 47.6127 54.3164 50.0705C52.788 52.5284 50.7667 54.6427 48.38 56.28C47.78 53.79 44.09 51.75 39.26 51.18C39.77 47.61 40.82 44.28 41.54 42.36C42.68 43.08 44 43.5 45.5 43.5C56.15 43.5 54.5 25.5 54.5 25.5C54.5 25.5 53 28.5 48.5 28.5H45.5C44.1655 28.4996 42.8551 28.8553 41.704 29.5304C40.5528 30.2054 39.6026 31.1754 38.9515 32.3402C38.3003 33.505 37.9717 34.8224 37.9995 36.1566C38.0274 37.4908 38.4107 38.7934 39.11 39.93C41.09 37.86 43.22 36 45.5 34.5C41.54 38.49 38.51 43.5 36.5 48.3C34.61 44.61 32.24 41.79 30.5 40.5C31.91 41.1 33.23 42 34.49 42.9C34.82 42.18 35 41.37 35 40.5C34.85 32.31 21.5 33 21.5 33C22.43 34.26 23 35.85 23 37.5V40.5C23 43.8 25.7 46.5 29 46.5C30.5 46.5 31.85 45.96 32.9 45C33.59 46.89 34.1 49.05 34.37 51.12C29.21 51.57 25.25 53.67 24.62 56.31C19.13 52.5 15.5 46.17 15.5 39C15.5 27.42 24.92 18 36.5 18V27L51.5 15L36.5 3V12C29.3392 12 22.4716 14.8446 17.4081 19.9081C12.3446 24.9716 9.5 31.8392 9.5 39C9.5 46.1608 12.3446 53.0284 17.4081 58.0919C22.4716 63.1554 29.3392 66 36.5 66C50.39 66 61.82 55.5 63.32 42H57.26Z" fill="%2339AB00"/></svg>');
   background-size: cover;
@@ -250,7 +250,7 @@ span {
 /* ****************************** */
 /* control caja principal derecha */
 
-.box2 {
+.cardRigth {
   /* colores */
   background-color: var(--secundary-1-950);
 
@@ -267,7 +267,7 @@ span {
   align-items: center;
 }
 
-.container-login {
+.cardRigth__login {
   /* colores */
   background-color: var(--white);
   border-radius: 1rem;
@@ -283,7 +283,7 @@ span {
   margin: 0;
   padding: 0;
 }
-.container-login h3 {
+.cardRigth__login h3 {
   /* posicion */
   display: flex;
   margin: 0 auto;
@@ -308,17 +308,17 @@ span {
   /* posicionamiento */
 }
 
-.container-form {
+.cardRigth__form{
   padding: 1rem;
 }
-.container-login img {
+.cardRigth__login img {
   width: 8rem;
   height: 8rem;
   margin: 0.1rem;
   border-radius: 10rem;
 }
 
-.container-form label {
+.cardRigth__formlabel {
   display: flex;
   margin-top: 1rem;
   margin-left: 1.2rem;
@@ -327,8 +327,8 @@ span {
   font-weight: 100;
   color: var(--black);
 }
-.container-login input[type="email"],
-.container-login input[type="password"] {
+.cardRigth__login input[type="email"],
+.cardRigth__login input[type="password"] {
   font-size: 1.6rem;
   color: var(--gray-700);
   width: 100%;
@@ -339,7 +339,7 @@ span {
   box-sizing: border-box;
   background-color: var(--gray-050);
 }
-.container-login .button {
+.cardRigth__login .cardRigth__button {
   background-color: var(--secundary-1-800);
   width: 12rem;
   color: var(--white);
@@ -349,7 +349,7 @@ span {
   cursor: pointer;
   margin-top: 1rem;
 }
-.container-login a{
+.cardRigth__login a{
   color: var(--white);
   text-decoration: none;
 }
@@ -360,11 +360,11 @@ span {
   text-decoration: none;
 }
 
-.baseform {
+.cardRigth__baseform {
   position: relative;
   bottom: 0%;
 }
-.baseform a {
+.cardRigth__baseform a {
   /* colores */
   background-color: var(--gray-100);
   /* display */
@@ -410,7 +410,7 @@ footer p {
   bottom: 2%;
 }
 
-footer .titlle {
+footer .cardRigth__footerTittle {
   /* color */
   text-decoration: underline;
   /* display */

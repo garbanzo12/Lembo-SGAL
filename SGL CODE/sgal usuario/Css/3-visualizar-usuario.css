@@ -112,13 +112,13 @@ body {
   display: flex;
   flex-direction: row;
   background-color: var(--secundary-1-950);
-  gap: 50vh;
+  gap: 30vh;
 }
 
 /* ====================================================== */
 /* Sección de Logos (antes .box1) */
 .visualizarCultivos__logos {
-  width: 20vh;
+  width: 20%;
   height: 100%;
   background: linear-gradient(
     to bottom,
@@ -196,7 +196,7 @@ img {
   border-radius: 1rem;
   margin-top: 3%;
   width: 85vh;
-  height: 50vh;
+  height: auto;
 }
 
 /* Subtítulo del Formulario */
@@ -322,7 +322,10 @@ label {
   font-size: 1.2rem;
 }
 
-
+/* (Opcional) Estilo para el label dentro del toggle */
+.visualizarCultivos__toggle-label {
+  /* Puedes agregar estilos específicos aquí si lo requieres */
+}
 
 /* Botón del toggle */
 .visualizarCultivos__toggle-button {
