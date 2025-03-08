@@ -259,7 +259,7 @@ label{
     justify-content: center;
     gap: 10vh;
 }
-.cardRigth__footer__endButton{
+.cardRigth__footer--endButto{
     margin-top: 2vh;
     margin-bottom: 1vh; 
     width: 12rem;
