@@ -97,142 +97,125 @@
     --gray-150: #f6f6f6;
   
     /* fuentes  */
-    --font--main: Helvetica, Arial, sans-serif; /* TEXTOS Y CONTENIDO*/
-    --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES */
+    --font--main: Helvetica, Arial, sans-serif;
+    --font--logo: Helvetica, Arial, sans-serif;
+  }
   
-}
-/*Hack para usar los rem de manera facil */
-/*globals*/
-html{
+  /* Hack para usar los rem de manera facil */
+  html {
     box-sizing: border-box;
     font-size: 62.5%;
-}
-*, *:before, *:after {
+  }
+  *, *:before, *:after {
     box-sizing: inherit;
-}
-body{
+  }
+  
+  body {
     display: flex;
     flex-direction: row;
     background-color: var(--secundary-1-950);
-    /* align-content: center;
-    justify-content: center; */
     gap: 30vh;
-}
-
+  }
   
   /* ************************************************ */
   
-.box1 {
+  /* .box1 → .ciclo__media */
+  .ciclo__media {
     width: 20%;
     height: 100%;
-    background: linear-gradient(
-      to bottom,
-      var(--secundary-1-600),
-      var(--gray-100)
-    );
-    /* display */
+    background: linear-gradient(to bottom, var(--secundary-1-600), var(--gray-100));
     display: flex;
     flex-direction: column;
-    /* alinear */
     align-items: center;
-}
+  }
   
-.contenedor-gif {
+  /* .contenedor-gif → .ciclo__gif */
+  .ciclo__gif {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* tamaños */
     width: 100%;
-    height: 100vh;
-}
+    height: 98.3vh;
+  }
   
-.subcontenedor-gif {
+  /* .subcontenedor-gif → .ciclo__gif-inner */
+  .ciclo__gif-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* position: relative; */
-    gap: 2rem;
-    height: 100vh;
     justify-content: space-between;
+    gap: 2rem;
+    height: 98.3vh;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    /* min-width: 16rem; */
-}
-/* .image-movile {
-    width: 35rem; /* vector httml para otros = */
-    /* height: 80rem; vector httml para otros = */
-    /* imagen cargada detras del celular */
-    /* background-image: url("../img/fondo-laptop.jpg"); */
-    /* ajuste a la imagen para que se ajuste detreas de vector */
-    /* border-radius: 4rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-/* } */
-/* .image-movile svg{
-    display: flex;
-    width: 35rem;/* para que no se ve el borde sobresalir 
-    height: 90vh;
-    justify-content: center;
-    box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
-    border-radius: 4rem;  
-}  */
-img {
+  }
+  
+  /* .ico-sena → .ciclo__logo */
+  .ciclo__logo {
+    /* Propiedades heredadas para la imagen */
+  }
+  
+  img {
     width: 10rem;
-}
-
-.box2{
+  }
+  
+  /* .box2 → .ciclo__form-container */
+  .ciclo__form-container {
     display: flex;
     flex-direction: column;
-}
-
-/* Titulo */
-.tittle{
+  }
+  
+  /* .tittle → .ciclo__title */
+  .ciclo__title {
     text-align: center;
     justify-content: center;
     font-size: 3rem;
     color: var(--primary-900);
-    text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800)
-}
-
-/* Contenedor principal */
-.registro{
+    text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800);
+  }
+  
+  /* .registro → .ciclo__form */
+  .ciclo__form {
     background-color: var(--white);
     border-radius: 1rem;
     margin-top: 3%;
     width: 75vh;
     height: 60%;
-}
-.subtittle{
+  }
+  
+  /* .subtittle → .ciclo__form-subtitle */
+  .ciclo__form-subtitle {
     text-align: center;
     background-color: var(--gray-200);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     margin-top: 0%;
     padding: 1.6rem;
-}
-
-/* Contenedor secundario */
-.datos{
+  }
+  
+  /* .datos → .ciclo__data */
+  .ciclo__data {
     display: flex;
     flex-direction: row;
     margin-top: 3vh;
     padding: 2rem;
-}
-
-/* Primer contenedor del contenedor secundario */
-.datos-generales{
+  }
+  
+  /* .datos-generales → .ciclo__data-general */
+  .ciclo__data-general {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2vh;
-}
-label{
+  }
+  
+  label {
     font-size: 1.5rem;
     padding: 0 1.6rem;
-}
-.opciones{
+  }
+  
+  /* .opciones → .ciclo__input */
+  .ciclo__input {
     text-decoration: none;
     width: 90%;
     margin-bottom: 1vh;
@@ -241,29 +224,31 @@ label{
     background-color: var(--gray-050);
     border: none;
     padding: 1.6rem;
-}
-
-/* Segundo contenedor del contenedor secundario*/
-.datos-insumos{
+  }
+  
+  /* .datos-insumos → .ciclo__data-insumo */
+  .ciclo__data-insumo {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2vh;
-}
-/* Fotter */
-.end{
+  }
+  
+  /* .end → .ciclo__footer */
+  .ciclo__footer {
     display: flex;
     text-align: center;
     justify-content: center;
     gap: 10vh;
-}
-.end-button{
+  }
+  
+  /* .end-button → .ciclo__footer-button */
+  .ciclo__footer-button {
     text-decoration: none;
     background-color: var(--secundary-1-800);
     width: 15rem;
     color: var(--white);
-    padding: 1rem 3rem 1rem 3rem;
-    /* paddin segun google desing 1.6rem 2.4rem 1.6rem 2.4rem los cambie segun FIGMA */
+    padding: 1rem 3rem;
     border: none;
     border-radius: 2.4rem;
     cursor: pointer;
@@ -271,64 +256,41 @@ label{
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem;
-}
-
-/* Responsive */
-/* @media (max-width: 480px ){
-    .registro{
-        background-color: var(--white);
-        border-radius: 1rem;
-        margin-top: 5%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 0%;
-    }
-    .datos{
-        display: flex;
-        flex-direction: row;
-    }
-    .datos-generales{
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-left: 5vh;
-    }
-    .datos-insumos{
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-left: 7vh;
-    }
-
-} */
-/* Estilos adicionales para la vista de visualizar */
-
-/* Contenedor de deshabilitar/Habilitar */
-.box-button-habi{
+  }
+  
+  /* Estilos adicionales para la vista de visualizar */
+  
+  /* .box-button-habi → .ciclo__toggle */
+  .ciclo__toggle {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-}
-.tittle-hab{
+  }
+  .ciclo__toggle-title {
     margin-bottom: 0%;
     font-weight: 500;
     font-size: 1.8rem;
-}
-
-.box-button-hab{
+  }
+  /* .box-button-hab → .ciclo__toggle-group */
+  .ciclo__toggle-group {
     display: flex;
     flex-direction: row;
     gap: 3%;
     text-align: center;
     justify-content: center;
     font-size: 1.2rem;
-}
-/* Boton de Habilitar */
-.button-hab{
+  }
+  /* .text-button → .ciclo__toggle-label */
+  .ciclo__toggle-label {
+    /* Sin propiedades adicionales */
+  }
+  /* .button-hab → .ciclo__toggle-button */
+  .ciclo__toggle-button {
     margin-top: 1.5vh;
     background-color: var(--primary-800);
     border-radius: 2rem;
     width: 5%;
     height: 2rem;
-}
+  }
+  
