@@ -1,27 +1,6 @@
+/* Variables Globales y Reset */
 :root {
-    /* color primario */
-    /* colores principales */
-    --primary-950: #39a900;
-    --primary-400: #303030;
-    --white: #fff;
-    --black: #000;
-  
-    /* colores gris */
-    --gray-950: #101010;
-    --gray-900: #262626;
-    --gray-850: #3b3b3b;
-    --gray-700: #515151;
-    --gray-600: #676767;
-    --gray-500: #7d7d7d;
-    --gray-400: #929292;
-    --gray-300: #a8a8a8;
-    --gray-200: #bebebe;
-    --gray-100: #d4d4d4;
-    --gray-050: #e9e9e9;
-  
-    /* colores ajustados en ia */
-  
-    /* Color primario */
+    /* Colores principales */
     --primary-50: #edf7e8;
     --primary-100: #dbefb9;
     --primary-200: #c9e8b9;
@@ -34,8 +13,22 @@
     --primary-900: #4bbd17;
     --primary-950: #39a900;
   
-    /* Colores secundarios */
-    /* Secundario 1 */
+    /* Colores neutros y grises */
+    --white: #fff;
+    --black: #000;
+    --gray-950: #101010;
+    --gray-900: #262626;
+    --gray-850: #3b3b3b;
+    --gray-700: #515151;
+    --gray-600: #676767;
+    --gray-500: #7d7d7d;
+    --gray-400: #929292;
+    --gray-300: #a8a8a8;
+    --gray-200: #bebebe;
+    --gray-100: #d4d4d4;
+    --gray-050: #e9e9e9;
+  
+    /* Colores secundarios (ajustados en IA) */
     --secundary-1-50: #e8ecef;
     --secundary-1-100: #d1dbdf;
     --secundary-1-200: #b9c7ce;
@@ -48,189 +41,126 @@
     --secundary-1-900: #17435d;
     --secundary-1-950: #00304d;
   
-    /* Secundario 2 */
-    --secundary-2-50: #f2ebf3;
-    --secundary-2-100: #e5d8e7;
-    --secundary-2-200: #d8c4db;
-    --secundary-2-300: #cbb0cd;
-    --secundary-2-400: #be9dc3;
-    --secundary-2-500: #b289b6;
-    --secundary-2-600: #a576aa;
-    --secundary-2-700: #98629e;
-    --secundary-2-800: #8b4e92;
-    --secundary-2-900: #7e3b86;
-    --secundary-2-950: #71277a;
+    /* Fuentes */
+    --font--main: Helvetica, Arial, sans-serif;
+    --font--logo: Helvetica, Arial, sans-serif;
+  }
   
-    /* Secundario 3 */
-    --secundary-3-50: #effdfe;
-    --secundary-3-100: #dffafe;
-    --secundary-3-200: #cfd0fd;
-    --secundary-3-300: #bffafd;
-    --secundary-3-400: #aff3fc;
-    --secundary-3-500: #a0f1fc;
-    --secundary-3-600: #90eef7;
-    --secundary-3-700: #80eecf;
-    --secundary-3-800: #70eafa;
-    --secundary-3-900: #60e7fa;
-    --secundary-3-950: #50e5f9;
-  
-    /* Secundario 4 */
-    --secundary-4-50: #fff6e8;
-    --secundary-4-100: #fff4d1;
-    --secundary-4-200: #feefb9;
-    --secundary-4-300: #fee9a2;
-    --secundary-4-400: #fee48b;
-    --secundary-4-500: #fede74;
-    --secundary-4-600: #fedb5d;
-    --secundary-4-700: #fed346;
-    --secundary-4-800: #fdce2e;
-    --secundary-4-900: #fdc817;
-    --secundary-4-950: #fdc300;
-  
-    /* Colores neutros */
-    --blanco: #ffffff;
-    --negro: #000000;
-    --gray-950: #313131;
-    --gray-750: #626262;
-    --gray-550: #949494;
-    --gray-350: #c5c5c5;
-    --gray-150: #f6f6f6;
-  
-    /* fuentes  */
-    --font--main: Helvetica, Arial, sans-serif; /* TEXTOS Y CONTENIDO*/
-    --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES */
-  
-}
-/*Hack para usar los rem de manera facil */
-/*globals*/
-html{
+  html {
+    margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-}
-*, *:before, *:after {
+  }
+  *, *:before, *:after {
     box-sizing: inherit;
-}
-body{
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: var(--font--main);
+    background-color: var(--secundary-1-950);
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    background-color: var(--secundary-1-950);
-    /* align-content: center;
-    justify-content: center; */
-    gap: 30vh;
-}
-
+    gap: 50vh;
+  }
   
-  /* ************************************************ */
+  /* Bloque: visualizarCultivos */
   
-.visualizarCultivos {
-    width: 29%;
+  /* Contenedor Principal */
+  .visualizarCultivos {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Sección de Logos (lado izquierdo) */
+  .visualizarCultivos__logos {
+    width: 20%;
     height: auto;
-    background: linear-gradient(
-      to bottom,
-      var(--secundary-1-600),
-      var(--gray-100)
-    );
-    /* display */
-    display: flex;
-    flex-direction: column;
-    /* alinear */
-    align-items: center;
-}
-  
-.visualizarCultivos__logos {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    /* tamaños */
-    width: 100%;
-    height: 100vh;
-}
-  
-.visualizarCultivos__logos-container {
+    background: linear-gradient(to bottom, var(--secundary-1-600), var(--gray-100));
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* position: relative; */
-    gap: 1rem;
-    height: 90vh;
+  }
+  
+  .visualizarCultivos__logos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap: 2rem;
+    height: 100vh;
+    width: 30vh;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    /* min-width: 16rem; */
-}
-/* .image-movile { */
-    /* width: 35rem; vector httml para otros = */
-    /* height: 70rem; vector httml para otros = */
-    /* imagen cargada detras del celular */
-    /* background-image: url("../img/fondo-laptop.jpg"); */
-    /* ajuste a la imagen para que se ajuste detreas de vector */
-    /* border-radius: 4rem; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-/* } */
-/* .image-movile svg{
-    display: flex;
-    width: 35rem;/* para que no se ve el borde sobresalir *
-    justify-content: center;
-    box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
-    border-radius: 4rem;  
-} */
-img {
+  }
+  
+  .visualizarCultivos__logo img {
     width: 10rem;
-}
-
-.visualizarCultivos__contenido{
+  }
+  
+  /* Sección de Contenido (lado derecho) */
+  .visualizarCultivos__content {
     display: flex;
     flex-direction: column;
-}
-
-/* Titulo */
-.visualizarCultivos__contenido__tittle{
+  }
+  
+  /* Título Principal */
+  .visualizarCultivos__title {
     text-align: center;
-    justify-content: center;
+    margin-left: 60vh;
     font-size: 3rem;
     color: var(--primary-900);
-    text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800)
-}
-
-/* Contenedor principal */
-.visualizarCultivos__contenido{
+    text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800);
+  }
+  
+  /* Formulario / Detalles */
+  .visualizarCultivos__form {
     background-color: var(--white);
     border-radius: 1rem;
     margin-top: 3%;
-    width: 80vh;
-    height: 85%;
-}
-.{
+    width: 50vh;
+    height: 60vh;
+    margin-left: 60vh;
+  }
+  
+  .visualizarCultivos__subtitle {
     text-align: center;
+    font-size: 2rem;
     background-color: var(--gray-200);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    margin-top: 0%;
+    margin-top: 0;
     padding: 1.6rem;
-}
-
-/* Contenedor secundario */
-.visualizarCultivos__datos{
+  }
+  
+  /* Sección de Datos */
+  .visualizarCultivos__data {
     display: flex;
     flex-direction: row;
     margin-top: 3vh;
-}
-
-/* Primer contenedor del contenedor secundario */
-.visualizarCultivos__datos-generales{
+    padding: 2rem;
+  }
+  
+  /* Datos Generales */
+  .visualizarCultivos__data-general {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2vh;
-}
-label{
-    font-size: 1.5rem;
-    padding: 1.6rem;
-}
-.visualizarCultivos__input{
+  }
+  
+  /* Datos de Individualización */
+  .visualizarCultivos__data-individualization {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2vh;
+  }
+  
+  /* Campos de Entrada */
+  .visualizarCultivos__input {
     text-decoration: none;
     width: 80%;
     margin-bottom: 1vh;
@@ -238,90 +168,84 @@ label{
     height: 2.4rem;
     background-color: var(--gray-050);
     border: none;
-    padding: 1.6rem;
-}
-
-/* Segundo contenedor del contenedor secundario*/
-.datos-insumos{
+    padding: 1.6rem 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  
+  /* Sección Toggle */
+  .visualizarCultivos__toggle {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-left: 2vh;
-}
-/* Fotter */
-.visualizarCultivos__footer{
-    display: flex;
     text-align: center;
     justify-content: center;
-    gap: 10vh;
-}
-.visualizarCultivos__boton--modificar{
-    text-decoration: none;
-    margin-top: 2vh;
-    margin-bottom: 1vh; 
-    padding: 1rem;
-    width: 12rem;
-    height: 3.6;
-    border-radius: 3rem;
-    background-color: var(--secundary-1-950);
-    color: var(--white);
-    /* padding: 1.6rem; */
+    margin-top: 1rem;
+  }
+  .visualizarCultivos__toggle-title {
+    margin-bottom: 0;
+    font-weight: 500;
     font-size: 1.8rem;
-}
-
-/* Responsive */
-/* @media (max-width: 480px ){
-    .registro{
-        background-color: var(--white);
-        border-radius: 1rem;
-        margin-top: 5%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 0%;
-    }
-    .datos{
-        display: flex;
-        flex-direction: row;
-    }
-    .datos-generales{
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-left: 5vh;
-    }
-    .datos-insumos{
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-left: 7vh;
-    }
-
-} */
-/* Estilos adicionales para la vista de visualizar */
-
-/* Contenedor de deshabilitar/Habilitar */
-.visualizarCultivos__habilitar-contenedor{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-.visualizarCultivos__habilitar-titulo{
-    margin-bottom: 0%;
-    padding: 1.6rem;
-}
-.visualizarCultivos__habilitar-contenedor{
+  }
+  .visualizarCultivos__toggle-container {
     display: flex;
     flex-direction: row;
     gap: 3%;
     text-align: center;
     justify-content: center;
-}
-/* Boton de Habilitar */
-.visualizarCultivos__habilitar-boton{
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .visualizarCultivos__toggle-label {
+    /* Sin estilos adicionales */
+  }
+  .visualizarCultivos__toggle-button {
     margin-top: 1.5vh;
     background-color: var(--primary-800);
     border-radius: 2rem;
     width: 5%;
     height: 2rem;
-}
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .visualizarCultivos__footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2vh;
+  }
+  .visualizarCultivos__button {
+    background-color: var(--secundary-1-800);
+    width: 15rem;
+    color: var(--white);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem;
+    text-decoration: none;
+  }
+  
+  /* Modificadores de Botón (Modificar/Cancelar) */
+  .visualizarCultivos__button--modify {
+    /* Personalización opcional para el botón de Modificar */
+  }
+  .visualizarCultivos__button--cancel {
+    /* Personalización opcional para el botón de Cancelar */
+  }
+  
+  /* Media Queries */
+  @media (min-width: 480px) {
+    .visualizarCultivos__logos {
+      /* Ajustes responsivos si se requieren */
+    }
+    .visualizarCultivos__form {
+      /* Ajustes responsivos si se requieren */
+    }
+  }
+  

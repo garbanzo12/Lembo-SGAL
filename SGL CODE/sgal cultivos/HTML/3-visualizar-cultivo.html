@@ -1,82 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizar Cultivo</title>
-    <link rel="stylesheet" href="../Css/3-visualizar-insumo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Cultivo</title>
+  <link rel="stylesheet" href="/SGL CODE/sgal cultivos/CSS/3-visualizar-insumo.css">
 </head>
 <body>
-    <div class="visualizarCultivos ">
-      <section class="visualizarCultivos__logos">
-        <div class="visualizarCultivos__logos-container">
-          <div class="visualizarCultivos__logo visualizarCultivos__logo--sena">
-            <img
-            src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-png-2022.png"
-            alt="Imagen de Logo Sena"
-            />
-          </div>
-
-          <!-- <div class="image-movile">
-            <svg width="350" height="700" viewBox="0 0 236 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M203.718 10H32C19.8497 10 10 19.8497 10 32V451.546C10 463.697 19.8497 473.546 32 473.546H203.718C215.868 473.546 225.718 463.697 225.718 451.546V32C225.718 19.8497 215.868 10 203.718 10ZM32 0C14.3269 0 0 14.3269 0 32V451.546C0 469.22 14.3269 483.546 32 483.546H203.718C221.391 483.546 235.718 469.22 235.718 451.546V32C235.718 14.3269 221.391 0 203.718 0H32Z" fill="#5D7B8E"/>
-              <path d="M63 9.50586C63 16.1333 68.3726 21.5059 75 21.5059H161C167.627 21.5059 173 16.1333 173 9.50586H63Z" fill="#5D7B8E"/>
-              </svg>
-              
-              <path
-                d="M90 10C90 16.6274 95.3726 22 102 22H188C194.627 22 200 16.6274 200 10H90Z"
-                fill="#5D7B8E"
-              />
-            
-          </div> -->
-
-          <div class="visualizarCultivos__logo visualizarCultivos__logo--sena">
-            <img src="/SGL CODE/img/LogoSgal.png" alt="Imagen de Logo Sgal" />
-          </div>
+  <!-- Sección de Logos -->
+  <div class="visualizarCultivos">
+    <section class="visualizarCultivos__logos">
+      <div class="visualizarCultivos__logos-container">
+        <div class="visualizarCultivos__logo visualizarCultivos__logo--sena">
+          <img src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-png-2022.png" alt="Imagen de Logo Sena">
+        </div>
+        <!-- Código comentado omitido -->
+        <div class="visualizarCultivos__logo visualizarCultivos__logo--sgal">
+          <img src="/SGL CODE/img/LogoSgal.png" alt="Imagen de Logo Sgal">
+        </div>
+      </div>
+      
+    </section>
+    
+  <!-- Sección de Contenido -->
+  <div class="visualizarCultivos__content">
+    <h1 class="visualizarCultivos__title">SENA SEDE LEMBO</h1>
+    <main class="visualizarCultivos__form">
+      <h2 class="visualizarCultivos__subtitle">DATOS CULTIVOS</h2>
+      <section class="visualizarCultivos__data">
+        <div class="visualizarCultivos__data-general">
+          <label for="">Tipo de Cultivo</label>
+          <input class="visualizarCultivos__input" type="text" placeholder="Alimentario" required>
+          <label for="">Tamaño del Cultivo</label>
+          <input class="visualizarCultivos__input" type="text" placeholder="30 ha" required>
+          <label for="">Ubicación del Cultivo</label>
+          <input class="visualizarCultivos__input" type="number" placeholder="Al frente del cultivo de fresas" required>
+        </div>
+        <div class="visualizarCultivos__data-individualization">
+          <label for="">Nombre del Cultivo</label>
+          <input class="visualizarCultivos__input" type="number" placeholder="Maíz" required>
+          <label for="">ID del Cultivo</label>
+          <input class="visualizarCultivos__input" type="text" placeholder="21e4" required>
+          <label for="">Descripción del Cultivo</label>
+          <input class="visualizarCultivos__input" type="number" placeholder="Mantener en suelos ligeros" required>
         </div>
       </section>
-    </div>
-    <!-- fin visualizarCultivos -->
+  
+      <div class="visualizarCultivos__toggle">
+        <h2 class="visualizarCultivos__toggle-title">Habilitar/Deshabilitar:</h2>
+        <div class="visualizarCultivos__toggle-container">
+          <h3 class="visualizarCultivos__toggle-label">Estado:</h3>
+          <button class="visualizarCultivos__toggle-button"></button>
+        </div>
+      </div>
+  
+      <footer class="visualizarCultivos__footer">
+        <a href="4-actualizar-cultivo.html" class="visualizarCultivos__button visualizarCultivos__button--modify">Modificar</a>
+        <a href="/SGL CODE/sgal main (sanchez)/index_main.html" class="visualizarCultivos__button visualizarCultivos__button--cancel">Cancelar</a>
+      </footer>
+    </main>
+  </div>
+  </div>
+  <!-- fin .visualizarCultivos -->
 
-    <div class="visualizarCultivos__contenido">
-        <h1 class="visualizarCultivos__contenido__tittle">SENA   SEDE   LEMBO</h1>    
-        <main class="visualizarCultivos__contenido"><!--resgitro-->
-            <h2 class="visualizarCultivos__titulo">DATOS CULTIVOS</h2>
-            <section class="visualizarCultivos__datos"><!--datos-->
-                <div class="visualizarCultivos__datos-generales"><!--datos-generales-->
-                    <label for="">Tipo de Cultivo</label>
-                    <input class="visualizarCultivos__input" type="text" name="" id="" placeholder="Alimentario" required>
-                    <label for="">Tamaño del cultivo </label>
-                    <input class="visualizarCultivos__input" type="text" name="" id="" placeholder="30 ha" required>
-                    <label for="">Ubicación del cultivo</label>
-                    <input class="visualizarCultivos__input" type="number" name="" id="" placeholder="Al frente del cultivo de fresas" required>
-                    
-                </div><!--datos-generales-->    
 
-                <div class="datos-insumos"><!--datos-insumos-->
-                    <label for="">Nombres del Cultivo</label>
-                    <input class="visualizarCultivos__input" type="number" name="" id="" placeholder="Maíz" required>
-                    <label for="">ID del Cultivo</label>
-                    <input class="visualizarCultivos__input" type="text" name="" id="" placeholder="21e4"required>
-                    <label for="">Descripción del Cultivo</label>
-                    <input class="visualizarCultivos__input" type="number" name="" id="" placeholder="Mantener en suelos ligeros"required>				
-                    
-
-                </div><!--datos-insumos-->
-            </section><!--datos-->
-            <div class="visualizarCultivos__habilitar">
-                <h2 class="visualizarCultivos__habilitar-titulo">Habilitar/Deshabilitar:</h2>
-                    <div class="visualizarCultivos__habilitar-contenedor box-button-hab">
-                        <h3 class="visualizarCultivos__habilitar-estado">Estado:</h3>
-                        <button class="visualizarCultivos__habilitar-boton"></button>    
-                    </div>
-            </div>
-
-            <footer class="visualizarCultivos__footer"><!--end-->
-                <a href="4-actualizar-cultivo.html" class="visualizarCultivos__boton visualizarCultivos__boton--modificar">Modificar</a>
-                <a href="/SGL CODE/sgal main (sanchez)/index_main.html" class="visualizarCultivos__boton visualizarCultivos__boton--modificar">Cancelar</a>
-            </footer><!--end-->
-        </main> <!---registro-->
-    </div>
+  
 </body>
 </html>
