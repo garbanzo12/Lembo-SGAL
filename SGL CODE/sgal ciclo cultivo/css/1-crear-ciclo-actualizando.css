@@ -185,7 +185,7 @@ body {
 /* BEM */
 /* ***************** ASIDE IZQUIDERO ***************** */
 
-.cardLeft {
+.cardLeft , .ciclo__media {
   width: 20%;
   height: 100vh;
   background: linear-gradient(to bottom,
