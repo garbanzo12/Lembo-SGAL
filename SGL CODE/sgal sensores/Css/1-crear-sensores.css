@@ -98,7 +98,7 @@
 
   /* fuentes  */
   --font--main: Helvetica, Arial, sans-serif; /* TEXTOS Y CONTENIDO*/
-  --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES */
+  --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES*/
 
   /* ********************************* */
   /* Botones primarios */
@@ -110,7 +110,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
 *,
 *:before,
 *,
@@ -121,46 +120,28 @@ body {
   font-size: 16px;
   font-family: var(--font--main);
 }
+
 /* ******************** */
-/* ******************** */
-/* codigo de pagina web */
-/* ******************** */
+/* Código de página web */
 /* ******************** */
 
 body {
-  /* colores */
   background-color: var(--white);
-
-  /* tamaños */
   width: 100%;
   height: 100%;
-  position: fixed; /* oara que use y aplique el 100% */
+  position: fixed;
   top: 0rem;
   left: 0rem;
-
-  /* posicionamiento */
   display: flex;
   flex-direction: row;
-
-  /* centrados */
   margin: 0 auto;
 }
-.header1 {
-  display: none; /* se apago un titulo solo ve en media querry */
-}
-.header2 {
-  /* display: flex;
-    position: absolute;
-    top: 4%;
-    width: 100%;
-    justify-content: center;
-    font-family: var(--font--main);
-    font-weight: bold;
-    font-size: 3.2rem;
-    color: var(--primary-800);
-    text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00; */
-  /* Sombra verde */
 
+.sensores__header--primary {
+  display: none; /* se apaga un título solo se ve en media query */
+}
+
+.sensores__header--form {
   position: absolute;
   top: 5%;
   left: 60%;
@@ -177,7 +158,7 @@ body {
 
 /* ************************************************ */
 
-.box1 {
+.sensores__media {
   width: 20%;
   height: auto;
   background: linear-gradient(
@@ -185,54 +166,49 @@ body {
     var(--secundary-1-600),
     var(--gray-100)
   );
-  /* display */
   display: flex;
   flex-direction: column;
-  /* alinear */
   align-items: center;
 }
 
-.contenedor-gif {
+.sensores__gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* tamaños */
   width: 100%;
   height: 100vh;
 }
 
-.subcontenedor-gif {
+.sensores__gallery-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
   gap: 2rem;
   height: 100vh;
-  justify-content: space-between;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  /* min-width: 16rem; */
 }
-.image-movile {
-  width: 35rem; /* vector httml para otros = */
-  height: 70rem; /* vector httml para otros = */
-  /* imagen cargada detras del celular */
+
+.sensores__logo img {
+  width: 10rem;
+}
+
+.sensores__image-mobile {
+  width: 35rem;
+  height: 70rem;
   background-image: url("../img/fondo-laptop.jpg");
-  /* ajuste a la imagen para que se ajuste detreas de vector */
   border-radius: 4rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.image-movile svg{
+.sensores__image-mobile svg {
   display: flex;
-  width: 35rem;/* para que no se ve el borde sobresalir */
+  width: 35rem;
   justify-content: center;
   box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
   border-radius: 4rem;
-  
- 
 }
 img {
   width: 10rem;
@@ -240,108 +216,73 @@ img {
 
 /* ************************************************ */
 
-.box2 {
-  /* colores */
+.sensores__content {
   background-color: var(--secundary-1-950);
-
-  /* tamanos */
   width: 80%;
   height: auto;
-
-  /* propiedades  si se activa display flex / desactiva aling content*/
   display: flex;
   flex-direction: column;
-
-  /* centrados */
   justify-content: center;
   align-items: center;
 }
 
-.container-box {
+.sensores__fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  /* height: 100vh; */
-
-  /* colores */
   background-color: var(--white);
   border-radius: 1rem;
-  /* tamaños */
   width: 40rem;
   height: auto;
-  /* centrado */
   text-align: center;
   box-shadow: 0 4px 8px var(--black);
-  /* posicion */
   position: fixed;
   top: 8%;
   margin: 0;
   padding: 0;
 }
-.container-box h3 {
-  /* posicion */
+.sensores__fieldset h3 {
   display: flex;
   margin: 0 auto;
-  /* centrado */
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-
-  /* colores */
   background-color: var(--gray-100);
-
-  /* tamaños */
-  border-radius: 1rem 1rem 0rem 0rem; /* bordes en sentido reloj. */
+  border-radius: 1rem 1rem 0 0;
   height: 5rem;
   width: 100%;
-
-  /* texto */
   color: var(--secundary-1-950);
   font-weight: bolder;
-
-  /* posicionamiento */
 }
-/* ******************************************************* */
-/* ******* aqui se controla las 2 columnas blancas ******* */
 
-.container-form {
+.sensores__form {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  /* *********OPCION 01*********** */
-  /* 40 REM o 80 REM */
-  /* width: 40rem;   
-    gap: 2rem;  */
-  /* 2 REM o 5 REM para 80 REM ARRIBA */
-
-  /* *********OPCION 02*********** */
-  /* 40 REM o 80 REM */
   width: 80rem;
   gap: 2rem;
-  /* 2 REM o 5 REM para 80 REM ARRIBA */
-
-  /* ******************************* */
 }
 
-.container-box img {
+.sensores__fieldset img {
   width: 16rem;
   height: 12rem;
   margin: 0.1rem;
   border-radius: 10rem;
 }
 
-.container-form label {
+.sensores__form .sensores__field {
+  /* Cada grupo de campo */
+}
+.sensores__form .sensores__label {
   display: flex;
   font-size: 1.6rem;
   font-weight: 200;
   color: var(--black);
+  padding: 0rem 2.4rem;
 }
 
-/* sanches ni stefania NO BORRAR NINGUNO DE ESTOS PORQUE SON TODOS LOS INPUTS SEGUN SE PONGA HTML */
 .container-box input[type="text"],
 .container-box input[type="password"],
 .container-box input[type="email"],
@@ -359,45 +300,42 @@ img {
 .container-box input[type="checkbox"],
 .container-box input[type="radio"],
 .container-box input[type="range"],
-.container-box input[type="submit"],
+	container-box input[type="submit"],
 .container-box input[type="reset"],
 .container-box input[type="button"],
 .container-box input[type="hidden"] {
   font-size: 1.6rem;
   color: var(--gray-700);
   width: 32rem;
-  padding: 1.6rem 2.4rem; /* TDOSOS LOS INPUTS DE 52 PX DE ALTOS SEGUN CORRECION GOOGLE DESING GUIDE */
-  margin: 0em;
+  padding: 1.6rem 2.4rem;
+  margin: 0;
   border: 0.1rem solid var(--blanco);
-  border-radius: 5rem; /* campo circular */
+  border-radius: 5rem;
   box-sizing: border-box;
   background-color: var(--gray-050);
 }
 
-/* ES PARA LOS INPUTS VACIOS PARA QUE SE AJUSTE A UN LADO CUANDO SON IMPARES */
-.container-box .vacio {
+/* Actualización para inputs vacíos */
+.sensores__fieldset .sensores__input--empty {
   font-size: 1.6rem;
   color: var(--white);
   width: 32rem;
-  padding: 1.6rem 2.4rem; /* TDOSOS LOS INPUTS DE 52 PX DE ALTOS SEGUN CORRECION GOOGLE DESING GUIDE */
-  margin: 0em;
+  padding: 1.6rem 2.4rem;
+  margin: 0;
   border: 0.1rem solid var(--blanco);
-  border-radius: 5rem; /* campo circular */
+  border-radius: 5rem;
   box-sizing: border-box;
   background-color: var(--white) !important;
 }
-.container-box .label-vacio {
+.sensores__fieldset .sensores__label--empty {
   color: var(--white);
 }
 
 label {
   margin: 0 auto;
-  padding: 0rem 2.4rem;
 }
 
-/* cñses para cargar imagen del sensor es un div ojo tiene un titulo en h4 */
-/* formato de image 16 : 9 osea   21rem x 12 rem  */
-.rect-load-picture {
+.sensores__upload {
   background-color: var(--white);
   width: 21rem;
   height: 12rem;
@@ -406,29 +344,27 @@ label {
   justify-content: center;
   align-items: center;
   border: solid 0.5rem var(--gray-100);
-  /*  segun el google desing el espesor de borde es de 1px o 2px maximo pero esto no es una selda es un cuadro de imagen */
 }
 
-.container-box .button {
+.sensores__fieldset .sensores__button {
   background-color: var(--secundary-1-800);
   width: 15rem;
   color: var(--white);
-  padding: 1rem 3rem 1rem 3rem;
-  /* paddin segun google desing 1.6rem 2.4rem 1.6rem 2.4rem los cambie segun FIGMA */
+  padding: 1rem 3rem;
   border: none;
   border-radius: 2.4rem;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
-  margin: 2rem;
+  margin-top: 1rem;
 }
 
-.container-box .h4 {
+.sensores__fieldset .sensores__h4 {
   font-weight: bold;
 }
 
-.container-box a {
+.sensores__fieldset a {
   color: var(--white);
   text-decoration: none;
 }
@@ -439,40 +375,33 @@ label {
   text-decoration: none;
 }
 
-.baseform {
+.sensores__baseform {
   position: relative;
   bottom: 0%;
   width: 100%;
 }
-.baseform a {
+.sensores__baseform a {
   display: flex;
-
-  /* colores */
   background-color: var(--gray-100);
-  /* display */
-  display: flex;
-  /* posicionamiento */
   justify-content: center;
   align-items: center;
-  /* tamaños */
   height: 3.6rem;
-  border-radius: 0rem 0rem 1rem 1rem;
-  /* fuente */
+  border-radius: 0 0 1rem 1rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--gray-600);
   text-decoration: none;
 }
 
-.ico-back {
-  display: block; /* Asegura que el div sea un bloque visible */
+.sensores__ico-back {
+  display: block;
   position: absolute;
-  margin-bottom: 0%;
-  font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
-  color: #00304d; /* Ajusta el color según sea necesario */
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #00304d;
 }
 
-.svg-container {
+.sensores__svg-container {
   background-color: var(--white);
   display: flex;
   width: 5.2rem;
@@ -483,17 +412,16 @@ label {
   bottom: 2%;
 }
 
-
 /* ********************************************* */
 /* ************** MEDIA QUERY ****************** */
 
 @media (max-width: 768px) {
   body {
-    height: auto; /* Ajusta la altura del body automáticamente */
-    min-height: 200vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana gráfica */
+    height: auto;
+    min-height: 200vh;
     overflow-y: auto;
   }
-  .header1 {
+  .sensores__header--primary {
     position: absolute;
     top: 2.5%;
     left: 50%;
@@ -507,18 +435,18 @@ label {
     color: var(--primary-800);
     text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
   }
-  .header2 {
+  .sensores__header--form {
     display: none;
   }
 
-  .box1 {
+  .sensores__media {
     display: none;
   }
 
-  .box2 {
+  .sensores__content {
     width: 100%;
   }
-  .container-box {
+  .sensores__fieldset {
     display: flex;
     position: fixed;
     top: 10%;
@@ -526,33 +454,31 @@ label {
     align-items: center;
   }
   h3 {
-    /* width: 40rem; */
   }
-  .container-form {
+  .sensores__form {
     display: flex;
-    flex-direction: column; /* Organiza en una sola columna */
-    align-items: center; /* Centra los elementos en la columna */
+    flex-direction: column;
+    align-items: center;
     width: 40rem;
-
     gap: 0.5rem;
   }
-  .container-form .dato {
-    width: 100%; /* Asegura que cada input y label ocupen todo el ancho del contenedor */
-    margin-bottom: 1rem; /* Añade espacio entre cada input */
+  .sensores__form .sensores__field {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  .container-form label,
-  .container-form input {
-    width: 100%; /* Asegura que los labels y inputs ocupen todo el ancho disponible */
-  }
-
-  .container-box .vacio {
-    display: none;
-  }
-  .container-box .label-vacio {
-    display: none;
+  .sensores__form label,
+  .sensores__form input {
+    width: 100%;
   }
 
-  .svg-container {
+  .sensores__fieldset .sensores__input--empty {
+    display: none;
+  }
+  .sensores__fieldset .sensores__label--empty {
+    display: none;
+  }
+
+  .sensores__svg-container {
     background-color: var(--white);
     display: flex;
     width: 5.2rem;
@@ -568,7 +494,7 @@ label {
 /* ************** MEDIA QUERY ****************** */
 
 @media (max-width: 399px) {
-  .svg-container {
+  .sensores__svg-container {
     background-color: var(--white);
     display: flex;
     width: 3rem;
@@ -579,14 +505,9 @@ label {
     bottom: 40%;
     left: 2%;
   }
-  .svg-container:hover{
-   transition: 200ms ease;
+  .sensores__svg-container:hover {
+    transition: 200ms ease;
     width: 3.5rem;
     height: 3.5em;
-
   }
-
-
-
-}
 }

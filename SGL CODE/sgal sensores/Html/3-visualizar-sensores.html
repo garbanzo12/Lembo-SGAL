@@ -22,18 +22,20 @@
     <title>VISUALIZAR SENSORES * ID</title>
   </head>
   <body>
-    <header class="header1"><span>SENA SEDE LEMBO</span></header>
-    <div class="box1">
-      <section class="contenedor-gif">
-        <div class="subcontenedor-gif">
-          <div class="ico-sena">
+    <header class="sensores__header sensores__header--primary">
+      <span>SENA SEDE LEMBO</span>
+    </header>
+    <div class="sensores__media">
+      <section class="sensores__gallery">
+        <div class="sensores__gallery-inner">
+          <div class="sensores__logo sensores__logo--sena">
             <img
               src="img/logo-sena-verde-complementario-png-2022.png"
               alt="Imagen de Logo Sena"
             />
           </div>
 
-          <div class="image-movile">
+          <div class="sensores__image-mobile">
             <svg
               width="350"
               height="700"
@@ -59,81 +61,70 @@
             />
           </div>
 
-          <div class="ico-sena">
+          <div class="sensores__logo sensores__logo--sgal">
             <img src="img/LogoSgal.png" alt="Imagen de Logo Sgal" />
           </div>
         </div>
       </section>
     </div>
-    <!-- fin box1 -->
+    <!-- fin de sensores__media -->
 
-    <main class="box2">
-      <header class="header2"><span>SENA SEDE LEMBO</span></header>
-      <fieldset class="container-box">
+    <main class="sensores__content">
+      <header class="sensores__header sensores__header--form">
+        <span>SENA SEDE LEMBO</span>
+      </header>
+      <fieldset class="sensores__fieldset">
         <h3>VISUALIZAR SENSOR . <span>ID ####</span></h3>
-        <form class="container-form">
-          <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI  -->
-
+        <form class="sensores__form">
+          <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SÍ  -->
           <!-- <img
-            class="logoCircular"
+            class="sensores__logo-circular"
             alt="SENA logo"
             height="100"
             src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-svg-2022.svg"
             width="100"
           /> -->
 
-          <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI -->
-
-          <div class="dato">
-            <label class="label" for="">Tipo de sensor</label>
+          <div class="sensores__field">
+            <label class="sensores__label" for="">Tipo de sensor</label>
             <input placeholder="Laser" type="text" />
           </div>
 
-         
-          <!-- ESPACIO PARA MAS INPUTS  -->
-
-          <!-- text, password, email, number, tel, url, search, date, time, datetime-local, month, week, color, file, checkbox, radio, range, submit, reset, button y hidden -->
-
-          <div class="dato">
-            <label class="label" for="">Nombre del sensor</label>
+          <div class="sensores__field">
+            <label class="sensores__label" for="">Nombre del sensor</label>
             <input placeholder="Laser Red Dragon" type="text" />
           </div>
 
-          <!-- ****************************segun figma debe pasar a segunda columna desde aqui ****************************** -->
-
-          <div class="dato">
-            <label class="label" for="">Unidad de medida</label>
+          <div class="sensores__field">
+            <label class="sensores__label" for="">Unidad de medida</label>
             <input placeholder="Candela" type="text" />
           </div>
 
-          <div class="dato">
-            <label class="label" for="">Tiempo de muestreo</label>
+          <div class="sensores__field">
+            <label class="sensores__label" for="">Tiempo de muestreo</label>
             <input placeholder="2 ms" type="text" />
           </div>
-
-        
-
-          <!-- esta es la imagen o espacio donde podemos cargar la imagen del sensor, por ahora es un div con estilos -->
-
-
-          <!-- ESPACIO PARA MAS INPUTS  -->
         </form>
-        <div class="captura">
+        <div class="sensores__capture">
           <h4>IMAGEN SENSOR</h4>
-          <img class="rect-load-picture" src="../Img/image sensor.jpg" alt="Images de Sensor Laser">
+          <img class="sensores__upload-image" src="../Img/image sensor.jpg" alt="Images de Sensor Laser">
         </div>
-        <div class="botones">
-          <button class="button"><a href="/SGL CODE/sgal sensores/Html/4-actualizar-sensores.html">MODIFICAR</a></button>
-          <button class="button"><a href="/SGL CODE/sgal main (sanchez)/">CANCELAR</a></button>
+        <div class="sensores__buttons">
+          <button class="sensores__button">
+            <a href="/SGL CODE/sgal sensores/Html/4-actualizar-sensores.html">MODIFICAR</a>
+          </button>
+          <button class="sensores__button">
+            <a href="/SGL CODE/sgal main (sanchez)/">CANCELAR</a>
+          </button>
         </div>
 
-        <div class="baseform">
+        <div class="sensores__baseform">
           <a href="#"> </a>
         </div>
       </fieldset>
       <!-- fin de form -->
 
-      <div class="svg-container">
+      <div class="sensores__svg-container">
         <a href="">
           <svg
             width="48"
@@ -153,7 +144,6 @@
         </a>
       </div>
     </main>
-
-    <!-- fin box 2 -->
+    <!-- fin de sensores__content -->
   </body>
 </html>
