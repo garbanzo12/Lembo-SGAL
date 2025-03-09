@@ -1,12 +1,11 @@
 :root {
-    /* color primario */
-    /* colores principales */
+    /* Colores principales */
     --primary-950: #39a900;
     --primary-400: #303030;
     --white: #fff;
     --black: #000;
-  
-    /* colores gris */
+    
+    /* Colores gris */
     --gray-950: #101010;
     --gray-900: #262626;
     --gray-850: #3b3b3b;
@@ -18,10 +17,8 @@
     --gray-200: #bebebe;
     --gray-100: #d4d4d4;
     --gray-050: #e9e9e9;
-  
-    /* colores ajustados en ia */
-  
-    /* Color primario */
+    
+    /* Colores ajustados en IA */
     --primary-50: #edf7e8;
     --primary-100: #dbefb9;
     --primary-200: #c9e8b9;
@@ -33,9 +30,8 @@
     --primary-800: #5dd12e;
     --primary-900: #4bbd17;
     --primary-950: #39a900;
-  
+    
     /* Colores secundarios */
-    /* Secundario 1 */
     --secundary-1-50: #e8ecef;
     --secundary-1-100: #d1dbdf;
     --secundary-1-200: #b9c7ce;
@@ -47,8 +43,7 @@
     --secundary-1-800: #2e566d;
     --secundary-1-900: #17435d;
     --secundary-1-950: #00304d;
-  
-    /* Secundario 2 */
+    
     --secundary-2-50: #f2ebf3;
     --secundary-2-100: #e5d8e7;
     --secundary-2-200: #d8c4db;
@@ -60,8 +55,7 @@
     --secundary-2-800: #8b4e92;
     --secundary-2-900: #7e3b86;
     --secundary-2-950: #71277a;
-  
-    /* Secundario 3 */
+    
     --secundary-3-50: #effdfe;
     --secundary-3-100: #dffafe;
     --secundary-3-200: #cfd0fd;
@@ -73,8 +67,7 @@
     --secundary-3-800: #70eafa;
     --secundary-3-900: #60e7fa;
     --secundary-3-950: #50e5f9;
-  
-    /* Secundario 4 */
+    
     --secundary-4-50: #fff6e8;
     --secundary-4-100: #fff4d1;
     --secundary-4-200: #feefb9;
@@ -86,7 +79,7 @@
     --secundary-4-800: #fdce2e;
     --secundary-4-900: #fdc817;
     --secundary-4-950: #fdc300;
-  
+    
     /* Colores neutros */
     --blanco: #ffffff;
     --negro: #000000;
@@ -95,142 +88,119 @@
     --gray-550: #949494;
     --gray-350: #c5c5c5;
     --gray-150: #f6f6f6;
+    
+    /* Fuentes */
+    --font--main: Helvetica, Arial, sans-serif;
+    --font--logo: Helvetica, Arial, sans-serif;
+  }
   
-    /* fuentes  */
-    --font--main: Helvetica, Arial, sans-serif; /* TEXTOS Y CONTENIDO*/
-    --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES */
-  
-}
-/*Hack para usar los rem de manera facil */
-/*globals*/
-html{
+  html {
+    margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-}
-*, *:before, *:after {
+  }
+  *, *:before, *:after {
     box-sizing: inherit;
-}
-body{
+  }
+  body {
+    font-size: 16px;
+    font-family: var(--font--main);
+    background-color: var(--secundary-1-950);
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    background-color: var(--secundary-1-950);
-    /* align-content: center;
-    justify-content: center; */
-    gap: 30vh;
-}
-
+    gap: 50vh;
+  }
   
-  /* ************************************************ */
+  /* ******************************************* */
+  /* Bloque: insumo (Visualizar Insumo)           */
+  /* ******************************************* */
   
-.box1 {
+  /* Contenedor de medios (antes .box1) */
+  .insumo__media {
     width: 20%;
     height: auto;
-    background: linear-gradient(
-      to bottom,
-      var(--secundary-1-600),
-      var(--gray-100)
-    );
-    /* display */
+    background: linear-gradient(to bottom, var(--secundary-1-600), var(--gray-100));
     display: flex;
     flex-direction: column;
-    /* alinear */
     align-items: center;
-}
+  }
   
-.contenedor-gif {
+  /* Galería (antes contenedor-gif) */
+  .insumo__gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* tamaños */
     width: 100%;
     height: 100vh;
-}
-  
-.subcontenedor-gif {
+  }
+  .insumo__gallery-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* position: relative; */
+    justify-content: space-between;
     gap: 2rem;
     height: 100vh;
-    justify-content: space-between;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    /* min-width: 16rem; */
-}
-/* .image-movile { */
-    /* width: 35rem; vector httml para otros = */
-    /* height: 70rem; vector httml para otros = */
-    /* imagen cargada detras del celular */
-    /* background-image: url("../img/fondo-laptop.jpg"); */
-    /* ajuste a la imagen para que se ajuste detreas de vector */
-    /* border-radius: 4rem; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-/* } */
-/* .image-movile svg{
-    display: flex;
-    width: 35rem;/* para que no se ve el borde sobresalir *
-    justify-content: center;
-    box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
-    border-radius: 4rem;  
-} */
-img {
+  }
+  
+  /* Logos (antes ico-sena) */
+  .insumo__logo {
+    /* Se aplican propiedades heredadas de la imagen */
+  }
+  img {
     width: 10rem;
-}
-
-.box2{
+  }
+  
+  /* Contenedor del contenido (antes .box2) */
+  .insumo__content {
     display: flex;
     flex-direction: column;
-}
-
-/* Titulo */
-.tittle{
+  }
+  
+  /* Título (antes .tittle) */
+  .insumo__title {
     text-align: center;
     justify-content: center;
     font-size: 3rem;
     color: var(--primary-900);
-    text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800)
-}
-
-/* Contenedor principal */
-.registro{
+    text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800);
+  }
+  
+  /* Sección de detalles (antes .registro) */
+  .insumo__details {
     background-color: var(--white);
     border-radius: 1rem;
     margin-top: 3%;
-    width: 80vh;
-    height: 70%;
-}
-.subtittle{
+    width: 50vh;
+    height: 60vh;
+  }
+  .insumo__details-subtitle {
     text-align: center;
+    font-size: 2rem;
     background-color: var(--gray-200);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     margin-top: 0%;
     padding: 1.6rem;
-}
-
-/* Contenedor secundario */
-.datos{
+  }
+  
+  /* Sección de datos (antes .datos) */
+  .insumo__data {
     display: flex;
     flex-direction: row;
     margin-top: 3vh;
-}
-
-/* Primer contenedor del contenedor secundario */
-.datos-generales{
+    padding: 2rem;
+  }
+  .insumo__data-general {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2vh;
-}
-label{
-    font-size: 1.5rem;
-    padding: 0 1.6rem;
-}
-.opciones{
+  }
+  .insumo__input {
     text-decoration: none;
     width: 80%;
     margin-bottom: 1vh;
@@ -238,30 +208,59 @@ label{
     height: 2.4rem;
     background-color: var(--gray-050);
     border: none;
-    padding: 1.6rem;
-}
-
-/* Segundo contenedor del contenedor secundario*/
-.datos-insumos{
+    padding: 1.6rem 2.4rem;
+  }
+  .insumo__data-additional {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2vh;
-}
-/* Fotter */
-.end{
+  }
+  
+  /* Contenedor de Toggle (deshabilitar/habilitar) */
+  .insumo__toggle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .insumo__toggle-title {
+    margin-bottom: 0%;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  .insumo__toggle-group {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  .insumo__toggle-label {
+    /* Sin propiedades adicionales */
+  }
+  .insumo__toggle-button {
+    margin-top: 1.5vh;
+    background-color: var(--primary-800);
+    border-radius: 2rem;
+    width: 5%;
+    height: 2rem;
+  }
+  
+  /* Footer (antes .end) */
+  .insumo__footer {
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 10vh;
-}
-.end-button{
+    gap: 2vh;
+  }
+  .insumo__footer-button {
     text-decoration: none;
     background-color: var(--secundary-1-800);
     width: 15rem;
     color: var(--white);
-    padding: 1rem 3rem 1rem 3rem;
-    /* paddin segun google desing 1.6rem 2.4rem 1.6rem 2.4rem los cambie segun FIGMA */
+    padding: 1rem 3rem;
     border: none;
     border-radius: 2.4rem;
     cursor: pointer;
@@ -269,64 +268,31 @@ label{
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem;
-}
-
-/* Responsive */
-/* @media (max-width: 480px ){
-    .registro{
-        background-color: var(--white);
-        border-radius: 1rem;
-        margin-top: 5%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 0%;
-    }
-    .datos{
-        display: flex;
-        flex-direction: row;
-    }
-    .datos-generales{
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-left: 5vh;
-    }
-    .datos-insumos{
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-left: 7vh;
-    }
-
-} */
-/* Estilos adicionales para la vista de visualizar */
-
-/* Contenedor de deshabilitar/Habilitar */
-.box-button-habi{
+  }
+  
+  /* **************************************** */
+  /* Footer adicional (antes .pie-pag)        */
+  .insumo__footer-note,
+  .insumo__footer-note a {
+    background-color: var(--gray-100);
     display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
-}
-.tittle-hab{
-    margin-bottom: 0%;
-    font-weight: 500;
-    font-size: 1.8rem;
-}
-
-.box-button-hab{
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-    text-align: center;
-    justify-content: center;
+    align-items: center;
+    height: 3.6rem;
+    border-radius: 0 0 1rem 1rem;
     font-size: 1.2rem;
-}
-/* Boton de Habilitar */
-.button-hab{
-    margin-top: 1.5vh;
-    background-color: var(--primary-800);
-    border-radius: 2rem;
-    width: 5%;
-    height: 2rem;
-}
+    font-weight: 700;
+    color: var(--gray-600);
+    text-decoration: none;
+  }
+  
+  /* Media Query (ajustes responsivos si se requieren) */
+  @media (min-width: 480px) {
+    .insumo__media {
+      /* Ajustes responsivos si son necesarios */
+    }
+    .insumo__details {
+      /* Ajustes responsivos si son necesarios */
+    }
+  }
+  

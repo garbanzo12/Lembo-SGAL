@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizar Insumo</title>
-    <link rel="stylesheet" href="../Css/3-visualizar-insumo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Insumo</title>
+  <link rel="stylesheet" href="../Css/3-visualizar-insumo.css">
 </head>
 <body>
-    <div class="box1">
-      <section class="contenedor-gif">
-        <div class="subcontenedor-gif">
-          <div class="ico-sena">
-            <img
-              src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-png-2022.png"
-              alt="Imagen de Logo Sena"
-            />
-          </div>
+  <div class="insumo__media">
+    <section class="insumo__gallery">
+      <div class="insumo__gallery-inner">
+        <div class="insumo__logo insumo__logo--sena">
+          <img src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-png-2022.png" alt="Imagen de Logo Sena" />
+        </div>
+        <!-- Código comentado omitido -->
+        <div class="insumo__logo insumo__logo--sgal">
+          <img src="/SGL CODE/img/LogoSgal.png" alt="Imagen de Logo Sgal" />
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- fin insumo__media -->
 
-          <!-- <div class="image-movile">
-            <svg width="350" height="700" viewBox="0 0 236 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M203.718 10H32C19.8497 10 10 19.8497 10 32V451.546C10 463.697 19.8497 473.546 32 473.546H203.718C215.868 473.546 225.718 463.697 225.718 451.546V32C225.718 19.8497 215.868 10 203.718 10ZM32 0C14.3269 0 0 14.3269 0 32V451.546C0 469.22 14.3269 483.546 32 483.546H203.718C221.391 483.546 235.718 469.22 235.718 451.546V32C235.718 14.3269 221.391 0 203.718 0H32Z" fill="#5D7B8E"/>
-              <path d="M63 9.50586C63 16.1333 68.3726 21.5059 75 21.5059H161C167.627 21.5059 173 16.1333 173 9.50586H63Z" fill="#5D7B8E"/>
-              </svg>
-              
-              <path
-                d="M90 10C90 16.6274 95.3726 22 102 22H188C194.627 22 200 16.6274 200 10H90Z"
-                fill="#5D7B8E"
-              />
-            
-          </div> -->
-
-          <div class="ico-sena">
-            <img src="/SGL CODE/img/LogoSgal.png" alt="Imagen de Logo Sgal" />
-          </div>
+  <div class="insumo__content">
+    <h1 class="insumo__title">SENA SEDE LEMBO</h1>
+    <main class="insumo__details">
+      <h2 class="insumo__details-subtitle">DATOS INSUMOS</h2>
+      <section class="insumo__data">
+        <div class="insumo__data-general">
+          <label for="">Tipo de Insumo</label>
+          <input class="insumo__input" type="text" name="" id="" placeholder="Semillas" required>
+          <label for="">Nombre del Insumo</label>
+          <input class="insumo__input" type="text" name="" id="" placeholder="Semilla de fresa" required>
+          <label for="">Cantidad</label>
+          <input class="insumo__input" type="number" name="" id="" placeholder="1023" required>
+          <label for="">Descripción</label>
+          <input class="insumo__input" type="text" name="" id="" placeholder="Mantener en lugar humedo" required>
+        </div>
+        <div class="insumo__data-additional">
+          <label for="">ID Insumo</label>
+          <input class="insumo__input" type="number" name="" id="" placeholder="876d78" required>
+          <label for="">Unidad De Medida</label>
+          <input class="insumo__input" type="text" name="" id="" placeholder="Grano" required>
+          <label for="">Valor Total</label>
+          <input class="insumo__input" type="number" name="" id="" placeholder="$10000" required>
+          <label for="">Valor Unitario</label>
+          <input class="insumo__input" type="number" name="" id="" placeholder="$100" required>
         </div>
       </section>
-    </div>
-    <!-- fin box1 -->
 
-    <div class="box2">
-        <h1 class="tittle">SENA   SEDE   LEMBO</h1>    
-        <main class="registro"><!--resgitro-->
-            <h2 class="subtittle">DATOS INSUMOS</h2>
-            <section class="datos"><!--datos-->
-                <div class="datos-generales"><!--datos-generales-->
-                    <label for="">Tipo de Insumo</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Semillas" required>
-                    <label for="">Nombre del Insumo </label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Semilla de fresa" required>
-                    <label for="">Cantidad</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="1023" required>
-                    <label for="">Descripción</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Mantener en lugar humedo"required>
-                </div><!--datos-generales-->    
+      <div class="insumo__toggle">
+        <h2 class="insumo__toggle-title">Habilitar/Deshabilitar:</h2>
+        <div class="insumo__toggle-group">
+          <h3 class="insumo__toggle-label">Estado:</h3>
+          <button class="insumo__toggle-button"></button>
+        </div>
+      </div>
 
-                <div class="datos-insumos"><!--datos-insumos-->
-                    <label for="">ID Insumo</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="876d78" required>
-                    <label for="">Unidad De Medida</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Grano"required>
-                    <label for="">Valor Total</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="$10000"required>				
-                    <label for="">Valor Unitario</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="$100"required>
-
-                </div><!--datos-insumos-->
-            </section><!--datos-->
-            <div class="box-button-habi">
-                <h2 class="tittle-hab">Habilitar/Deshabilitar:</h2>
-                    <div class="box-button-hab">
-                        <h3 class="text-button">Estado:</h3>
-                        <button class="button-hab"></button>    
-                    </div>
-            </div>
-
-            <footer class="end"><!--end-->
-                <a class="end-button" href="/SGL CODE/sgal insumos/Html/4-actualizar-insumos.html">Modificar</a>
-                <a class="end-button" href="/SGL CODE/sgal main (sanchez)/index_main.html">Cancelar</a>
-            </footer><!--end-->
-        </main> <!---registro-->
-    </div>
+      <footer class="insumo__footer">
+        <a class="insumo__footer-button" href="/SGL CODE/sgal insumos/Html/4-actualizar-insumos.html">Modificar</a>
+        <a class="insumo__footer-button" href="/SGL CODE/sgal main (sanchez)/index_main.html">Cancelar</a>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

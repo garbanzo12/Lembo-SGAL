@@ -177,7 +177,7 @@ body {
   
   /* ************************************************ */
   
-.box1 {
+.visualizarCultivos {
     width: 20%;
     height: auto;
     background: linear-gradient(
@@ -192,7 +192,7 @@ body {
     align-items: center;
 }
   
-.contenedor-gif {
+.visualizarCultivos__logos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +201,7 @@ body {
     height: 100vh;
 }
   
-.subcontenedor-gif {
+.visualizarCultivos__logos-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +214,7 @@ body {
     margin-bottom: 5rem;
     /* min-width: 16rem; */
 }
-.image-movile {
+.visualizarCultivos__logo--movile {
     width: 35rem; /* vector httml para otros = */
     height: 70rem; /* vector httml para otros = */
     /* imagen cargada detras del celular */
@@ -238,7 +238,7 @@ img {
   
   /* ************************************************ */
   
-.box2 {
+.visualizarCultivos__contenido {
     /* colores */
     background-color: var(--secundary-1-950);
   
@@ -255,7 +255,7 @@ img {
     align-items: center;
 }
   
-.container-box {
+.visualizarCultivos__form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,7 +278,7 @@ img {
     margin: 0;
     padding: 0;
 }
-.container-box h3 {
+.visualizarCultivos__form-container h3 {
     /* posicion */
     display: flex;
     margin: 0 auto;
@@ -304,7 +304,7 @@ img {
  /* ******************************************************* */
  /* ******* aqui se controla las 2 columnas blancas ******* */
 
-.container-form {
+.visualizarCultivos__form {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -325,14 +325,14 @@ img {
     /* ******************************* */
 }
   
-.container-box img {
+.visualizarCultivos__form-container img {
     width: 16rem;
     height: 12rem;
     margin: 0.1rem;
     border-radius: 10rem;
 }
   
-.container-form label {                
+.visualizarCultivos__form label {                
     display: flex;
     font-size: 1.6rem;
     font-weight: 200;
@@ -340,27 +340,27 @@ img {
 }
   
   /* sanches ni stefania NO BORRAR NINGUNO DE ESTOS PORQUE SON TODOS LOS INPUTS SEGUN SE PONGA HTML */
-  .container-box input[type="text"],
-  .container-box input[type="password"],
-  .container-box input[type="email"],
-  .container-box input[type="number"],
-  .container-box input[type="tel"],
-  .container-box input[type="url"],
-  .container-box input[type="search"],
-  .container-box input[type="date"],
-  .container-box input[type="time"],
-  .container-box input[type="datetime-local"],
-  .container-box input[type="month"],
-  .container-box input[type="week"],
-  .container-box input[type="color"],
-  .container-box input[type="file"],
-  .container-box input[type="checkbox"],
-  .container-box input[type="radio"],
-  .container-box input[type="range"],
-  .container-box input[type="submit"],
-  .container-box input[type="reset"],
-  .container-box input[type="button"],
-  .container-box input[type="hidden"] {
+  .visualizarCultivos__form-container input[type="text"],
+  .visualizarCultivos__form-container input[type="password"],
+  .visualizarCultivos__form-container input[type="email"],
+  .visualizarCultivos__form-container input[type="number"],
+  .visualizarCultivos__form-container input[type="tel"],
+  .visualizarCultivos__form-container input[type="url"],
+  .visualizarCultivos__form-container input[type="search"],
+  .visualizarCultivos__form-container input[type="date"],
+  .visualizarCultivos__form-container input[type="time"],
+  .visualizarCultivos__form-container input[type="datetime-local"],
+  .visualizarCultivos__form-container input[type="month"],
+  .visualizarCultivos__form-container input[type="week"],
+  .visualizarCultivos__form-container input[type="color"],
+  .visualizarCultivos__form-container input[type="file"],
+  .visualizarCultivos__form-container input[type="checkbox"],
+  .visualizarCultivos__form-container input[type="radio"],
+  .visualizarCultivos__form-container input[type="range"],
+  .visualizarCultivos__form-container input[type="submit"],
+  .visualizarCultivos__form-container input[type="reset"],
+  .visualizarCultivos__form-container input[type="button"],
+  .visualizarCultivos__form-container input[type="hidden"] {
     font-size: 1.6rem;
     color: var(--gray-700);
     width: 32rem;
@@ -373,7 +373,7 @@ img {
 }
   
   /* ES PARA LOS INPUTS VACIOS PARA QUE SE AJUSTE A UN LADO CUANDO SON IMPARES */
-.container-box .vacio {
+.visualizarCultivos__form-container .vacio {
     font-size: 1.6rem;
     color: var(--white);
     width: 32rem;
@@ -384,7 +384,7 @@ img {
     box-sizing: border-box;
     background-color: var(--white) !important;
 }
-.container-box .label-vacio {
+.visualizarCultivos__form-container .label-vacio {
     color: var(--white);
 }
   
@@ -393,7 +393,7 @@ label {
     padding: 0rem 2.4rem;
 }
   
-.rect-load-picture{
+.visualizarCultivos__imagen{
     display: flex;
     justify-content: center;
 }
@@ -402,7 +402,7 @@ label {
   
   /* cñses para cargar imagen del sensor es un div ojo tiene un titulo en h4 */
   /* formato de image 16 : 9 osea   21rem x 12 rem  */
-.rect-load-picture {
+.visualizarCultivos__imagen {
     background-color: var(--white);
     width: 21rem;
     height: 12rem;
@@ -414,7 +414,7 @@ label {
     /*  segun el google desing el espesor de borde es de 1px o 2px maximo pero esto no es una selda es un cuadro de imagen */
 }
   
-.container-box .button {
+.visualizarCultivos__form-container .visualizarCultivos__boton {
     background-color: var(--secundary-1-800);
     width: 15rem;
     color: var(--white);
@@ -429,11 +429,11 @@ label {
     margin: 2rem;
 }
   
-.container-box .h4 {
+.visualizarCultivos__form-container .h4 {
     font-weight: bold;
 }
   
-.container-box a {
+.visualizarCultivos__form-container a {
     color: var(--white);
     text-decoration: none;
 }
@@ -477,7 +477,7 @@ label {
     color: #00304d; /* Ajusta el color según sea necesario */
 }
   
-.svg-container {
+.visualizarCultivos__volver {
     background-color: var(--white);
     display: flex;
     width: 5.2rem;
@@ -512,18 +512,18 @@ label {
       color: var(--primary-800);
       text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
     }
-    .header2 {
+    .visualizarCultivos__header {
       display: none;
     }
   
-    .box1 {
+    .visualizarCultivos {
       display: none;
     }
   
-    .box2 {
+    .visualizarCultivos__header {
       width: 100%;
     }
-    .container-box {
+    .visualizarCultivos__form-container {
       display: flex;
       position: fixed;
       top: 10%;
@@ -531,7 +531,7 @@ label {
       align-items: center;
     }
     
-    .container-form {
+    .visualizarCultivos__form {
       display: flex;
       flex-direction: column; /* Organiza en una sola columna */
       align-items: center; /* Centra los elementos en la columna */
@@ -539,19 +539,19 @@ label {
   
       gap: 0.5rem;
     }
-    .container-form .dato {
+    .visualizarCultivos__form .visualizarCultivos__input-container {
       width: 100%; /* Asegura que cada input y label ocupen todo el ancho del contenedor */
       margin-bottom: 1rem; /* Añade espacio entre cada input */
     }
-    .container-form label,
-    .container-form input {
+    .visualizarCultivos__form label,
+    .visualizarCultivos__form input {
       width: 100%; /* Asegura que los labels y inputs ocupen todo el ancho disponible */
     }
   
-    .container-box .vacio {
+    .visualizarCultivos__form-container .vacio {
       display: none;
     }
-    .container-box .label-vacio {
+    .visualizarCultivos__form-container .label-vacio {
       display: none;
     }
   

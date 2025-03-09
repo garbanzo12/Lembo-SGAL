@@ -19,21 +19,21 @@
 
     <link rel="stylesheet" href="../Css/2-buscar-insumo.css" />
 
-    <title>VISUALIZAR Cultivos</title>
+    <title>Visualizar Cultivo</title>
   </head>
   <body>
-    <header class="header1"><span>SENA SEDE LEMBO</span></header>
-    <div class="box1">
-      <section class="contenedor-gif">
-        <div class="subcontenedor-gif">
-          <div class="ico-sena">
+    <!-- <header class="header1"><span>SENA SEDE LEMBO</span></header> -->
+    <div class="visualizarCultivos">
+      <section class="visualizarCultivos__logos">
+        <div class="visualizarCultivos__logos-container">
+          <div class="visualizarCultivos__logo visualizarCultivos__logo--sena">
             <img
             src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-png-2022.png"
             alt="Imagen de Logo Sena"
             />
           </div>
 
-          <div class="image-movile">
+          <div class="visualizarCultivos__logo--movile">
             <svg width="350" height="700" viewBox="0 0 236 484" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M203.718 10H32C19.8497 10 10 19.8497 10 32V451.546C10 463.697 19.8497 473.546 32 473.546H203.718C215.868 473.546 225.718 463.697 225.718 451.546V32C225.718 19.8497 215.868 10 203.718 10ZM32 0C14.3269 0 0 14.3269 0 32V451.546C0 469.22 14.3269 483.546 32 483.546H203.718C221.391 483.546 235.718 469.22 235.718 451.546V32C235.718 14.3269 221.391 0 203.718 0H32Z" fill="#5D7B8E"/>
               <path d="M63 9.50586C63 16.1333 68.3726 21.5059 75 21.5059H161C167.627 21.5059 173 16.1333 173 9.50586H63Z" fill="#5D7B8E"/>
@@ -54,11 +54,11 @@
     </div>
     <!-- fin box1 -->
 
-    <main class="box2">
-      <header class="header2"><span>SENA SEDE LEMBO</span></header>
-      <fieldset class="container-box">
+    <main class="visualizarCultivos__contenido">
+      <header class="visualizarCultivos__header"><span>SENA SEDE LEMBO</span></header>
+      <fieldset class="visualizarCultivos__form-container">
         <h3>VISUALIZAR CULTIVO</h3>
-        <form class="container-form">
+        <form class="visualizarCultivos__form">
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI  -->
 
           <!-- <img
@@ -71,7 +71,7 @@
 
           <!-- SE DEBE DESCOMENTAR SI SE NECESITA LA IMAGEN HAY CASOS QUE SI -->
 
-          <div class="dato">
+          <div class="visualizarCultivos__input-container">
             <label class="label" for="">ID CULTIVO</label>
             <input placeholder="Ingrese el ID del cultivo" type="number" />
           </div>
@@ -88,16 +88,16 @@
           <!-- esta es la imagen o espacio donde podemos cargar la imagen del sensor, por ahora es un div con estilos -->
           <div>
             <h4>VISUALIZAR CULTIVO</h4>
-            <div class="rect-load-picture">
+            <div class="visualizarCultivos__imagen">
               <div style="width:50%;height:0;padding-bottom:100%;position:relative; right: 27%;"><iframe src="https://giphy.com/embed/emySgWo0iBKWqni1wR" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
             </div>
           </div>
 
           <!-- ESPACIO PARA MAS INPUTS  -->
         </form>
-        <div class="botones">
-          <button class="button"><a href="/SGL CODE/sgal main (sanchez)/index_main.html">CANCELAR</a></button>
-          <button class="button"><a href="3-visualizar-cultivo.html">BUSCAR</a></button>
+        <div class="visualizarCultivos__botones">
+          <button class="visualizarCultivos__boton visualizarCultivos__boton--cancelar"><a href="/SGL CODE/sgal main (sanchez)/index_main.html">CANCELAR</a></button>
+          <button class="visualizarCultivos__boton visualizarCultivos__boton--buscar"><a href="3-visualizar-cultivo.html">BUSCAR</a></button>
     
 
         </div>
@@ -108,7 +108,7 @@
       </fieldset>
       <!-- fin de form -->
 
-      <div class="svg-container">
+      <div class="visualizarCultivos__volver">
         <a href="">
         <svg
           width="48"

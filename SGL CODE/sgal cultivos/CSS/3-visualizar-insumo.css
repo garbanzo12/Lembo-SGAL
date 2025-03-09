@@ -122,7 +122,7 @@ body{
   
   /* ************************************************ */
   
-.box1 {
+.visualizarCultivos {
     width: 29%;
     height: auto;
     background: linear-gradient(
@@ -137,7 +137,7 @@ body{
     align-items: center;
 }
   
-.contenedor-gif {
+.visualizarCultivos__logos {
     display: flex;
     /* justify-content: center;
     align-items: center; */
@@ -146,14 +146,14 @@ body{
     height: 100vh;
 }
   
-.subcontenedor-gif {
+.visualizarCultivos__logos-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* position: relative; */
-    gap: 2rem;
-    height: 100vh;
+    gap: 1rem;
+    height: 90vh;
     justify-content: space-between;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -181,13 +181,13 @@ img {
     width: 10rem;
 }
 
-.box2{
+.visualizarCultivos__contenido{
     display: flex;
     flex-direction: column;
 }
 
 /* Titulo */
-.tittle{
+.visualizarCultivos__contenido__tittle{
     text-align: center;
     justify-content: center;
     font-size: 3rem;
@@ -196,14 +196,14 @@ img {
 }
 
 /* Contenedor principal */
-.registro{
+.visualizarCultivos__contenido{
     background-color: var(--white);
     border-radius: 1rem;
     margin-top: 3%;
     width: 80vh;
     height: 85%;
 }
-.subtittle{
+.{
     text-align: center;
     background-color: var(--gray-200);
     border-top-right-radius: 1rem;
@@ -213,14 +213,14 @@ img {
 }
 
 /* Contenedor secundario */
-.datos{
+.visualizarCultivos__datos{
     display: flex;
     flex-direction: row;
     margin-top: 3vh;
 }
 
 /* Primer contenedor del contenedor secundario */
-.datos-generales{
+.visualizarCultivos__datos-generales{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -230,7 +230,7 @@ label{
     font-size: 1.5rem;
     padding: 1.6rem;
 }
-.opciones{
+.visualizarCultivos__input{
     text-decoration: none;
     width: 80%;
     margin-bottom: 1vh;
@@ -249,13 +249,13 @@ label{
     margin-left: 2vh;
 }
 /* Fotter */
-.end{
+.visualizarCultivos__footer{
     display: flex;
     text-align: center;
     justify-content: center;
     gap: 10vh;
 }
-.end-button{
+.visualizarCultivos__boton--modificar{
     text-decoration: none;
     margin-top: 2vh;
     margin-bottom: 1vh; 
@@ -300,17 +300,17 @@ label{
 /* Estilos adicionales para la vista de visualizar */
 
 /* Contenedor de deshabilitar/Habilitar */
-.box-button-habi{
+.visualizarCultivos__habilitar-contenedor{
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 }
-.tittle-hab{
+.visualizarCultivos__habilitar-titulo{
     margin-bottom: 0%;
     padding: 1.6rem;
 }
-.box-button-hab{
+.visualizarCultivos__habilitar-contenedor{
     display: flex;
     flex-direction: row;
     gap: 3%;
@@ -318,7 +318,7 @@ label{
     justify-content: center;
 }
 /* Boton de Habilitar */
-.button-hab{
+.visualizarCultivos__habilitar-boton{
     margin-top: 1.5vh;
     background-color: var(--primary-800);
     border-radius: 2rem;

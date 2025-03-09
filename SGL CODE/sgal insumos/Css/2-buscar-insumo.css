@@ -1,12 +1,11 @@
 :root {
-  /* color primario */
-  /* colores principales */
+  /* Colores principales */
   --primary-950: #39a900;
   --primary-400: #303030;
   --white: #fff;
   --black: #000;
-
-  /* colores gris */
+  
+  /* Colores gris */
   --gray-950: #101010;
   --gray-900: #262626;
   --gray-850: #3b3b3b;
@@ -18,10 +17,8 @@
   --gray-200: #bebebe;
   --gray-100: #d4d4d4;
   --gray-050: #e9e9e9;
-
-  /* colores ajustados en ia */
-
-  /* Color primario */
+  
+  /* Colores ajustados en IA */
   --primary-50: #edf7e8;
   --primary-100: #dbefb9;
   --primary-200: #c9e8b9;
@@ -33,9 +30,8 @@
   --primary-800: #5dd12e;
   --primary-900: #4bbd17;
   --primary-950: #39a900;
-
+  
   /* Colores secundarios */
-  /* Secundario 1 */
   --secundary-1-50: #e8ecef;
   --secundary-1-100: #d1dbdf;
   --secundary-1-200: #b9c7ce;
@@ -47,8 +43,7 @@
   --secundary-1-800: #2e566d;
   --secundary-1-900: #17435d;
   --secundary-1-950: #00304d;
-
-  /* Secundario 2 */
+  
   --secundary-2-50: #f2ebf3;
   --secundary-2-100: #e5d8e7;
   --secundary-2-200: #d8c4db;
@@ -60,8 +55,7 @@
   --secundary-2-800: #8b4e92;
   --secundary-2-900: #7e3b86;
   --secundary-2-950: #71277a;
-
-  /* Secundario 3 */
+  
   --secundary-3-50: #effdfe;
   --secundary-3-100: #dffafe;
   --secundary-3-200: #cfd0fd;
@@ -73,8 +67,7 @@
   --secundary-3-800: #70eafa;
   --secundary-3-900: #60e7fa;
   --secundary-3-950: #50e5f9;
-
-  /* Secundario 4 */
+  
   --secundary-4-50: #fff6e8;
   --secundary-4-100: #fff4d1;
   --secundary-4-200: #feefb9;
@@ -86,7 +79,7 @@
   --secundary-4-800: #fdce2e;
   --secundary-4-900: #fdc817;
   --secundary-4-950: #fdc300;
-
+  
   /* Colores neutros */
   --blanco: #ffffff;
   --negro: #000000;
@@ -95,117 +88,96 @@
   --gray-550: #949494;
   --gray-350: #c5c5c5;
   --gray-150: #f6f6f6;
-
-  /* fuentes  */
-  --font--main: Helvetica, Arial, sans-serif; /* TEXTOS Y CONTENIDO*/
-  --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES */
-
+  
+  /* Fuentes */
+  --font--main: Helvetica, Arial, sans-serif;
+  --font--logo: Helvetica, Arial, sans-serif;
 }
-/*Hack para usar los rem de manera facil */
-/*globals*/
-html{
+
+html {
+  margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-body{
+body {
+  font-size: 16px;
+  font-family: var(--font--main);
+  background-color: var(--secundary-1-950);
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  background-color: var(--secundary-1-950);
-  /* align-content: center;
-  justify-content: center; */
   gap: 50vh;
 }
 
+/* ****************************************** */
+/* Bloque: insumo (Buscar Insumos)            */
+/* ****************************************** */
 
-/* ************************************************ */
-
-.box1 {
+/* Contenedor de medios (antes .box1) */
+.insumo__media {
   width: 20%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    var(--secundary-1-600),
-    var(--gray-100)
-  );
-  /* display */
+  background: linear-gradient(to bottom, var(--secundary-1-600), var(--gray-100));
   display: flex;
   flex-direction: column;
-  /* alinear */
   align-items: center;
 }
 
-.contenedor-gif {
+/* Galería (antes contenedor-gif) */
+.insumo__gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* tamaños */
   width: 100%;
-  height: 100vh;
+  height: 98.3vh;
+}
+.insumo__gallery-inner {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 98.3vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-.subcontenedor-gif {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* position: relative; */
-  gap: 2rem;
-  height: 100vh;
-  justify-content: space-between;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  /* min-width: 16rem; */
+/* Logos (antes ico-sena) */
+.insumo__logo {
+  /* Propiedades heredadas para la imagen */
 }
-/* .image-movile {
-  width: 35rem; /* vector httml para otros = */
-  /* height: 80rem; vector httml para otros = */
-  /* imagen cargada detras del celular */
-  /* background-image: url("../img/fondo-laptop.jpg"); */
-  /* ajuste a la imagen para que se ajuste detreas de vector */
-  /* border-radius: 4rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-/* } */
-/* .image-movile svg{
-  display: flex;
-  width: 35rem;/* para que no se ve el borde sobresalir 
-  height: 90vh;
-  justify-content: center;
-  box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
-  border-radius: 4rem;  
-}  */
 img {
   width: 10rem;
 }
 
-.box2{
+/* Contenedor del formulario (antes .box2) */
+.insumo__form-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 
-/* Titulo */
-.tittle{
+/* Título (antes .tittle) */
+.insumo__title {
   text-align: center;
   justify-content: center;
   font-size: 3rem;
   color: var(--primary-900);
-  text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800)
+  text-shadow: 0 0 2px var(--primary-800), 0 0 2px var(--primary-800);
 }
 
-/* Contenedor principal */
-.registro{
+/* Formulario (antes .registro) */
+.insumo__form {
   background-color: var(--white);
   border-radius: 1rem;
   margin-top: 3%;
   width: 50vh;
-  height: 39%;
+  height: 30vh;
 }
-.subtittle{
+.insumo__form-subtitle {
   text-align: center;
   font-size: 2rem;
   background-color: var(--gray-200);
@@ -215,30 +187,22 @@ img {
   padding: 1.6rem;
 }
 
-/* Contenedor secundario */
-.datos{
+/* Sección de datos (antes .datos) */
+.insumo__data {
   display: flex;
   flex-direction: row;
   margin-top: 3vh;
   padding: 2rem;
 }
-
-/* Primer contenedor del contenedor secundario */
-.datos-generales{
+.insumo__data-general {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-left: 2vh;
 }
-label{
-  font-size: 1.8rem;
-  padding: 0 1.6rem;
-}
-.opciones{
+.insumo__input {
   text-decoration: none;
   width: 90%;
-  font-size: 1.6rem;
-  font-weight: 500;
   margin-bottom: 1vh;
   border-radius: 3rem;
   height: 2.4rem;
@@ -247,20 +211,19 @@ label{
   padding: 1.6rem 2.4rem;
 }
 
-/* Fotter */
-.end{
+/* Footer (antes .end) */
+.insumo__footer {
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 2vh;
 }
-.end-button{
+.insumo__footer-button {
   text-decoration: none;
   background-color: var(--secundary-1-800);
   width: 15rem;
   color: var(--white);
-  padding: 1rem 3rem 1rem 3rem;
-  /* paddin segun google desing 1.6rem 2.4rem 1.6rem 2.4rem los cambie segun FIGMA */
+  padding: 1rem 3rem;
   border: none;
   border-radius: 2.4rem;
   cursor: pointer;
@@ -270,15 +233,27 @@ label{
   margin: 2rem;
 }
 
-.pie-pag, a{  
+/* Footer adicional (antes .pie-pag) */
+.insumo__footer-note,
+.insumo__footer-note a {  
   background-color: var(--gray-100);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3.6rem;
-  border-radius: 0rem 0rem 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--gray-600);
   text-decoration: none;    
+}
+
+/* Media Query */
+@media (min-width: 480px) {
+  .insumo__media {
+    /* Ajustes responsivos si son necesarios */
+  }
+  .insumo__form {
+    /* Ajustes responsivos si son necesarios */
+  }
 }
