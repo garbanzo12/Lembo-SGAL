@@ -97,14 +97,17 @@
   --gray-150: #f6f6f6;
 
   /* fuentes  */
-  --font--main: Helvetica, Arial, sans-serif; /* TEXTOS Y CONTENIDO*/
-  --font--logo: Helvetica, Arial, sans-serif; /* LOGOS Y ARTES */
+  --font--main: Helvetica, Arial, sans-serif;
+  /* TEXTOS Y CONTENIDO*/
+  --font--logo: Helvetica, Arial, sans-serif;
+  /* LOGOS Y ARTES */
 
   /* ********************************* */
   /* Botones primarios */
 
   /* Botones secundarios */
 }
+
 html {
   margin: 0;
   box-sizing: border-box;
@@ -117,10 +120,7 @@ html {
 ::after {
   box-sizing: inherit;
 }
-body {
-  font-size: 16px;
-  font-family: var(--font--main);
-}
+
 /* ******************** */
 /* ******************** */
 /* codigo de pagina web */
@@ -128,42 +128,23 @@ body {
 /* ******************** */
 
 body {
-  /* colores */
+  font-size: 16px;
+  font-family: var(--font--main);
+  font-size: 16px;
   background-color: var(--white);
-
-  /* tamaños */
   width: 100%;
   height: 100%;
-  position: fixed; /* oara que use y aplique el 100% */
-  top: 0rem;
-  left: 0rem;
-
-  /* posicionamiento */
+  position: fixed;
   display: flex;
-  flex-direction: row;
-
-  /* centrados */
   margin: 0 auto;
 }
-.header1 {
-  display: none; /* se apago un titulo solo ve en media querry */
-}
-.header2 {
-  /* display: flex;
-  position: absolute;
-  top: 4%;
-  width: 100%;
-  justify-content: center;
-  font-family: var(--font--main);
-  font-weight: bold;
-  font-size: 3.2rem;
-  color: var(--primary-800);
-  text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00; */
-  /* Sombra verde */
 
+/* ****************  Titulo principal  ****************   */
+
+.header {
   position: absolute;
-  top: 5%;
-  left: 60%;
+  top: 2%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
@@ -175,86 +156,198 @@ body {
   text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
 }
 
-/* ************************************************ */
+/* *******************   MEDIA QUERY TITULO PRINCIPAL ****************** */
 
-.box1 {
+@media (min-width: 380px) {
+  .header {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: absolute;
+    top: 6%;
+    left: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    position: absolute;
+    top: 8%;
+    left: 60%;
+  }
+}
+
+/* BEM */
+/* ***************** ASIDE IZQUIDERO ***************** */
+
+.cardLeft {
   width: 20%;
-  height: auto;
-  background: linear-gradient(
-    to bottom,
-    var(--secundary-1-600),
-    var(--gray-100)
-  );
-  /* display */
-  display: flex;
-  flex-direction: column;
-  /* alinear */
-  align-items: center;
-}
-
-.contenedor-gif {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* tamaños */
-  width: 100%;
   height: 100vh;
-}
-
-.subcontenedor-gif {
+  background: linear-gradient(to bottom,
+      var(--secundary-1-600),
+      var(--gray-100));
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.cardLeft__container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  margin: auto;
   gap: 2rem;
-  height: 100vh;
-  justify-content: space-between;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  /* min-width: 16rem; */
 }
-.image-movile {
-  width: 35rem; /* vector httml para otros = */
-  height: 70rem; /* vector httml para otros = */
-  background-image: url("link imagen plantilla img/CUADROS");
+
+.cardLeft__logoSena {
+  width: 10rem;
+}
+
+.cardLeft__imageMovil {
+  width: 20rem;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-img {
+
+.cardLeft__logoSgal {
   width: 10rem;
-  
 }
 
-/* ************************************************ */
+/* *****************  MEDIA QUERY LEFT****************** */
 
-.box2 {
+@media (min-width: 380px) {
+  .cardLeft {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardLeft {
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    height: auto;
+  }
+
+  .cardLeft__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardLeft__imageMovil {
+    display: none;
+  }
+
+  .cardLeft__logoSena {
+    height: 7rem;
+    width: 7rem;
+    margin-bottom: 70rem;
+    /*  para separarlo por que no hay imagen de celular */
+  }
+
+  .cardLeft__logoSgal {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 2rem;
+    /*  para separarlo por que no hay imagen de celular */
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+  }
+
+  .cardLeft__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cardLeft__imageMovil {
+    display: flex;
+    width: 22rem;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .cardLeft__logoSena {
+    height: 9rem;
+    width: 9rem;
+    margin: 0rem;
+  }
+
+  .cardLeft__logoSgal {
+    height: 9rem;
+    width: 9rem;
+
+  }
+}
+
+@media (min-width: 1920px) {
+  .cardLeft__container {
+    gap: 5rem;
+  }
+
+  .cardLeft__imageMovil {
+    display: flex;
+    width: 30rem;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .cardLeft__logoSena {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .cardLeft__logoSgal {
+    height: 10rem;
+    width: 10rem;
+
+  }
+}
+
+@media (min-width: 2560px) {
+  .cardLeft__container {
+    gap: 4rem;
+  }
+}
+
+/* BEM */
+/* ***************** MAIN RIGHT ***************** */
+
+.cardRight {
   /* colores */
   background-color: var(--secundary-1-950);
-
-  /* tamanos */
   width: 80%;
-  height: auto;
-
-  /* propiedades  si se activa display flex / desactiva aling content*/
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-
-  /* centrados */
   justify-content: center;
   align-items: center;
 }
 
-.container-box {
+.cardRight__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  /* height: 100vh; */
-
-  /* colores */
   background-color: var(--white);
   border-radius: 1rem;
   /* tamaños */
@@ -265,99 +358,80 @@ img {
   box-shadow: 0 4px 8px var(--black);
   /* posicion */
   position: fixed;
-  top: 20%;
-  margin: 0;
+  top: 5%;
+  margin: 3rem;
   padding: 0;
 }
-.container-box h3 {
+
+.cardRight__container h3 {
   /* posicion */
   display: flex;
   margin: 0 auto;
   /* centrado */
   justify-content: center;
   align-items: center;
-
   /* colores */
   background-color: var(--gray-100);
-
   /* tamaños */
-  border-radius: 1rem 1rem 0rem 0rem; /* bordes en sentido reloj. */
+  border-radius: 1rem 1rem 0rem 0rem;
+  /* bordes en sentido reloj. */
   height: 5rem;
   width: 100%;
-
   /* texto */
   color: var(--secundary-1-950);
   font-weight: bolder;
-
-  /* posicionamiento */
 }
-/* ******************************************************* */
-/* ******* aqui se controla las 2 columnas blancas ******* */
 
-.container-form {
+.cardRight__form {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  /* *********OPCION 01*********** */
-  /* 40 REM o 80 REM */
-  /* width: 40rem;   
-  gap: 2rem;  */
-  /* 2 REM o 5 REM para 80 REM ARRIBA */
-
-  /* *********OPCION 02*********** */
-  /* 40 REM o 80 REM */
-  width: 80rem;
-  gap: 2rem;
-  /* 2 REM o 5 REM para 80 REM ARRIBA */
-
-  /* ******************************* */
 }
 
-.container-box img {
+.cardRight__container img {
   width: 16rem;
   height: 12rem;
   margin: 0.1rem;
   border-radius: 10rem;
 }
 
-.container-form label {
+.cardRight__form label {
   display: flex;
   font-size: 1.6rem;
   font-weight: 200;
   color: var(--black);
 }
 
-/* sanches ni stefania NO BORRAR NINGUNO DE ESTOS PORQUE SON TODOS LOS INPUTS SEGUN SE PONGA HTML */
-.container-box input[type="text"],
-.container-box input[type="password"],
-.container-box input[type="email"],
-.container-box input[type="number"],
-.container-box input[type="tel"],
-.container-box input[type="url"],
-.container-box input[type="search"],
-.container-box input[type="date"],
-.container-box input[type="time"],
-.container-box input[type="datetime-local"],
-.container-box input[type="month"],
-.container-box input[type="week"],
-.container-box input[type="color"],
-.container-box input[type="file"],
-.container-box input[type="checkbox"],
-.container-box input[type="radio"],
-.container-box input[type="range"],
-.container-box input[type="submit"],
-.container-box input[type="reset"],
-.container-box input[type="button"],
-.container-box input[type="hidden"] {
+.cardRight__container input[type="text"],
+.cardRight__container input[type="password"],
+.cardRight__container input[type="email"],
+.cardRight__container input[type="number"],
+.cardRight__container input[type="tel"],
+.cardRight__container input[type="url"],
+.cardRight__container input[type="search"],
+.cardRight__container input[type="date"],
+.cardRight__container input[type="time"],
+.cardRight__container input[type="datetime-local"],
+.cardRight__container input[type="month"],
+.cardRight__container input[type="week"],
+.cardRight__container input[type="color"],
+.cardRight__container input[type="file"],
+.cardRight__container input[type="checkbox"],
+.cardRight__container input[type="radio"],
+.cardRight__container input[type="range"],
+.cardRight__container input[type="submit"],
+.cardRight__container input[type="reset"],
+.cardRight__container input[type="button"],
+.cardRight__container input[type="hidden"] {
   font-size: 1.6rem;
   color: var(--gray-700);
   width: 32rem;
-  padding: 1.6rem 2.4rem; /* TDOSOS LOS INPUTS DE 52 PX DE ALTOS SEGUN CORRECION GOOGLE DESING GUIDE */
+  padding: 1.6rem 2.4rem;
   margin: 0em;
   border: 0.1rem solid var(--blanco);
-  border-radius: 5rem; /* campo circular */
+  border-radius: 5rem;
+  /* campo circular */
   box-sizing: border-box;
   background-color: var(--gray-050);
 }
@@ -366,7 +440,8 @@ label {
   margin: 0 auto;
   padding: 0rem 2.4rem;
 }
-.container-box .button {
+
+.button {
   background-color: var(--secundary-1-800);
   width: 15rem;
   color: var(--white);
@@ -379,10 +454,12 @@ label {
   font-weight: 500;
   margin: 2rem;
 }
-.container-box a {
+
+.cardRight__container a {
   color: var(--white);
   text-decoration: none;
 }
+
 .login-container a {
   display: block;
   margin-top: 10px;
@@ -395,6 +472,7 @@ label {
   bottom: 0%;
   width: 100%;
 }
+
 .baseform a {
   display: flex;
 
@@ -415,85 +493,79 @@ label {
   text-decoration: none;
 }
 
-.image-movile {
-  width: 35rem; /* vector httml para otros = */
-  height: 70rem; /* vector httml para otros = */
-  /* imagen cargada detras del celular */
-  background-image: url("../img/fondo-laptop.jpg");
-  /* ajuste a la imagen para que se ajuste detreas de vector */
-  border-radius: 4rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.image-movile svg{
-  display: flex;
-  width: 35rem;/* para que no se ve el borde sobresalir */
-  justify-content: center;
-  box-shadow: inset 0 0 0 1rem var(--secundary-1-600);
-  border-radius: 4rem;
-  
- 
-}
-  
-}
-@media (max-width: 768px) {
-  body {
-    height: auto; /* Ajusta la altura del body automáticamente */
-    min-height: 200vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana gráfica */
-    overflow-y: auto; 
+/* *****************  MEDIA QUERY RIGHT****************** */
+
+@media (min-width: 380px) {
+  .cardRight {
+    min-width: 100%;
   }
-  .header1 {
-    position: absolute;
-    top: 2.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+
+  .cardRight__container {
     display: flex;
-    justify-content: center;
-    font-family: var(--font--main);
-    font-weight: bold;
-    font-size: 3.2rem;
-    color: var(--primary-800);
-    text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
-  }
-  .header2 {
-    display: none;
-    
-  }
-
-  .box1 {
-    display: none; 
-  }
-
-  .box2 {
-    width: 100%;
-  
-  }
-  .container-box {
-     display: flex;
-    position: fixed;
-    top: 10%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 80%;
+    height: auto;
   }
-  h3 {
-    /* width: 40rem; */
-  }
-  .container-form {
+}
+
+@media (min-width: 768px) {
+  .cardRight {
     display: flex;
-    flex-direction: column; /* Organiza en una sola columna */
-    align-items: center; /* Centra los elementos en la columna */
-    width: 40rem;
-  
-    gap: 0.5rem;
+    flex-direction: column;
+    min-width: 80%;
+    height: auto;
   }
-  .container-form .dato {
-    width: 100%; /* Asegura que cada input y label ocupen todo el ancho del contenedor */
-    margin-bottom: 1rem; /* Añade espacio entre cada input */
+
+  .cardRight__container {
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+    max-height: auto;
+    
+    position: fixed;
+    top: 15%;
+    margin: 2rem;
   }
-  .container-form label,
-  .container-form input {
-    width: 100%; /* Asegura que los labels y inputs ocupen todo el ancho disponible */
+
+  .dato {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .cardRight {
+    min-width: 80%;
+  }
+
+  .cardRight__container {
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 1920px) {
+  .cardRight__container {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  .cardRight__container {
+    min-width: 40%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
   }
 }
