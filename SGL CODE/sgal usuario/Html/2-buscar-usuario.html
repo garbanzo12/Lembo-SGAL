@@ -67,20 +67,20 @@
 
           <div class="ciclo__data-general">
             <label class="label" for="">Id Usuario</label>
-            <input class="" placeholder="Id del usuario" type="tel" />
+            <input class="ciclo__ID" placeholder="Id del usuario" type="tel" />
           </div>
 
          <!-- ESPACIO PARA MAS INPUTS  -->
           </div>
-
+          <div class="botones">
+            <button class="button">
+              BUSCAR
+            </button>
+            <!-- <button class="button"><a href="">CANCELAR</a></button> -->
+          </div>
         </form>
 
-        <div class="botones">
-          <button class="button">
-            <a href="../Html/3-visualizar-usuario.html">BUSCAR</a>
-          </button>
-          <!-- <button class="button"><a href="">CANCELAR</a></button> -->
-        </div>
+
 
         <div class="baseform">
           <a href="#"> </a>
@@ -91,5 +91,23 @@
     </main>
 
     <!-- fin box 2 -->
+
+
+
+    <script>
+      fetch("/SGL CODE/Estandarizacion/config.json")
+          .then(result => result.json())
+          .then(data =>{
+              //Crea un elemento sript
+              const script = document.createElement("script")
+              //Asignamos la ruta del srcipt
+              script.src = data.validar2; // ⬅️ cambiar nombre del json aqui
+              //Indica que el sript solo se ejecuta cuando el html solo se haya cargado
+              script.defer = true;
+              //Ponemos el script en el head para que entienda donde va
+              document.head.appendChild(script);
+          })
+          .catch(error => console.log('Error al cargar script'))
+  </script>
 </body>
 </html>

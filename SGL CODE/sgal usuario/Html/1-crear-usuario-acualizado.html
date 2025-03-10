@@ -36,7 +36,7 @@
     
     </header>
 
-    <!-- ******************  inicio box1 ****************  -->
+    <!-- ******************  inicio cicloLeft ****************  -->
 
     <aside class="cicloLeft">
       <section class="cardLeft__container">
@@ -59,7 +59,7 @@
         />
       </section>
     </aside>
-    <!-- ******************  fin box1 ****************  -->
+    <!-- ******************  fin cicloLeft ****************  -->
 
     <main class="cicloRight">
       <fieldset class="cardRight__container">
@@ -69,12 +69,12 @@
 
           <div class="ciclo__data-general">
             <label class="label" for="">Tipo de Usuario</label>
-            <input class="" placeholder="Tipo de usuario" type="text" />
+            <input class="ciclo__user" placeholder="Tipo de usuario" type="text" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="label" for="">Tipo de Documento</label>
-            <select class="opciones" name="" id="" required>
+            <select class="ciclo__document" name="" id="" required>
                 <option value="">Ninguna</option>
                 <option value="">Tarjeta de Identidad</option>
                 <option value="">Documento de Identidad</option>
@@ -83,17 +83,17 @@
 
           <div class="ciclo__data-general">
             <label class="label" for="">Nombre Del Usuario</label>
-            <input placeholder="Nombre Completo" type="text" />
+            <input class="ciclo__nameUser" placeholder="Nombre Completo" type="text" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="label" for="">Correo Electrónico</label>
-            <input placeholder="Correo Electrónico" type="email" />
+            <input class="ciclo__email" placeholder="Correo Electrónico" type="email" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="label" for="">Número De Contacto</label>
-            <input placeholder="Número de Celular" type="tel" />
+            <input class="ciclo__cellPhone" placeholder="Número de Celular" type="tel" />
           </div>
 
           <div class="ciclo__data-general">
@@ -118,13 +118,13 @@
 
          <!-- ESPACIO PARA MAS INPUTS  -->
           </div>
-
+          <div class="botones">
+            <button class="button" type="submit" >
+              Crear
+            </button>
         </form>
 
-        <div class="botones">
-          <button class="button">
-            <a href="/SGL CODE/sgal main (sanchez)/index_main.html">CREAR</a>
-          </button>
+       
           <!-- <button class="button"><a href="">CANCELAR</a></button> -->
         </div>
 
@@ -151,7 +151,21 @@
         />
       </svg>
     </main>
-
-    <!-- fin box 2 -->
+    <link rel="stylesheet" href="">
+    <script>
+      fetch("/SGL CODE/Estandarizacion/config.json")
+          .then(result => result.json())
+          .then(data =>{
+              //Crea un elemento script
+              const script = document.createElement("script")
+              //Asignamos la ruta del srcipt
+              script.src = data.validar1;
+              //Indica que el sript solo se ejecuta cuando el html solo se haya cargado
+              script.defer = true;
+              //Ponemos el script en el head para que entienda donde va
+              document.head.appendChild(script);
+          })
+          .catch(error => console.log('Error al cargar script'))
+  </script>
   </body>
  </html>  
