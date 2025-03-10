@@ -17,9 +17,9 @@
     />
     <meta http-equiv="Content-Language" content="es" />
 
-    <link rel="stylesheet" href="../Css/3-visualizar-usuario.css">
+    <link rel="stylesheet" href="../Css/1-crear-usuario-actualizado.css">
 
-    <title>Actualización de Usuarios</title>
+    <title>Registro de Usuarios</title>
   </head>
   <body>
     <!-- ******************  Titulo principal  ****************  -->
@@ -33,9 +33,10 @@
         <path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
         <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
       </a>
+    
     </header>
 
-    <!-- ******************  inicio box1 ****************  -->
+    <!-- ******************  inicio cicloLeft ****************  -->
 
     <aside class="cicloLeft">
       <section class="cardLeft__container">
@@ -58,22 +59,22 @@
         />
       </section>
     </aside>
-    <!-- ******************  fin box1 ****************  -->
+    <!-- ******************  fin cicloLeft ****************  -->
 
     <main class="cicloRight">
       <fieldset class="cardRight__container">
-        <h3>ACTUALIZACIÓN USUARIO</h3>
+        <h3>REGISTRO USUARIO</h3>
 
         <form class="cicloRight__form">
 
           <div class="ciclo__data-general">
             <label class="label" for="">Tipo de Usuario</label>
-            <input class="" placeholder="Tipo de usuario" type="text" />
+            <input class="ciclo__user" placeholder="Tipo de usuario" type="text" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="label" for="">Tipo de Documento</label>
-            <select class="opciones" name="" id="" required>
+            <select class="ciclo__document" name="" id="" required>
                 <option value="">Ninguna</option>
                 <option value="">Tarjeta de Identidad</option>
                 <option value="">Documento de Identidad</option>
@@ -82,17 +83,17 @@
 
           <div class="ciclo__data-general">
             <label class="label" for="">Nombre Del Usuario</label>
-            <input placeholder="Nombre Completo" type="text" />
+            <input class="ciclo__nameUser" placeholder="Nombre Completo" type="text" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="label" for="">Correo Electrónico</label>
-            <input placeholder="Correo Electrónico" type="email" />
+            <input class="ciclo__email" placeholder="Correo Electrónico" type="email" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="label" for="">Número De Contacto</label>
-            <input placeholder="Número de Celular" type="tel" />
+            <input class="ciclo__cellPhone" placeholder="Número de Celular" type="tel" />
           </div>
 
           <div class="ciclo__data-general">
@@ -106,24 +107,24 @@
                 <path d="M14 14l1 -1c.653 -.629 1.413 -.815 2.13 -.559" /><path d="M19 16v6" />
                 <path d="M22 19l-3 3l-3 -3" /></svg></div>
 
-            <div class="icon-box">
+            <div class="icon-box"><!--icon-box-->
                 <p class="datos-image">Resoluciòn maxima 200 x 200 px</p>
                 <div class="icon-clip"><svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  
                     viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  
                     stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5" />
                 </svg></div>
-            </div>
+            </div><!--icon-box-->
 
          <!-- ESPACIO PARA MAS INPUTS  -->
           </div>
-
+          <div class="botones">
+            <button class="button" type="submit" >
+              Crear
+            </button>
         </form>
 
-        <div class="botones">
-          <button class="button">
-            <a href="/SGL CODE/sgal main (sanchez)/index_main.html">ACTUALIZAR</a>
-          </button>
+       
           <!-- <button class="button"><a href="">CANCELAR</a></button> -->
         </div>
 
@@ -150,17 +151,15 @@
         />
       </svg>
     </main>
-
-
-    
+    <link rel="stylesheet" href="">
     <script>
       fetch("/SGL CODE/Estandarizacion/config.json")
           .then(result => result.json())
           .then(data =>{
-              //Crea un elemento sript
+              //Crea un elemento script
               const script = document.createElement("script")
               //Asignamos la ruta del srcipt
-              script.src = data.validar2; // ⬅️ cambiar nombre del json aqui
+              script.src = data.validar1;
               //Indica que el sript solo se ejecuta cuando el html solo se haya cargado
               script.defer = true;
               //Ponemos el script en el head para que entienda donde va
@@ -168,8 +167,5 @@
           })
           .catch(error => console.log('Error al cargar script'))
   </script>
-</body>
-</html>
-
-</body>
-</html>
+  </body>
+ </html>  

@@ -37,10 +37,10 @@
         <div class="usuario__menu-section">
           <h3 class="usuario__menu-section-title">Usuarios</h3>
           <ul class="usuario__menu-list">
-            <li class="usuario__menu-item"><a href="#" class="usuario__menu-link">Crear</a></li>
-            <li class="usuario__menu-item"><a href="#" class="usuario__menu-link">Listar</a></li>
-            <li class="usuario__menu-item"><a href="#" class="usuario__menu-link">Actualizar</a></li>
-            <li class="usuario__menu-item"><a href="#" class="usuario__menu-link">Visualizar</a></li>
+            <li class="usuario__menu-item"><a href="/SGL CODE/sgal usuario/Html/1-crear-usuario-acualizado.html" class="usuario__menu-link">Crear</a></li>
+            <li class="usuario__menu-item"><a href="/SGL CODE/sgal usuario/Html/5-listar-usuarios.html" class="usuario__menu-link">Listar</a></li>
+            <li class="usuario__menu-item"><a href="/SGL CODE/sgal usuario/Html/4-actualizar-usuario.html" class="usuario__menu-link">Actualizar</a></li>
+            <li class="usuario__menu-item"><a href="/SGL CODE/sgal usuario/Html/2-buscar-usuario.html" class="usuario__menu-link">Visualizar</a></li>
           </ul>
         </div>
         <div class="usuario__menu-section">
@@ -160,5 +160,26 @@
       </div>
     </div>
   </main>
+
+
+  
+  <script>
+    fetch("/SGL CODE/Estandarizacion/config.json")
+        .then(result => result.json())
+        .then(data =>{
+            //Crea un elemento sript
+            const script = document.createElement("script")
+            //Asignamos la ruta del srcipt
+            script.src = data.validar2; // ⬅️ cambiar nombre del json aqui
+            //Indica que el sript solo se ejecuta cuando el html solo se haya cargado
+            script.defer = true;
+            //Ponemos el script en el head para que entienda donde va
+            document.head.appendChild(script);
+        })
+        .catch(error => console.log('Error al cargar script'))
+</script>
+</body>
+</html>
+
 </body>
 </html>
