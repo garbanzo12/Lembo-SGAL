@@ -141,7 +141,7 @@ body {
 
 /* ****************  Titulo principal  ****************   */
 
- .ciclo_tittle {
+.ciclo__tittle {
   position: absolute;
   top: 2%;
   left: 50%;
@@ -155,7 +155,8 @@ body {
   color: var(--primary-800);
   text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
 }
-.icon-tabler-home{
+
+.ciclo__ico {
   color: var(--blanco);
   margin-left: 2rem;
 }
@@ -163,7 +164,7 @@ body {
 /* *******************   MEDIA QUERY TITULO PRINCIPAL ****************** */
 
 @media (min-width: 380px) {
-  .header, .ciclo_tittle {
+  .ciclo__tittle {
     position: absolute;
     top: 4%;
     left: 50%;
@@ -171,7 +172,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .header, .ciclo_tittle {
+  .ciclo__tittle {
     position: absolute;
     top: 6%;
     left: 60%;
@@ -179,7 +180,7 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .header, .ciclo_tittle {
+  .ciclo__tittle {
     position: absolute;
     top: 8%;
     left: 60%;
@@ -200,7 +201,8 @@ body {
   align-items: center;
 }
 
-.cardLeft__container, .cicloLeft__container {
+.cardLeft__container,
+.cicloLeft__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,11 +211,13 @@ body {
   gap: 2rem;
 }
 
-.cardLeft__logoSena, .cicloLeft__logoSena {
+.cardLeft__logoSena,
+.cicloLeft__logoSena {
   width: 10rem;
 }
 
-.cardLeft__imageMovil, .cicloLeft__logoMovil {
+.cardLeft__imageMovil,
+.cicloLeft__logoMovil {
   width: 20rem;
   height: auto;
   background-size: cover;
@@ -221,44 +225,53 @@ body {
   background-position: center;
 }
 
-.cardLeft__logoSgal, .ciclo__logosgal {
+.cardLeft__logoSgal,
+.ciclo__logosgal {
   width: 10rem;
 }
 
 /* *****************  MEDIA QUERY LEFT****************** */
 
 @media (min-width: 380px) {
-  .cardLeft, .cicloLeft {
+
+  .cardLeft,
+  .cicloLeft {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  .cardLeft, .cicloLeft {
+
+  .cardLeft,
+  .cicloLeft {
     display: flex;
     flex-direction: column;
     min-width: 20%;
     height: auto;
   }
 
-  .cardLeft__container, .cicloLeft__container {
+  .cardLeft__container,
+  .cicloLeft__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .cardLeft__imageMovil, .cicloLeft__imageMovil {
+  .cardLeft__imageMovil,
+  .cicloLeft__imageMovil {
     display: none;
   }
 
-  .cardLeft__logoSena, .cicloLeft__logoSena {
+  .cardLeft__logoSena,
+  .cicloLeft__logoSena {
     height: 7rem;
     width: 7rem;
     margin-bottom: 70rem;
     /*  para separarlo por que no hay imagen de celular */
   }
 
-  .cardLeft__logoSgal, .cicloLeft__logoSgal {
+  .cardLeft__logoSgal,
+  .cicloLeft__logoSgal {
     height: 8rem;
     width: 8rem;
     margin-bottom: 2rem;
@@ -267,20 +280,24 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .cardLeft, .cicloLeft {
+
+  .cardLeft,
+  .cicloLeft {
     display: flex;
     flex-direction: column;
     width: 20%;
     height: auto;
   }
 
-  .cardLeft__container, .cicloLeft__container {
+  .cardLeft__container,
+  .cicloLeft__container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .cardLeft__imageMovil, .cicloLeft__imageMovil {
+  .cardLeft__imageMovil,
+  .cicloLeft__imageMovil {
     display: flex;
     width: 22rem;
     height: auto;
@@ -289,13 +306,15 @@ body {
     background-position: center;
   }
 
-  .cardLeft__logoSena, .cicloLeft__logoSena {
+  .cardLeft__logoSena,
+  .cicloLeft__logoSena {
     height: 9rem;
     width: 9rem;
     margin: 0rem;
   }
 
-  .cardLeft__logoSgal, .cicloLeft__logoSgal {
+  .cardLeft__logoSgal,
+  .cicloLeft__logoSgal {
     height: 9rem;
     width: 9rem;
 
@@ -303,11 +322,14 @@ body {
 }
 
 @media (min-width: 1920px) {
-  .cardLeft__container, .cicloLeft__container {
+
+  .cardLeft__container,
+  .cicloLeft__container {
     gap: 5rem;
   }
 
-  .cardLeft__imageMovil, .cicloLeft__imageMovil {
+  .cardLeft__imageMovil,
+  .cicloLeft__imageMovil {
     display: flex;
     width: 30rem;
     height: auto;
@@ -316,12 +338,14 @@ body {
     background-position: center;
   }
 
-  .cardLeft__logoSena, .cicloLeft__logoSena {
+  .cardLeft__logoSena,
+  .cicloLeft__logoSena {
     height: 10rem;
     width: 10rem;
   }
 
-  .cardLeft__logoSgal, .cicloLeft__logoSgal {
+  .cardLeft__logoSgal,
+  .cicloLeft__logoSgal {
     height: 10rem;
     width: 10rem;
 
@@ -329,7 +353,9 @@ body {
 }
 
 @media (min-width: 2560px) {
-  .cardLeft__container, .cicloLeft__container {
+
+  .cardLeft__container,
+  .cicloLeft__container {
     gap: 4rem;
   }
 }
@@ -346,10 +372,10 @@ body {
   justify-content: center;
   align-items: center;
 
- 
+
 }
 
-.cardRight__container, .cicloRight__container {
+.cicloRight__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -369,7 +395,7 @@ body {
   padding: 0;
 }
 
-.cardRight__container h3, .cicloRight__container h3 {
+.cicloRight__container h3 {
   /* posicion */
   display: flex;
   margin: 0 auto;
@@ -388,48 +414,39 @@ body {
   font-weight: bolder;
 }
 
-.cardRight__form, .cicloRight__form {
+.cicloRight__form {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.cardRight__container img, .cicloRight__container img  {
+.cicloRight__container img {
   width: 16rem;
   height: 12rem;
   margin: 0.1rem;
   border-radius: 10rem;
 }
 
-.cardRight__form label, .cicloRight__form label {
+.cicloRight__form label {
   display: flex;
   font-size: 1.6rem;
   font-weight: 200;
   color: var(--black);
 }
 
-.cardRight__container input, .cicloRight__container input[type="text"],
-.cardRight__container input, .cicloRight__container input [type="password"],
-.cardRight__container input, .cicloRight__container input[type="email"],
-.cardRight__container input, .cicloRight__container input[type="number"],
-.cardRight__container input, .cicloRight__container input[type="tel"],
-.cardRight__container input, .cicloRight__container input[type="url"],
-.cardRight__container input, .cicloRight__container input[type="search"],
-.cardRight__container input, .cicloRight__container input[type="date"],
-/* .cardRight__container input[type="time"], */
-/* .cardRight__container input[type="datetime-local"], */
-/* .cardRight__container input[type="month"], */
-/* .cardRight__container input[type="week"], */
-/* .cardRight__container input[type="color"], */
-.cardRight__container input, .cicloRight__container input[type="file"],
-/* .cardRight__container input[type="checkbox"], */
-/* .cardRight__container input[type="radio"], */
-/* .cardRight__container input[type="range"], */
-.cardRight__container input, .cicloRight__container input[type="submit"],
-/* .cardRight__container input[type="reset"], */
-.cardRight__container input, .cicloRight__container input[type="button"]
-{
+.cicloRight__container input, 
+.cicloRight__container input[type="text"],
+.cicloRight__container input[type="password"],
+.cicloRight__container input[type="email"],
+.cicloRight__container input[type="number"],
+.cicloRight__container input[type="tel"],
+.cicloRight__container input[type="url"],
+.cicloRight__container input[type="search"],
+.cicloRight__container input[type="date"],
+.cicloRight__container input[type="file"],
+.cicloRight__container input[type="submit"],
+.cicloRight__container input[type="button"] {
   font-size: 1.6rem;
   color: var(--gray-700);
   width: 32rem;
@@ -442,12 +459,39 @@ body {
   background-color: var(--gray-050);
 }
 
-label, .cicloRigh__label {
+/* ****************************************************************** */
+/* INICIO DE ACCION PARA QUE EL BOTON CAMBIE DE COLOR Y SE QUEDE EN EL COLOR SEGUN ESTADO */
+.cicloRight__inputbox[type="checkbox"] {
+  display: none;
+}
+
+.cicloRight__labelChange {
+  display: inline-block;
+  width: 15rem;
+  height: 1.8rem;
+  padding: 16px 24px;
+  background-color: var(--secundary-4-950);
+  color: var(--white);
+  border-radius: 25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 0rem 20rem 0rem 20rem;
+}
+
+/* Cambia el estilo cuando está "oprimido" */
+.cicloRight__inputbox[type="checkbox"]:checked+label {
+  background-color: var(--black);
+}
+
+/* FIN DE ESTADO DE ACCION  */
+
+.cicloRight__label {
   margin: 0 auto;
   padding: 0rem 2.4rem;
 }
 
-.button, .cicloRigh__button {
+.cicloRight__button {
   background-color: var(--secundary-1-800);
   width: 15rem;
   color: var(--white);
@@ -457,29 +501,25 @@ label, .cicloRigh__label {
   cursor: pointer;
   margin-top: 1rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: bold;
   margin: 1.2rem;
 }
 
-.cardRight__container a, .cicloRight__container a {
+.cicloRight__container a {
   color: var(--white);
   text-decoration: none;
-}
-
-.login-container a, .cicloRight__container a {
   display: block;
   margin-top: 10px;
-  color: #0a3d62;
   text-decoration: none;
 }
 
-.baseform , .cicloRight__footform{
+.cicloRight__footform {
   position: relative;
   bottom: 0%;
   width: 100%;
 }
 
-.baseform a, .cicloRight__footform a {
+.cicloRight__footform a {
   display: flex;
 
   /* colores */
@@ -502,7 +542,8 @@ label, .cicloRigh__label {
 /* *****************  MEDIA QUERY RIGHT****************** */
 
 @media (min-width: 380px) {
-  .cardRight, .cicloRight {
+
+  .cicloRight {
     min-width: 100%;
     max-height: 100vh;
     display: flex;
@@ -510,7 +551,7 @@ label, .cicloRigh__label {
     white-space: nowrap;
   }
 
-  .cardRight__container, .cicloRight__container {
+  .cicloRight__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -522,20 +563,23 @@ label, .cicloRigh__label {
     top: 15%;
     gap: 1rem;
   }
-  .cardRight__form, .cicloRight__form {
-    gap: 0.1rem;   /* funciona para el espacio entre inputs para media query 380  SOLO CON 8 INPUTS SI HAY MAS SE SALE DE LA PANTALLA */ 
+
+  .cicloRight__form {
+    gap: 0.1rem;
+    /* funciona para el espacio entre inputs para media query 380  SOLO CON 8 INPUTS SI HAY MAS SE SALE DE LA PANTALLA */
   }
 }
 
 @media (min-width: 768px) {
-  .cardRight, .cicloRight {
+
+  .cicloRight {
     display: flex;
     flex-direction: column;
     min-width: 80%;
     height: auto;
   }
 
-  .cardRight__container, .cicloRight__container {
+  .cicloRight__container {
     display: flex;
     flex-direction: column;
     min-width: 70%;
@@ -546,7 +590,7 @@ label, .cicloRigh__label {
     gap: 1rem;
   }
 
-  .dato , .cicloRight__dato{
+  .cicloRight__dato {
     /*PENDIENTE BEM */
     padding: 0.2rem;
     margin: 0.2rem;
@@ -555,11 +599,11 @@ label, .cicloRigh__label {
 }
 
 @media (min-width: 1280px) {
-  .cardRight, .cicloRight {
+  .cicloRight {
     min-width: 80%;
   }
 
-  .cardRight__container, .cicloRight__container {
+  .cicloRight__container {
     min-width: 60%;
     display: flex;
     flex-direction: column;
@@ -570,10 +614,15 @@ label, .cicloRigh__label {
     gap: 1rem;
   }
 
+  .cicloRight__labelChange {
+    margin: 0rem 30rem 0rem 30rem;
+  }
+
 }
 
 @media (min-width: 1920px) {
-  .cardRight__container, .cicloRight__container {
+
+  .cicloRight__container {
     min-width: 40%;
     display: flex;
     flex-direction: column;
@@ -586,7 +635,8 @@ label, .cicloRigh__label {
 }
 
 @media (min-width: 2560px) {
-  .cardRight__container, .cicloRight__container {
+
+  .cicloRight__container {
     min-width: 30%;
     min-height: 20rem;
     display: flex;
