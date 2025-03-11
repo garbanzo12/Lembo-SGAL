@@ -85,7 +85,7 @@ try{
     }
      
     function showAlert(message, error = null){
-        // if (activo) {
+        if (activo) {
             
         //Se comento la variable de las otras dos funciones
         const alert = document.createElement('P');
@@ -101,8 +101,8 @@ try{
         setTimeout(()=>{
             alert.remove();
         },2000)
-        // return activo = false;
-        // }
+        return activo = false;
+         }
     }
 }catch(error){
     console.log(error)

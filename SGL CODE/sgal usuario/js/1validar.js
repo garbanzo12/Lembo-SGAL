@@ -79,7 +79,7 @@ try {
       } else {
 
         alert.classList.add('correcto');
-        // location.href ="";
+        location.href ="/SGL CODE/sgal main (sanchez)/index_main.html";
       }
       useForm.appendChild(alert);
       setTimeout(() => {

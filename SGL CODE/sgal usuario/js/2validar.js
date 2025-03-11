@@ -8,6 +8,7 @@ try {
     };
   
     // Seleccionamos elementos del DOM
+    // let activo = true;
     const useForm = document.querySelector('.cicloRight__form');
     const ciclo__ID = document.querySelector('.ciclo__ID');
 
@@ -45,6 +46,7 @@ try {
   
     // Función para mostrar alertas en el formulario
     function showAlert(message, error = null) {
+      // if (activo) {
       const alert = document.createElement('p');
       console.log(message);
       alert.textContent = message;
@@ -61,7 +63,9 @@ try {
       setTimeout(() => {
         alert.remove();
       }, 2000);
-    }
+      // return activo = false;
+    // }
+  }
   } catch (error) {
     console.log(error);
   }

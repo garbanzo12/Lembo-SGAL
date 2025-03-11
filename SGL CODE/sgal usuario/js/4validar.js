@@ -1,92 +1,85 @@
 // Validador de formularios
-console.log('Friedrich Nietzsche: "Aquel que tiene algo por qué vivir es capaz de enfrentar todos los cómos"  ')
+console.log('"No es lo que te ocurre, sino cómo reaccionas, lo que importa" (Epicteto)');
 try {
-    // Objeto para almacenar los datos del formulario
-    const userData = {
-      ciclo__user: '',
-      ciclo__document: '',
-      ciclo__nameUser: '',
-      ciclo__email: '',
-      ciclo__cellPhone: ''
-    };
-  
-    // Seleccionamos elementos del DOM
-    const useForm = document.querySelector('.cicloRight__form');
-    const ciclo__user = document.querySelector('.ciclo__user');
-    const ciclo__document = document.querySelector('.ciclo__document');
-    const ciclo__nameUser = document.querySelector('.ciclo__nameUser');
-    const ciclo__email = document.querySelector('.ciclo__email');
-    const ciclo__cellPhone = document.querySelector('.ciclo__cellPhone');
-  
-    // Evento submit
-    useForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const { ciclo__user, ciclo__nameUser, ciclo__email, ciclo__cellPhone } = userData;
-  
-      console.log('Enviando formulario...');
-  
-      if (
-        ciclo__user === ''  ||
-        ciclo__nameUser === '' ||
-        ciclo__email === '' ||
-        ciclo__cellPhone === ''
-      ) {
-        showAlert('Todos los campos son obligatorios');
-      } else {
-        showAlert('Todos los campos son correctos', true);
-      }
-  
-      // Aquí podrías limpiar o procesar el formulario si es necesario
-    });
-  
-    // Escuchamos los eventos de los campos
-    ciclo__user.addEventListener('input', readText);
-    // Para el select se usa "change"
-    ciclo__document.addEventListener('change', readText);
-    ciclo__nameUser.addEventListener('input', readText);
-    ciclo__email.addEventListener('input', readText);
-    ciclo__cellPhone.addEventListener('input', readText);
-  
-    // Callback para leer los datos de cada campo
-    function readText(e) {
-      if (e.target.classList.contains('ciclo__user')) {
-        userData.ciclo__user = e.target.value;
-      }
-      if (e.target.classList.contains('ciclo__document')) {
-        userData.ciclo__document = e.target.value;
-      }
-      if (e.target.classList.contains('ciclo__nameUser')) {
-        userData.ciclo__nameUser = e.target.value;
-      }
-      if (e.target.classList.contains('ciclo__email')) {
-        userData.ciclo__email = e.target.value;
-      }
-      if (e.target.classList.contains('ciclo__cellPhone')) {
-        userData.ciclo__cellPhone = e.target.value;
-      }
-      // console.log(userData);
-    }
-  
-    // Función para mostrar alertas en el formulario
-    function showAlert(message, error = null) {
-      const alert = document.createElement('p');
-      console.log(message);
-      alert.textContent = message;
-      if (error == null) {
+  // Objeto para almacenar los datos del formulario
+  const userData = {
+    nuevoTipoUsuario: '',
+    nuevoTipoDocumento: '',
+    nuevoNombreUsuario: '',
+    nuevoEmailUsuario: '',
+    nuevoNumeroContacto: ''
+  };
 
-        alert.classList.add('error');
-      } else {
+  // Seleccionamos elementos del DOM usando las nuevas clases
+  const useForm = document.querySelector('.cicloRight__form');
+  const tipoUsuario = document.querySelector('.nuevo-tipoUsuario');
+  const tipoDocumento = document.querySelector('.nuevo-tipoDocumento');
+  const nombreUsuario = document.querySelector('.nuevo-nombreUsuario');
+  const emailUsuario = document.querySelector('.nuevo-emailUsuario');
+  const numeroContacto = document.querySelector('.nuevo-numeroContacto');
 
-        alert.classList.add('correcto');
-        // location.href ="";
-      }
-      useForm.appendChild(alert);
-      setTimeout(() => {
-        alert.remove();
-      }, 2000);
+  // Evento submit
+  useForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const { nuevoTipoUsuario, nuevoNombreUsuario, nuevoEmailUsuario, nuevoNumeroContacto } = userData;
+    console.log('Enviando formulario...');
+
+    if (
+      nuevoTipoUsuario === '' ||
+      nuevoNombreUsuario === '' ||
+      nuevoEmailUsuario === '' ||
+      nuevoNumeroContacto === ''
+    ) {
+      showAlert('Todos los campos son obligatorios');
+    } else {
+      showAlert('Todos los campos son correctos', true);
     }
-  } catch (error) {
-    console.log(error);
+  });
+
+  // Escuchamos los eventos de los campos usando las nuevas clases
+  tipoUsuario.addEventListener('input', readText);
+  tipoDocumento.addEventListener('change', readText);
+  nombreUsuario.addEventListener('input', readText);
+  emailUsuario.addEventListener('input', readText);
+  numeroContacto.addEventListener('input', readText);
+
+  // Callback para leer los datos de cada campo
+  function readText(e) {
+    if (e.target.classList.contains('nuevo-tipoUsuario')) {
+      userData.nuevoTipoUsuario = e.target.value;
+    }
+    if (e.target.classList.contains('nuevo-tipoDocumento')) {
+      userData.nuevoTipoDocumento = e.target.value;
+    }
+    if (e.target.classList.contains('nuevo-nombreUsuario')) {
+      userData.nuevoNombreUsuario = e.target.value;
+    }
+    if (e.target.classList.contains('nuevo-emailUsuario')) {
+      userData.nuevoEmailUsuario = e.target.value;
+    }
+    if (e.target.classList.contains('nuevo-numeroContacto')) {
+      userData.nuevoNumeroContacto = e.target.value;
+    }
   }
-  
+
+  // Función para mostrar alertas en el formulario
+  function showAlert(message, error = null) {
+    const alert = document.createElement('p');
+    console.log(message);
+    alert.textContent = message;
+    if (error == null) {
+      alert.classList.add('error');
+    } else {
+      alert.classList.add('correcto');
+      location.href ="/SGL CODE/sgal main (sanchez)/index_main.html";
+
+    }
+    useForm.appendChild(alert);
+    setTimeout(() => {
+      alert.remove();
+    }, 2000);
+  }
+} catch (error) {
+  console.log(error);
+}
