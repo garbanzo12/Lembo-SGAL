@@ -1,5 +1,5 @@
 // Validador de formularios
-console.log('"No es lo que te ocurre, sino cómo reaccionas, lo que importa" (Epicteto)');
+console.log('"Hay que darle un sentido a la vida, por el hecho mismo de que carece de sentido.Henry Miller');
 try {
   // Objeto para almacenar los datos del formulario
   const userData = {

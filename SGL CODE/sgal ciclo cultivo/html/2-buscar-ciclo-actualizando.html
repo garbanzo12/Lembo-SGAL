@@ -79,12 +79,12 @@
         <form class="cicloRight__form">
           <div class="ciclo__data-general">
             <label class="cicloRight__label" for="">ID Ciclo Cultivo</label>
-            <input placeholder="Ingrese Dato" type="number" />
+            <input class="dato"  placeholder="Ingrese Dato" type="number" />
           </div>
 
 
-          <button class="cicloRight__button">
-            <a href="../sgal main (sanchez)/index_main.html">BUSCAR</a>
+          <button type="submit" class="cicloRight__button">
+            BUSCAR
           </button> 
           
           
@@ -116,5 +116,22 @@
       <!-- fin de form --> 
     </main>
     <!-- fin box 2 -->
+
+
+    <script>
+      fetch("/SGL CODE/Estandarizacion/config.json")
+          .then(result => result.json())
+          .then(data =>{
+              // Crea un elemento script
+              const script = document.createElement("script")
+              // Asignamos la ruta del script
+              script.src = data.validar7;
+              // Indica que el script solo se ejecuta cuando el HTML se haya cargado
+              script.defer = true;
+              // Ponemos el script en el head para que entienda donde va
+              document.head.appendChild(script);
+          })
+          .catch(error => console.log('Error al cargar script'))
+    </script>
   </body>
 </html>

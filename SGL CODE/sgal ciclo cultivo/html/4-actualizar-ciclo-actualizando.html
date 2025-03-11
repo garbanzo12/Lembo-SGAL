@@ -77,31 +77,34 @@
         <h3>ACTUALIZAR CICLO</h3>
 
         <div class="cicloRight__botones">
-          <button class="cicloRight__button" type="submit"><a href="../html/3-visualizar-ciclo-actualizando.html">VOLVER</a></button>
+          <button class="cicloRight__button" type="submit">
+            <a href="../html/3-visualizar-ciclo-actualizando.html">VOLVER</a>
+          </button>
         </div>
-
 
         <form class="cicloRight__form">
           <div class="ciclo__data-general">
             <label class="cicloRight__label" for="">ID Ciclo Cultivo</label>
-            <input placeholder="Ingrese Dato" type="number" />
+            <!-- Se añade nueva clase: dato-idCiclo -->
+            <input class="dato-idCiclo" placeholder="Ingrese Dato" type="number" />
           </div>
 
           <div class="ciclo__data-general">
-            <label class="cicloRight__label" for=""
-              >Nombre del Ciclo Cultivo</label
-            >
-            <input placeholder="Ingrese Dato" type="password" />
+            <label class="cicloRight__label" for="">Nombre del Ciclo Cultivo</label>
+            <!-- Se añade nueva clase: dato-nombreCiclo -->
+            <input class="dato-nombreCiclo" placeholder="Ingrese Dato" type="password" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="cicloRight__label" for="">Novedad</label>
-            <input placeholder="Ingrese Dato" type="email" />
+            <!-- Se añade nueva clase: dato-novedad -->
+            <input class="dato-novedad" placeholder="Ingrese Dato" type="text" />
           </div>
 
           <div class="ciclo__data-general">
             <label class="cicloRight__label" for="">Ingrese Tamaño m2</label>
-            <input placeholder="Ingrese Dato" type="number" />
+            <!-- Se añade nueva clase: dato-tamanoM2 -->
+            <input class="dato-tamanoM2" placeholder="Ingrese Dato" type="number" />
           </div>
 
           <h2 class="ciclo__toggle-title">Habilitado/Deshabilitadi:</h2>
@@ -112,14 +115,11 @@
             <label class="cicloRight__labelChange" for="boton"></label>
           </div>
 
-
           <div class="cicloRight__botones">
-            <button class="cicloRight__button">
-              <a href="../html/MODAL_CREAR.html">GUARDAR</a>
+            <button type="submit" class="cicloRight__button">
+              GUARDAR
             </button>
-            <!-- <button class="cicloRight__button"><a href="">CANCELAR</a></button> -->
           </div>
-
         </form>
 
         <div class="cicloRight__footform">
@@ -130,5 +130,21 @@
       <!-- fin de form --> 
     </main>
     <!-- fin box 2 -->
+     
+    <script>
+      fetch("/SGL CODE/Estandarizacion/config.json")
+          .then(result => result.json())
+          .then(data =>{
+              // Crea un elemento script
+              const script = document.createElement("script")
+              // Asignamos la ruta del script
+              script.src = data.validar9;
+              // Indica que el script solo se ejecuta cuando el HTML se haya cargado
+              script.defer = true;
+              // Ponemos el script en el head para que entienda donde va
+              document.head.appendChild(script);
+          })
+          .catch(error => console.log('Error al cargar script'))
+    </script>
   </body>
 </html>
