@@ -406,6 +406,7 @@ footer .cardRigth__footerTittle {
 
 /* js */
 .error {
+  
   background-color: rgb(197, 65, 65);
   text-align: center;
   padding: 1rem;
