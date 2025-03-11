@@ -10,49 +10,50 @@
     <meta nmae="Keywords" content="gestion, agricola, sena, adso" />
     <!-- Enlace a archivo css -->
     <link rel="stylesheet" href="styles.css" />
-    <meta name="Author" content="Grupo 8 ADSO"/>
+    <meta name="Author" content="Grupo 8 ADSO" />
   </head>
   <body>
-    <header><span>SENA SEDE LEMBO</span></header>
-    <!-- falta poner el titulo con position absolute -->
-    <div class="cardLeft">
+    <!-- TITULO EN POS ABSOLUTED -->
+    <header class="cardMain__tittle"><span>SENA SEDE LEMBO</span></header>
+  
+    <aside class="cardLeft">
+
+      <!-- CONTENIDO IMAGENES SENA -->
       <section class="cardLeft__container">
         <div>
-          <div class="cardLeft__rectangle--gray">
-            <img src="../img/L1.png" alt="" />
-          </div>
-          <div class="cardLeft__rectangle">
-            <img src="../img/L2.png" alt="" />
-          </div>
+          <img class="cardLeft__rectangle--gray" src="../img/L1.png" alt="" />
+          <img class="cardLeft__rectangle" src="../img/L2.png" alt="" />
         </div>
+
         <div>
-          <div class="cardLeft__rectangle">
-            <img src="../img/L3.png" alt="" />
-          </div>
+          <img class="cardLeft__rectangle" src="../img/L3.png" alt="" />
         </div>
+
         <div>
-          <div class="cardLeft__rectangle">
-            <img src="../img/L4.png" alt="" />
-          </div>
-          <div class="rectangle gray">
-            <img src="../img/L5.png" alt="" />
-          </div>
+          <img class="cardLeft__rectangle" src="../img/L4.png" alt="" />
+          <img class="cardLeft__rectangle--gray" src="../img/L5.png" alt="" />
         </div>
       </section>
 
-      <div class="cardLeft__logs">
-        <div class="cardLeft__logsimg cardLeft__vector1"><img src="" alt="" /></div>
+      <!-- FOOTER CON LOS LOGOS 1 2 3 -->
+      <footer class="cardLeft__footer">
+         <div>  <!--  cardLeft__logsimg  -->
+          <img class="cardLeft__vector1 src=" alt="" />
+        </div>
 
-        <div class="cardLeft__logsimg cardLeft__vector2"><img src="" alt="" /></div>
-
-        <div class="cardLeft__logsimg cardLeft__vector3"><img src="" alt="" /></div>
-      </div>
-    </div>
+        <div>
+          <img class="cardLeft__vector2" src="" alt="" />
+        </div>
+        <div>
+          <img class="cardLeft__vector3" src="" alt="" />
+        </div>
+      </footer>
+    </aside>
     <!-- fin box1 -->
 
     <main class="cardRigth">
       <fieldset class="cardRigth__login">
-        <h3>LOGIN USUARIO SENA</h3>
+        <h3>LOGIN USUARIO SGAL</h3>
         <form class="cardRigth__form">
           <img
             class="cardRigth__formlogoCircular"
@@ -62,14 +63,18 @@
             width="100"
           />
           <div>
-            <label for="Correo Electronico">Correo Electronico</label>
+            <label class="cardRigth__formlabel" for="Correo Electronico">Correo Electronico</label>
             <input placeholder="Correo electrónico" type="email" />
           </div>
           <div>
-            <label for="Contraseña">Contraseña</label>
+            <label class="cardRigth__formlabel" for="Contraseña">Contraseña</label>
             <input placeholder="Ingrese su contraseña" type="password" />
           </div>
-          <div><button class="cardRigth__button"><a href="../sgal main (sanchez)/index_main.html">ACEPTAR</a></button></div>
+          <div>
+            <button class="cardRigth__button">
+              <a href="../sgal main (sanchez)/index_main.html">ACEPTAR</a>
+            </button>
+          </div>
         </form>
         <div class="cardRigth__baseform">
           <a href="#"> OLVIDO SU CONTRASEÑA </a>
@@ -84,7 +89,9 @@
           trantamento y manejo de la informacion que los usuarios registraron en
           dichos sistemas.
         </p>
-        <a class="cardRigth__foot" href="#">Click en enlace para mas información</a>
+        <a class="cardRigth__foot" href="#"
+          >Click en enlace para mas información</a
+        >
       </footer>
     </main>
   </body>
