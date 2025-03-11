@@ -6,12 +6,13 @@ body {
   font-family: var(--main-font);
   /* background: linear-gradient(to top, var(--Background2-main) 50%, var(--Background1-main) );  */
   background-color: rgb(7, 7, 36);
-  margin: ;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   font-size: 16px;
   color: white;
+  height: 1500px;
 
 }
 
@@ -23,8 +24,12 @@ body {
   border-radius: 6px;
   margin: 0 auto;
   color: black;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
   transition: background-color 0.5s ease;
-  /* Suaviza el cambio del fondo */
+/* ESTE CONETENEDOR ESTA EN MEDIO DE LA PANTALLA EN LA PARTE SUPERIOR SE ENCESITA QUE SE PEGUE A LA PARTE SUPERIOR CUANDO SE HACE SCROLL */
+  /* position: fixed;  */
+  left: 35%;
 }
 
 .Bar__Top:hover {
@@ -38,6 +43,7 @@ body {
   padding: 0px 20px 0px 20px;
   gap: 30px;
   transition: gap 1s ease;
+
   /* Aplica la transición para el gap */
 }
 
@@ -128,13 +134,6 @@ p {
   
 }
 
-/* .Bar__linksmodulos{
-  display: flex;
-  width: 200px;
-  position: fixed;
-  top: 120px;
-  left: 20px;
-} */
 /* *******************     MENU DE MODULOS     ***************** */
 
 main {
@@ -184,6 +183,6 @@ main {
   flex-direction: column; /* Asegura que los elementos estén en columna */
 }
 .Main__svg {
-  width: 100px;
-  height: auto;
+  width: 90px;
+  height: 90px;
 }
