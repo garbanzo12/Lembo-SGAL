@@ -1,0 +1,189 @@
+html {
+  size: 62.5%;
+}
+
+body {
+  font-family: var(--main-font);
+  /* background: linear-gradient(to top, var(--Background2-main) 50%, var(--Background1-main) );  */
+  background-color: rgb(7, 7, 36);
+  margin: ;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 16px;
+  color: white;
+
+}
+
+.Bar__Top {
+  background-color: rgb(218, 214, 235);
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  border-radius: 6px;
+  margin: 0 auto;
+  color: black;
+  transition: background-color 0.5s ease;
+  /* Suaviza el cambio del fondo */
+}
+
+.Bar__Top:hover {
+  background-color: rgba(218, 214, 235, 0.5);
+  /* Cambia el fondo a 50% de opacidad */
+}
+
+.Bar__List {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 20px 0px 20px;
+  gap: 30px;
+  transition: gap 1s ease;
+  /* Aplica la transición para el gap */
+}
+
+.Bar__Top:hover .Bar__List {
+  gap: 100px;
+  /* Aumenta el espacio entre los elementos */
+}
+
+.Bar__Item {
+  background-color: aqua;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  border-radius: 4px;
+}
+
+.BarTop__Image {
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  width: auto;
+  flex-direction: column;
+  text-align: center;
+  margin: 4px 0 8px 0;
+}
+
+
+/* *******************   BARRA DE NAVEGACION    ***************** */
+.Bar__side {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  border: 2px solid yellow;
+  cursor: pointer; /* Indicador visual interactivo */
+}
+
+.Bar__nombreUser {
+  width: 160px;
+  height: 100px;
+  margin: 8px;
+}
+
+.Bar__Usuario {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  border-radius: 16px;
+}
+
+/* Menú de módulos oculto */
+.Bar__linksmodulos {
+  display: none;
+  background-color: lightgray;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  width: 200px;
+  transition: background-color 1s ease;
+  /* transform: gap 1s ease; */
+  color: black;
+
+}
+
+.Bar__linksmodulos a{
+  text-decoration: none; 
+  color: inherit;
+}
+
+/* Cuando el checkbox está marcado */
+#toggle-linksmodulos:checked ~ .Bar__linksmodulos {
+  display: block; /* Muestra el menú */
+  
+}
+
+/* .Bar__linksmodulos{
+  display: flex;
+  width: 200px;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+} */
+/* *******************     MENU DE MODULOS     ***************** */
+
+main {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+}
+
+/* Styles for each section and article */
+.section, .article {
+  border: 2px solid #000; /* Borde visible */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9; /* Color de fondo claro */
+}
+
+.section h2{
+  color: black;
+}
+
+/* Align content in sections and articles */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre párrafo e imagen */
+}
+
+/* Paragraph styles */
+.content p {
+  flex: 1; /* El párrafo toma todo el espacio restante */
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  color: black;
+}
+
+/* Image styles */
+.content img {
+  width: 400px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  border-radius: 8px;
+}
+.Menu__h4 {
+  display: flex; /* Crea un contenedor flexible */
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+}
+.Main__svg {
+  width: 100px;
+  height: auto;
+}

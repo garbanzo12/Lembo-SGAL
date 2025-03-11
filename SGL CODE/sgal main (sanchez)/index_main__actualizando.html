@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sgal main (sanchez)/styles__actualizando.css">
+    <link rel="stylesheet" href="../../root.css">
+    <title>Index__Main</title>
+</head>
+<body>
+
+<header class="Bar__Top">
+        <ul class="Bar__List">
+            <li class="Bar__Item">
+                <p>Cultivos</p>
+                <a href="">
+                    <img src="../img/cultivos_modulo.png" alt="modulo_Cultivos" class="BarTop__Image">
+                </a>
+            </li>
+            <li class="Bar__Item">
+                <p>Insumo</p>
+                <a href="">
+                    <img src="../img/insumo_modulo.png" alt="modulo_insumo" class="BarTop__Image">
+                </a>
+            </li>
+            <li class="Bar__Item">
+                <p>Sensor</p>
+                <a href="">
+                    <img src="../img/sensor_modulo.png" alt="modulo_Sensor" class="BarTop__Image">
+                </a>
+            </li>
+            <li class="Bar__Item">
+                <p>Usuarios</p>
+                <a href="">
+                    <img src="../img/usuario_modulo.png" alt="modulo_Usuarios" class="BarTop__Image">
+                </a>
+            </li>
+        </ul>
+</header>
+
+<!-- este nav  MENU  es para desplegar con position fixed absolute -->
+<nav class="Bar__general">
+    <!-- Checkbox oculto -->
+    <input type="checkbox" id="toggle-linksmodulos" style="display: none;">
+
+    <!-- Label asociado al checkbox -->
+    <label for="toggle-linksmodulos" class="Bar__side">
+        <div class="Bar__nombreUser">Nombre de Usuario</div>
+        <img class="Bar__Usuario" src="../img/imagen_foto_perfil_github2.jpg" alt="logo sgal">
+    </label>
+    
+    <ul class="Bar__linksmodulos">
+         
+            <h4>MODULO CULTIVO</h4> 
+            <a href="">CREAR CULTIVO</a>
+            <a href="">BUSCAR CULTIVO</a>
+            <a href="">VISUALIZAR CULTIVO</a>
+            <a href="">LISTAR CULTIVO</a> 
+            
+            <h4>MODULO INSUMOS</h4> 
+            <a href="">CREAR INSUMOS</a>
+            <a href="">BUSCAR INSUMOS</a>
+            <a href="">VISUALIZAR INSUMOS</a>
+            <a href="">LISTAR INSUMOS</a>  
+                        
+            <h4>MODULO CICLO</h4> 
+            <a href="../sgal ciclo cultivo/html/1-crear-ciclo-actualizando.html">CREAR CICLO</a>
+            <a href="../sgal ciclo cultivo/html/2-buscar-ciclo-actualizando.html">BUSCAR CICLO</a>
+            <a href="../sgal ciclo cultivo/html/3-visualizar-ciclo-actualizando.html">VISUALIZAR CICLO</a>
+            <a href="../sgal ciclo cultivo/html/4-actualizar-ciclo-actualizando.html">ACTUALIZAR CICLO</a> 
+            <a href="../sgal ciclo cultivo/html/5-listar-ciclo-actualizando-NOLISTO.html">LISTAR CICLO</a> 
+                        
+            <h4>MODULO INSUMOS</h4> 
+            <a href="">CREAR USUARIOS</a>
+            <a href="">BUSCAR USUARIOS</a>
+            <a href="">VISUALIZAR USUARIOS</a>
+            <a href="">LISTAR USUARIOS</a> 
+
+            <h4  class="Menu__h4" ><span><a href="">CONFIGURACION</a>
+                <!-- <svg class="Main__svg" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M181.875 447.896C208.812 401.583 270.458 396.125 305.562 431.5C313.417 439.416 317.354 443.375 320.833 443.854C324.312 444.333 346.146 431.791 353.896 427.354C361.812 422.812 383.729 410.25 385.104 406.958C386.479 403.666 385.042 398.062 382.146 386.854C371.667 346.083 397.104 303.166 437.729 292.104C448.604 289.146 454.042 287.666 456.187 284.812C458.333 282 458.333 257.104 458.333 247.979C458.333 238.854 458.333 213.979 456.187 211.146C454.042 208.312 448.604 206.833 437.729 203.854C397.104 192.812 371.646 149.896 382.104 109.125C385.021 97.8955 386.437 92.2914 385.062 88.9997C383.687 85.708 361.771 73.1664 353.875 68.6247C346.125 64.1664 324.292 51.6455 320.792 52.1247C317.312 52.6039 313.396 56.5414 305.542 64.458C290.797 79.171 270.819 87.434 249.989 87.434C229.16 87.434 209.181 79.171 194.437 64.458C186.583 56.5414 182.646 52.583 179.167 52.1247C175.687 51.6664 153.854 64.1664 146.104 68.6247C138.187 73.1455 116.271 85.708 114.896 89.0205C113.521 92.2914 114.958 97.9164 117.854 109.125C128.333 149.896 102.896 192.812 62.2707 203.875C51.3957 206.833 45.9582 208.312 43.8123 211.146C41.6665 213.979 41.6665 238.875 41.6665 247.979C41.6665 257.083 41.6665 282 43.8123 284.833C45.9582 287.666 51.3957 289.146 62.2707 292.104L62.6457 292.208" stroke="#F24822" stroke-width="31.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M51.8541 378.811C74.3541 356.311 150.854 280.603 158.354 271.853C166.271 262.603 159.854 250.103 163.687 211.374C165.521 192.624 169.562 178.582 181.104 168.145C194.854 155.145 206.104 155.145 244.854 154.27C278.604 155.145 282.604 151.395 286.104 160.145C288.604 166.395 281.104 170.145 272.104 180.145C252.104 200.145 240.354 210.124 239.229 216.374C231.104 243.874 263.104 260.103 280.604 242.624C287.229 235.999 317.854 205.124 320.854 202.624C323.104 200.624 328.479 200.728 331.104 203.874C333.354 206.082 333.604 206.374 333.354 216.374C333.125 225.624 333.229 238.916 333.25 252.624C333.292 270.353 332.354 290.082 324.854 300.082C309.854 322.582 284.854 323.832 262.354 324.832C241.104 326.082 223.604 323.832 218.104 327.832C213.604 330.082 189.854 355.061 161.104 383.791L109.854 435.04C67.3541 468.77 20.6041 416.29 51.8541 378.79" stroke="#F24822" stroke-width="31.25" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> -->
+                </span></h4> 
+            <h4><a href="">CERRAR SESSION</a></h4> 
+    </ul>
+</nav>
+
+<main>
+    <header2>
+        <h1><img src="" alt=""><span>SISTEMA DE GESTION AGRICOLA</span><img src="" alt=""></h1>
+    </header2>
+    
+    <section class="section">
+        <h2>MODULO CULTIVO</h2>
+        <div class="content">
+            <p>Este módulo se encarga de la gestión de los cultivos, proporcionando herramientas para la planificación y el monitoreo.</p>
+            <img src="../img/cultivos_img.png" alt="Cultivo">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>MODULO INSUMOS</h2>
+        <div class="content">
+            <p>Este módulo permite gestionar todos los insumos necesarios para las actividades agrícolas.</p>
+            <img src="../img/insumo.jpg" alt="Insumos">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>MODULO CICLOS</h2>
+        <div class="content">
+            <p>Este módulo ayuda a controlar los ciclos agrícolas, desde la siembra hasta la cosecha.</p>
+            <img src="../img/ciclos.jpg" alt="Ciclos">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>MODULO USUARIOS</h2>
+        <div class="content">
+            <p>Este módulo gestiona los datos de los usuarios, incluyendo roles y permisos.</p>
+            <img src="../img/usuarios.jpg" alt="Usuarios">
+        </div>
+    </section>
+
+    <article class="article">
+        <h2>ARTICULO POR FUERA DE LA PAGINA SOBRE UN TEMA ESPECIAL</h2>
+        <div class="content">
+            <p>En este artículo se analiza en profundidad un tema relacionado con la agricultura sostenible.</p>
+            <img src="../img/especial.jpg" alt="Tema Especial">
+        </div>
+    </article>
+</main>
+
+<footer>
+    <!-- Imagen con grafico azul y blanco -->
+
+</footer>
+
+
+</html>
