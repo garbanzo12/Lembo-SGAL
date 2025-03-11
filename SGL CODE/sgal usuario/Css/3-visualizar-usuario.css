@@ -533,7 +533,7 @@ label, .cicloRigh__label {
     height: auto;
     /* posicion */
     position: fixed;
-    top: 15%;
+    top: 8%;
     gap: 1rem;
   }
   .cardRight__form, .cicloRight__form {
@@ -594,7 +594,7 @@ label, .cicloRigh__label {
     height: auto;
     /* posicion */
     position: fixed;
-    top: 28%;
+    top: 20%;
     gap: 1rem;
   }
 }
