@@ -64,15 +64,15 @@
           />
           <div>
             <label class="cardRigth__formlabel" for="Correo Electronico">Correo Electronico</label>
-            <input placeholder="Correo electrónico" type="email" />
+            <input class="userName" placeholder="Correo electrónico" type="email" />
           </div>
           <div>
             <label class="cardRigth__formlabel" for="Contraseña">Contraseña</label>
-            <input placeholder="Ingrese su contraseña" type="password" />
+            <input class="userPasword" placeholder="Ingrese su contraseña" type="password" />
           </div>
           <div>
-            <button class="cardRigth__button">
-              <a href="../sgal main (sanchez)/index_main.html">ACEPTAR</a>
+            <button type="submit" class="cardRigth__button">
+              ACEPTAR
             </button>
           </div>
         </form>
@@ -94,5 +94,22 @@
         >
       </footer>
     </main>
+
+
+    <script>
+      fetch("/SGL CODE/Estandarizacion/config.json")
+        .then(result => result.json())
+        .then(data => {
+          // Crea un elemento script
+          const script = document.createElement("script")
+          // Asignamos la ruta del script
+          script.src = data.login; // ⬅️ cambiar nombre del json aqui
+          // Indica que el script solo se ejecuta cuando el HTML se haya cargado
+          script.defer = true;
+          // Ponemos el script en el head para que se ejecute
+          document.head.appendChild(script);
+        })
+        .catch(error => console.log('Error al cargar script'))
+    </script>
   </body>
 </html>
