@@ -220,6 +220,7 @@
     font-size: 3.2rem;
     color: var(--primary-800);
     text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
+    z-index: 0;
   }
 
 
@@ -327,12 +328,12 @@
   
   .BarGeneral__side {
     position: fixed;
-    top: 2rem;
+    top: 1.4rem;
     left: 2rem;
     border-radius: 1rem 1rem 0 0;
     background-color: var(--secundary-1-400);
     width: auto;
-    height: 10vh;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -340,7 +341,7 @@
     color: var(--black);
     border: 0.2rem solid var(--primary-950);
     cursor: pointer; /* Indicador visual interactivo */
-    z-index: 0;
+    z-index: 1000;
   }
   
   .BarGeneral__nombreUser {
@@ -350,10 +351,13 @@
   }
   
   .BarGeneral__Usuario {
-    width: 8rem;
-    height: 8rem;
-    margin: 0.8rem;
+    width: 9rem;
+    height: 9rem;
+    margin: 0.2rem;
     border-radius: 1.6rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
   }
   
   /* Menú de módulos oculto */
@@ -413,7 +417,7 @@
 
 
   /* Media Query */
-  @media (min-width: 480px) {
+  @media (min-width: 380px) {
     .ciclo__container--blue {
       background-color: var(--secundary-1-950);
       width: 100%;
@@ -510,5 +514,62 @@
       border-bottom: none;
       color: var(--gray-500);
     }
+
+
+    .BarGeneral__nombreUser {
+      width: 16rem;
+      height: 10rem;
+      margin: 0.8rem;
+    }
+    
+    .BarGeneral__Usuario {
+      display: flex;
+      position: relative;
+      top: 0.05rem;
+    }
+    
+    .BarGeneral__side {
+      position: fixed;
+      top: 2rem;
+      left: 2.1rem;
+      border-radius: 1rem 1rem 0 0;
+      background-color: var(--secundary-1-400);
+      width: auto;
+      height: 10rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--black);
+      border: 0.2rem solid var(--primary-950);
+      cursor: pointer; /* Indicador visual interactivo */
+      z-index: 1000;
+    }
+
+
+
+
+    /* Menú de módulos oculto */
+    .BarLinksmodulos {
+      display: none;
+      background-color: var(--secundary-1-100);
+      padding: 1rem;
+      border: 0.1rem solid var(--primary-950);
+      border-radius: 0 0 1rem 1rem;
+      position: fixed;
+      top: 10rem;
+      left: 2rem;
+      width: 10rem;
+      transition: background-color 1s ease;
+      /* transform: gap 1s ease; */
+      color: var(--black);
+      font-weight: 400;
+      z-index: 10;
+    
+    }
+
+
+
+
   }
   
