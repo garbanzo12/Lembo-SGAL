@@ -125,6 +125,7 @@
     display: flex;
     flex-direction: row;
     gap: 10rem;
+    
   }
   
   /* Sidebar */
@@ -197,15 +198,36 @@
   }
   
   /* Contenido principal */
-  .ciclo__content {
+  .cicloListar {
     background-color: var(--gray-050);
     padding: 1rem;
     border-radius: 1.2rem;
     width: 70vh;
-    margin-top: 5vh;
+    margin-top: 11rem;
     align-items: center;
     justify-content: center;
   }
+  .cicloListar__tittle{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font--main);
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: var(--primary-800);
+    text-shadow: 0 0 2px #00ff00, 0 0 20px #00ff00;
+  }
+
+
+  .ciclo__table-header{
+    border: 0.1rem solid var(--gray-400);
+  }
+
+
   .ciclo__table-container {
     background-color: var(--white);
     display: flex;
@@ -219,13 +241,13 @@
   }
   
   /* Toolbar */
-  .ciclo__toolbar {
+  .cicloToolbar {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 5%;
   }
-  .ciclo__toolbar-section {
+  .cicloToolbar__section {
     display: flex;
     flex-direction: row;
   }
@@ -278,11 +300,13 @@
     border: 0.1rem solid var(--secundary-1-950);
     margin-top: 8%;
     margin-bottom: 5%;
+    gap: 0;
   }
   .ciclo__table-cell,
   .ciclo__table-data {
-    border-bottom: 0.1rem solid var(--secundary-1-950);
-    border-left: 0.1rem solid var(--secundary-1-950);
+    border: 0.1rem solid var(--gray-400);
+    /* border-bottom: 0.1rem solid var(--secundary-1-950); */
+    /* border-left: 0.1rem solid var(--secundary-1-950); */
     font-size: 1rem;
     color: var(--secundary-1-950);
   }
@@ -301,6 +325,93 @@
     /* Si se desea aplicar estilos específicos, se pueden agregar aquí */
   }
   
+  .BarGeneral__side {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--secundary-1-400);
+    width: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+    border: 0.2rem solid var(--primary-950);
+    cursor: pointer; /* Indicador visual interactivo */
+    z-index: 0;
+  }
+  
+  .BarGeneral__nombreUser {
+    width: 16rem;
+    height: 10rem;
+    margin: 0.8rem;
+  }
+  
+  .BarGeneral__Usuario {
+    width: 8rem;
+    height: 8rem;
+    margin: 0.8rem;
+    border-radius: 1.6rem;
+  }
+  
+  /* Menú de módulos oculto */
+  .BarLinksmodulos {
+    display: none;
+    background-color: var(--secundary-1-100);
+    padding: 1rem;
+    border: 0.1rem solid var(--primary-950);
+    border-radius: 0 0 1rem 1rem;
+    position: fixed;
+    top: 10rem;
+    left: 2rem;
+    width: 10rem;
+    transition: background-color 1s ease;
+    /* transform: gap 1s ease; */
+    color: var(--black);
+    font-weight: 400;
+    z-index: 10;
+  
+  }
+  
+  .BarLinksmodulos a{
+    text-decoration: none; 
+    color: inherit;
+  }
+  
+  .BarGeneral__check {
+    display: none;
+  }
+  .BarTop__href {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .BarTop__Image {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .BarTop__Image--small{
+    width: 6rem;
+    height: 6rem;
+  }
+  /* Cuando el checkbox está marcado */
+  #toggle-linksmodulos:checked ~ .BarLinksmodulos {
+    display: block; /* Muestra el menú */
+    
+  }
+
+
+
+
+
+
+
+
+
+
   /* Media Query */
   @media (min-width: 480px) {
     .ciclo__container--blue {
@@ -310,7 +421,7 @@
       align-items: center;
       justify-content: center;
     }
-    .ciclo__content {
+    .cicloListar {
       background-color: var(--gray-050);
       padding: 2rem;
       border-radius: 1.2rem;
@@ -331,7 +442,7 @@
       margin-right: 5%;
       padding: 2rem;
     }
-    .ciclo__toolbar-section {
+    .cicloToolbar__section {
       display: flex;
       flex-direction: row;
     }
