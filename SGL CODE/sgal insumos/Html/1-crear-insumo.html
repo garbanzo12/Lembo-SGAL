@@ -1,73 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Insumos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Es una pagina con formulario y una ventana de celular"
+    />
+    <meta
+      name="keywords"
+      content="sena, risaralda, lembo, gestion, agricola, campecino, produtos, cultivos,"
+    />
+    <meta
+      name="author"
+      content="Aprendiz: Erick Ramirez, Aprendiz Aprendiz:Sanchez Hernandez, Aprendiz:Estefani Acevedo"
+    />
+    <meta http-equiv="Content-Language" content="es" />
+
     <link rel="stylesheet" href="../Css/1-crear-insumo.css">
-</head>
-<body>
-    <div class="box1">
-      <section class="contenedor-gif">
-        <div class="subcontenedor-gif">
-          <div class="ico-sena">
-            <img
-              src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-png-2022.png"
-              alt="Imagen de Logo Sena"/>
-          </div>
 
-          <!-- <div class="image-movile">
-            <svg width="350" height="700" viewBox="0 0 236 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M203.718 10H32C19.8497 10 10 19.8497 10 32V451.546C10 463.697 19.8497 473.546 32 473.546H203.718C215.868 473.546 225.718 463.697 225.718 451.546V32C225.718 19.8497 215.868 10 203.718 10ZM32 0C14.3269 0 0 14.3269 0 32V451.546C0 469.22 14.3269 483.546 32 483.546H203.718C221.391 483.546 235.718 469.22 235.718 451.546V32C235.718 14.3269 221.391 0 203.718 0H32Z" fill="#5D7B8E"/>
-              <path d="M63 9.50586C63 16.1333 68.3726 21.5059 75 21.5059H161C167.627 21.5059 173 16.1333 173 9.50586H63Z" fill="#5D7B8E"/>
-              </svg>
-              
-              <path
-                d="M90 10C90 16.6274 95.3726 22 102 22H188C194.627 22 200 16.6274 200 10H90Z"
-                fill="#5D7B8E"/>  
-          </div> -->
+    <title>Registro de Insumos</title>
+  </head>
+  <body>
+    <!-- ******************  Titulo principal  ****************  -->
 
-          <div class="ico-sena">
-            <img src="/SGL CODE/img/LogoSgal.png" alt="Imagen de Logo Sgal" />
-          </div>
-        </div>
+    <header class="ciclo_tittle">
+      <spam>SENA SEDE LEMBO</spam>
+      <a href="/SGL CODE/sgal main (sanchez)/index_main.html">
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  
+        stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  
+        class="icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+      </a>
+    
+    </header>
+
+    <!-- ******************  inicio cicloLeft ****************  -->
+
+    <aside class="cicloLeft">
+      <section class="cardLeft__container">
+        <img
+          class="cicloLeft__logoSena"
+          src="/SGL CODE/img/LOGOS SENA/LOGOS SENA/logo-sena-verde-complementario-svg-2022.svg"
+          alt="Imagen de Logo Sena"
+        />
+
+        <img
+          class="cicloLeft__imageMovil"
+          src="/SGL CODE/img/movil01.png"
+          alt="Imagen de celular  cuadros"
+        />
+
+        <img
+          class="cicloLeft__logoSgal"
+          src="/SGL CODE/img/LogoSgal.png"
+          alt="Imagen de Logo Sgal"
+        />
       </section>
-    </div>
-    <!-- fin box1 -->
+    </aside>
+    <!-- ******************  fin cicloLeft ****************  -->
 
-    <div class="box2">
-        <h1 class="tittle">SENA   SEDE   LEMBO</h1>    
-        <main class="registro"><!--resgitro-->
-            <h2 class="subtittle">REGISTRO INSUMO</h2>
-            <section class="datos"><!--datos-->
-                <div class="datos-generales"><!--datos-generales-->
-                    <label for="">Tipo de Insumo</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Ingresar el tipo de insumo" required>
-                    <label for="">Nombre del Insumo </label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Ingrese nombre de insumo" required>
-                    <label for="">Cantidad</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingrese cantidad de insumo" required>
-                    <label for="">Descripción</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Solo texto"required>
-                </div><!--datos-generales-->    
+    <main class="cicloRight">
+      <fieldset class="cardRight__container">
+        <h3>REGISTRO INSUMO</h3>
 
-                <div class="datos-insumos"><!--datos-insumos-->
-                    <label for="">ID Insumo</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingresar ID Insumo" required>
-                    <label for="">Unidad De Medida</label>
-                    <input class="opciones" type="text" name="" id="" placeholder="Ingresar Unidad Medida"required>
-                    <label for="">Valor Total</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingresar Valor Total"required>
-                    <label for="">Valor Unitario</label>
-                    <input class="opciones" type="number" name="" id="" placeholder="Ingresar Valor Unitario"required>
-                </div><!--datos-insumos-->
-            </section><!--datos-->
+        <form class="cicloRight__form">
+          <div class="ciclo__data-general">
+            <label class="label" for="">Id Insumo</label>
+            <input class="ciclo__nameUser" placeholder="ID del Insumo" type="number" />
+          </div>
 
-            <footer class="end"><!--end-->
-                <a class="end-button" href="/SGL CODE/sgal insumos/Html/2-buscar-insumo.html">Crear</a>
-                <a class="end-button" href="/SGL CODE/sgal main (sanchez)/index_main.html">Cancelar</a>
-            </footer><!--end-->
-        </main> <!---registro-->
-    </div>
-</body>
-</html>
+          <div class="ciclo__data-general">
+            <label class="label" for="">Tipo de Insumo</label>
+            <input class="ciclo__nameUser" placeholder="Tipo de Insumo" type="text" />
+          </div>
+
+          <div class="ciclo__data-general">
+            <label class="label" for="">Nombre del Insumo</label>
+            <input class="ciclo__email" placeholder="Nombre del Insumo" type="text" />
+          </div>
+          
+          <div class="ciclo__data-general">
+            <label class="label" for="">Cantidad</label>
+            <input class="ciclo__cellPhone" placeholder="Cantidad del Insumo" type="number" />
+          </div>
+
+          <div class="ciclo__data-general">
+            <label class="label" for="">Unidad de Medida</label>
+            <input class="ciclo__nameUser" placeholder="Unidad de Medida" type="number" />
+          </div>
+
+          <div class="ciclo__data-general">
+            <label class="label" for="">Valor Unitario</label>
+            <input class="ciclo__nameUser" placeholder="Valor Unitario" type="number" />
+          </div>
+
+          <div class="ciclo__data-general">
+            <label class="label" for="">Valor Total</label>
+            <input class="ciclo__nameUser" placeholder="Valor Total" type="number" />
+          </div>
+
+          <div class="ciclo__data-general">
+            <label class="label" for="">Descripción</label>
+            <input class="ciclo__nameUser" placeholder="Descrición del Insumo" type="text" />
+          </div>
+
+          <div class="botones">
+            <button class="button" type="submit">
+              CREAR
+            </button>
+            <!-- <button class="button"><a href="">CANCELAR</a></button> -->
+          </div>
+
+        </form>
+
+        <div class="baseform">
+          <a href="#"> </a>
+        </div>
+      </fieldset>
+      <!-- fin de form -->
+
+      <svg
+        class="CardRight__svg"
+        width="48"
+        height="48"
+        viewBox="0 0 26 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M23 34.7746L11 18.9694L23 3.16406M3 3.16406V34.7746"
+          stroke="#00304D"
+          stroke-width="5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </main>
+
+    <script>
+      fetch("/SGL CODE/Estandarizacion/config.json")
+          .then(result => result.json())
+          .then(data =>{
+              // Crea un elemento script
+              const script = document.createElement("script")
+              // Asignamos la ruta del script
+              script.src = data.validar11;
+              // Indica que el script solo se ejecuta cuando el HTML se haya cargado
+              script.defer = true;
+              // Ponemos el script en el head para que entienda donde va
+              document.head.appendChild(script);
+          })
+          .catch(error => console.log('Error al cargar script'))
+    </script>
+  </body>
+ </html>  
